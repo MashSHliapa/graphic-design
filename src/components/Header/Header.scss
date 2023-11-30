@@ -1,0 +1,49 @@
+.header {
+
+  &__container {
+    display: flex;
+    min-height: 97px;
+    align-items: center;
+    position: relative;
+  }
+
+  &__logo {}
+
+  &__menu {
+    margin-left: 237px;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 81px;
+  }
+
+  &__link {
+    color: #727272;
+    line-height: 125%;
+  }
+
+  &__link:hover {
+    color: #05921C;
+    border-bottom: #05921C solid 1px;
+    transition: 0.3s;
+  }
+
+  &__red-rectangle{}
+}
+
+.red-rectangle {
+  width: 100px;
+  height: 553px;
+  background-color: #FF3D00;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  z-index: -1;
+}

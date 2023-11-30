@@ -1,0 +1,43 @@
+import telegram from '../../images/Telegram.png'
+import whatsapp from '../../images/WatsApp.png'
+import viber from '../../images/Viber.png'
+import './Contacts.scss'
+
+export function Contacts() {
+  return (
+    <div className="contacts">
+      <div className="contacts__body">
+        <div className="contacts__data">
+          <div className="contacts__title footer-title">Контактная информация</div>
+          <div className="contacts__phone">+375 29 859 71 18 </div>
+          <div className="contacts__email">levkova.alena81@gmail.com </div>
+        </div>
+
+        <div className="contacts__extra-data">
+          <div className="contacts__title footer-title">Дополнительные способы для
+            связи со мной
+          </div>
+          <div className="contacts__icons-group">
+            <div className="contacts__icon">
+              <a href="https://t.me/@LevkovaAlena" target="_blank">
+                <img src={telegram} alt="telegram" />
+              </a>
+            </div>
+            <div className="contacts__icon">
+              <a href="https://api.whatsapp.com/send?phone=375298597118" target="_blank">
+                <img src={whatsapp} alt="whatsapp" />
+              </a>
+            </div>
+            <div className="contacts__icon">
+              <a href="viber://chat?number=%2B375298597118" target="_blank">
+                <img src={viber} alt="viber" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="contacts__unp">УНП КВ3399281</div>
+      </div>
+    </div>
+  )
+}

@@ -1,0 +1,39 @@
+.contacts {
+  &__container {}
+
+  &__body {
+    color: #FFFFFF;
+    font-family: 'ABeeZee', sans-serif;
+    max-width: 318px;
+  }
+
+  &__data {}
+
+  &__title {}
+
+  &__phone {
+    font-size: 30px;
+    padding: 2px 0;
+  }
+
+  &__email {
+    font-size: 23px;
+    padding: 12px 0 15px;
+  }
+
+  &__extra-data {}
+
+  &__icons-group {
+    display: flex;
+    gap: 29px;
+  }
+
+  &__icon:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+  }
+
+  &__unp {
+    margin-top: 34px;
+  }
+}

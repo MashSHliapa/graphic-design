@@ -1,0 +1,76 @@
+.main {
+  &__container {
+    position: relative;
+  }
+
+  &__body {}
+
+  &__data {
+    margin: 6px auto 0;
+    max-width: 757px;
+    text-align: end;
+  }
+
+  &__name {
+    padding: 6px 0 22px;
+  }
+
+  &__career {
+    text-align: center;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: -125px;
+    z-index: -1;
+  }
+
+  &__image img {
+    object-fit: cover;
+  }
+
+  &__about {
+    margin: 104px 0 91px 445px;
+    padding: 5px;
+  }
+
+  &__exposition {
+    margin: 0 auto 151px;
+    font-family: 'Bona Nova';
+    font-size: 30px;
+    line-height: 120%;
+    max-width: 894px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px;
+  }
+}
+
+.about {
+  &__description {
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+  }
+
+  &__separator {
+    width: 5px;
+    height: 154px;
+    background-color: #05921C;
+    margin-right: 15px;
+  }
+
+  &__text {
+    font-family: 'ABeeZee', sans-serif;
+    max-width: 545px;
+    color: #000000;
+    font-size: 13px;
+    line-height: 138%;
+    margin-bottom: 0;
+  }
+
+  &__text span {
+    font-size: 18px;
+  }
+}

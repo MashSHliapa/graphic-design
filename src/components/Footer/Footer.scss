@@ -1,0 +1,60 @@
+.footer {
+  background-color: #000000;
+
+  &__container {}
+
+  &__body {
+    color: #FFFFFF;
+    font-family: 'ABeeZee', sans-serif;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    padding: 31.6px 5px 43px;
+  }
+
+  &__social {
+    text-align: center;
+  }
+
+  &__social {}
+
+  &__icon-group {
+    margin-top: 50px;
+  }
+
+  &__icon:not(:last-child) {
+    margin-bottom: 59px;
+  }
+
+  &__icon {}
+
+  &__icon-title {
+    font-size: 25px;
+    padding: 3px 0;
+    line-height: 118%;
+  }
+
+  &__data {
+    margin-top: 10px;
+  }
+
+  &__logo {}
+
+  &__info {
+    padding-top: 28px;
+  }
+
+  &__name {
+    padding: 0 0 6px 0;
+    text-align: end;
+  }
+}
+
+.footer-title {
+  font-family: 'Abel', sans-serif;
+  line-height: 127%;
+  color: #808080;
+  padding: 10px 0px;
+}
