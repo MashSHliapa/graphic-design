@@ -1,0 +1,11 @@
+.title {
+  &__container {}
+
+  &__title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Bona Nova', serif;
+    padding: 0 10px;
+  }
+}

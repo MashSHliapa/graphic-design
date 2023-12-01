@@ -1,0 +1,90 @@
+.flyers {
+  &__container {}
+
+  &__body {}
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    /* ширина для вертикального скролла */
+    background-color: rgb(248, 247, 247);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #FF3D00;
+    // border-radius: 9em;
+    // box-shadow: inset 1px 1px 10px #f3faf7;
+  }
+
+  &__title {
+    margin: 40px 0;
+  }
+
+  &__list {
+    height: 100vh;
+    /* Высота блока */
+    overflow-y: scroll;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 430px 430px;
+    // grid-template-rows: 600px 610px 235px 270px 15px 500px 1px 300px;
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
+    grid-template-areas: "a1 a2"
+      "a3 b"
+      "a4 b"
+      "a4 s"
+      "a4 a6"
+      "a5 a6"
+      "a7 a6"
+      "a7 a8";
+  }
+
+  &__item1 {
+    grid-area: a1;
+  }
+
+  &__item2 {
+    grid-area: a2;
+  }
+
+  &__item3 {
+    grid-area: a3;
+  }
+
+  &__item4 {
+    grid-area: a4;
+  }
+
+  &__item5 {
+    grid-area: a5;
+  }
+
+  &__item5 img {
+    min-height: 510px;
+    max-width: 430px;
+  }
+
+  &__item6 {
+    grid-area: a6;
+  }
+
+  &__item7 {
+    grid-area: a7;
+  }
+
+  &__item8 {
+    grid-area: a8;
+  }
+
+  &__item-big {
+    grid-area: b;
+  }
+
+  &__item-small {
+    grid-area: s;
+  }
+
+  &__up {
+    margin: 37px 0 38px 0;
+  }
+}
