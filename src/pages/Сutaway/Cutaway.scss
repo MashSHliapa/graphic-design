@@ -1,0 +1,22 @@
+.cutaway {
+  &__container {}
+
+  &__body {}
+
+  &__title {
+    margin: 40px 0; // посмотреть после
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 58px;
+  }
+
+  &__item {}
+
+  &__up {
+    margin: 50px 0; // посмотреть после
+  }
+}
