@@ -5,6 +5,7 @@ import { Footer } from '../Footer'
 import './Layout.scss'
 import { Flyers } from '../../pages/Flyers'
 import { Cutaway } from '../../pages/Сutaway'
+import { Diplomas } from '../../pages/Diplomas'
 
 export function Layout() {
   return (
@@ -13,6 +14,7 @@ export function Layout() {
       <Main />
       <Flyers />
       <Cutaway />
+      <Diplomas />
       <Footer />
     </div>
   )

@@ -1,0 +1,22 @@
+.diplomas {
+  &__container {}
+
+  &__body {}
+
+  &__title {
+    margin: 41px 0;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px 30px;
+  }
+
+  &__item {}
+
+  &__up {
+    margin: 54px 0;
+  }
+}
