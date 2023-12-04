@@ -2,7 +2,7 @@ import { createBrowserRouter } from 'react-router-dom'
 import { Layout } from './components/Layout'
 import { Flyers } from './pages/Flyers'
 import { Cutaway } from './pages/Сutaway'
-import { Diplomas } from './pages/Diplomas'
+import { DiplomasAndCertificates } from './pages/DiplomasAndCertificates'
 import { Portfolio } from './pages/Portfolio'
 
 
@@ -27,8 +27,8 @@ export const router = createBrowserRouter([
         element: <Cutaway />
       },
       {
-        path: '/diplomas',
-        element: <Diplomas />
+        path: '/diplomas_and_certificates',
+        element: <DiplomasAndCertificates />
       },
     ]
   }

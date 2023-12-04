@@ -20,9 +20,9 @@
   }
 
   &__list {
-    height: 100vh;
-    /* Высота блока */
-    overflow-y: scroll;
+    // height: 100vh;
+    // /* Высота блока */
+    // overflow-y: scroll;
     display: grid;
     justify-content: center;
     grid-template-columns: 430px 430px;

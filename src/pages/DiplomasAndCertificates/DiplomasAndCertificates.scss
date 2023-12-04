@@ -1,0 +1,44 @@
+.diplomas-certificate {
+  &__container {}
+
+  &__body {}
+}
+
+.diplomas {
+  &__title {
+    margin: 61px 0 44px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px 30px;
+  }
+
+  &__item {}
+
+  &__up {
+    margin: 54px 0;
+  }
+}
+
+.certificates {
+  &__title {
+    margin: 40px 0;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 41px 33px;
+  }
+
+  &__item {}
+}
+
+.green-and {
+  color: #05921C;
+  font-family: 'Great Vibes', cursive;
+}
