@@ -8,7 +8,7 @@ export function Footer() {
   return (
     <footer className="footer">
       <div className="footer__container _container">
-        <div className="footer__body">
+        <div className="footer__body" id="сontacts">
           <div className="footer__row">
 
             <div className="footer__col">

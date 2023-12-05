@@ -94,6 +94,9 @@
     letter-spacing: 1px;
     font-weight: 600;
   }
+   &__menu-item_reduce {
+    font-size: 30px;
+   }
 
   &__menu-item:not(:last-child) {
     margin-bottom: 25px;

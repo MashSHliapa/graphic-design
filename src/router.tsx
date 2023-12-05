@@ -20,19 +20,19 @@ export const router = createBrowserRouter([
         element: <Portfolio />
       },
       {
-        path: '/flyers',
+        path: '/portfolio/flyers',
         element: <Flyers />
       },
       {
-        path: '/cutaway',
+        path: '/portfolio/cutaway',
         element: <Cutaway />
       },
       {
-        path: '/diplomas_and_certificates',
+        path: '/portfolio/diplomas_and_certificates',
         element: <DiplomasAndCertificates />
       },
       {
-        path: '/logo',
+        path: '/portfolio/logo',
         element: <Logo />
       },
     ]
