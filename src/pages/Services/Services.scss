@@ -1,0 +1,133 @@
+.services {
+  background-color: #ECECEC;
+  padding: 126px 0 0 0;
+
+  &__container {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__body {
+    text-transform: uppercase;
+    font-family: 'ABeeZee', sans-serif;
+    padding-left: 25px;
+  }
+
+  &__title {
+    font-family: 'Bona Nova';
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: 2px;
+    margin-bottom: 43px;
+  }
+
+  &__menu {
+    display: flex;
+  }
+
+  &__separator {
+    width: 5px;
+    height: 230px;
+    background-color: #05921C;
+    margin-right: 26px;
+  }
+
+  &__list {
+    margin-bottom: 62px;
+  }
+
+  &__item {
+    font-size: 20px;
+    line-height: 118%;
+    letter-spacing: 1.5px;
+    margin-top: 1px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 5.8px;
+  }
+
+  &__link {
+    color: #000000;
+    position: relative;
+    // padding: 0px 26px;
+    transition: all .1s ease-out;
+  }
+
+  // &__link::before {
+  //   content:'';
+  //   position: absolute;
+  //   top: -1px;
+  //   left: 0px;
+  //   width: 0px;
+  //   z-index: -1;
+  //   height: 24px;
+  //   background: #A0C860;
+  //   transition: all .5s ease-out;
+  // }
+
+  // &__link:hover:before {
+  //   width: 100%;
+  // }
+
+  &__link:hover {
+    background: #A0C860;
+    transition: all .2s ease-out;
+  }
+
+  &__buttons-group {
+    display: flex;
+    padding-bottom: 43px;
+    margin-bottom: 151px;
+  }
+
+  &__button:not(:last-child) {
+    margin-right: 47px;
+  }
+
+  &__button {
+    color: #000000;
+    text-transform: none;
+    padding: 20px 0px;
+    font-size: 25px;
+    line-height: 118%;
+    border: #000000 solid 2px;
+    min-width: 250px;
+    text-align: center;
+    transition: all .2s ease;
+  }
+
+  &__button:hover {
+    color: #FFFFFF;
+    background-color: #000000;
+    transition: all .2s ease;
+  }
+
+  &__button_booking {
+    color: #FF3D00;
+    font-size: 20px;
+    padding: 23px 0px;
+  }
+
+  &__button_booking:hover {
+    color: #FF3D00;
+  }
+
+  &__red-rectangle {
+    height: 626px;
+    width: 100px;
+    background-color: #FF3D00;
+    position: absolute;
+    bottom: -51px;
+    left: -126px;
+    z-index: 30;
+  }
+
+  &__image {
+    position: absolute;
+    bottom: -51px;
+    right: -130px;
+    z-index: -1;
+  }
+}

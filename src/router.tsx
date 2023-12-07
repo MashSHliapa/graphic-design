@@ -5,6 +5,7 @@ import { Cutaway } from './pages/Сutaway'
 import { DiplomasAndCertificates } from './pages/DiplomasAndCertificates'
 import { Portfolio } from './pages/Portfolio'
 import { Logo } from './pages/Logo'
+import { Services } from './pages/Services'
 
 
 export const router = createBrowserRouter([
@@ -13,7 +14,7 @@ export const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        // element:
+        element: <Services />
       },
       {
         path: '/portfolio',
