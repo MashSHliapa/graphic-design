@@ -21,7 +21,7 @@ export function Stickers() {
     <div className="sticker">
       <div className="sticker__container _container">
         <div className="sticker__body">
-          <div className="sticker__title">
+          <div className="sticker__title _title">
             <Title>стикеры <span className="green-and">&</span> бирки</Title>
           </div>
 

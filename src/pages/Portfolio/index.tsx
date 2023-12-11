@@ -98,12 +98,12 @@ export function Portfolio() {
               </div>
             </div>
           </li>
-          <li className="gallery__item">
+          <li className="gallery__item" onClick={handleClickPageWithScroll}>
             <img src={post} alt="post" />
             <div className="gallery__menu">
               <div className="gallery__menu-item">
-                <a className="gallery__menu-link" href="#">ПОСТ & СТОРИС
-                </a>
+                <NavLink to="/portfolio/stories" className="gallery__menu-link" >ПОСТ & СТОРИС
+                </NavLink>
               </div>
             </div>
           </li>
