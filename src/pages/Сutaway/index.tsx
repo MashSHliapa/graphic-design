@@ -60,7 +60,7 @@ export function Cutaway() {
               <img src={cutaway12} alt="cutaway" />
             </li>
           </ul>
-          <div className="cutaway__up">
+          <div className="cutaway__up _up">
             <Up />
           </div>
         </div>

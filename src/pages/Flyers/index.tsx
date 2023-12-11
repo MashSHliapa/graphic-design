@@ -54,7 +54,7 @@ export function Flyers() {
               <img src={flyer10} alt="flyer" />
             </div>
           </div>
-          <div className="flyers__up">
+          <div className="flyers__up _up">
             <Up />
           </div>
         </div>

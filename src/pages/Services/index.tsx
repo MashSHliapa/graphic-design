@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import services from '../../images/services.jpg'
 import './Services.scss'
 export function Services() {
@@ -36,7 +37,7 @@ export function Services() {
             </ul>
           </div>
           <div className="services__buttons-group">
-            <a href="#" className="services__button" >портфолио</a>
+            <NavLink to="/portfolio" className="services__button" >портфолио</NavLink>
             <a href="#" className="services__button services__button_booking">заказать дизайн</a>
           </div>
         </div>

@@ -48,7 +48,7 @@ export function Logo() {
               <img src={logo9} alt="logo9" />
             </li>
           </ul>
-          <div className="logo__up">
+          <div className="logo__up _up">
             <Up />
           </div>
         </div>

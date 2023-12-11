@@ -1,0 +1,60 @@
+.sticker {
+  &__container {}
+
+  &__title {}
+
+  &__box {
+    padding: 45px 0 0 0;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+    justify-content: center;
+  }
+
+  &__item {}
+}
+
+.tags {
+  &__list {
+    display: grid;
+    grid-template-rows: 20px 440px 440px;
+    grid-template-columns: 385px 260px 350px;
+    row-gap: 28px;
+    justify-content: center;
+  }
+
+  &__list li {
+    margin: 0 auto;
+  }
+
+  &__item1 {
+    grid-area: 2/1/3/2;
+  }
+
+  &__item2 {
+    grid-area: 2/2/3/3;
+  }
+
+  &__item3 {
+    grid-area: 1/3/3/4;
+  }
+
+  &__item4 {
+    grid-area: 3/1/4/2;
+  }
+
+  &__item5 {
+    grid-area: 3/2/4/3;
+  }
+
+  &__item6 {
+    grid-area: 3/3/4/4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+}

@@ -69,7 +69,7 @@ export function DiplomasAndCertificates() {
                 <img src={diploma6} alt="diploma" />
               </li>
             </ul>
-            <div className="diplomas__up">
+            <div className="diplomas__up _up">
               <Up />
             </div>
           </div>
