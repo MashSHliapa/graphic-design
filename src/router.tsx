@@ -8,6 +8,7 @@ import { Logo } from './pages/Logo'
 import { Services } from './pages/Services'
 import { Stickers } from './pages/Stickers'
 import { Stories } from './pages/Stories'
+import { PostersAndBanners } from './pages/PostersAndBanners'
 
 
 export const router = createBrowserRouter([
@@ -45,6 +46,10 @@ export const router = createBrowserRouter([
       {
         path: '/portfolio/stories',
         element: <Stories />
+      },
+      {
+        path: '/portfolio/posters',
+        element: <PostersAndBanners />
       },
     ]
   }

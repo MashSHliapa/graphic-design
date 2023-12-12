@@ -79,11 +79,11 @@ export function Portfolio() {
               </div>
             </div>
           </li>
-          <li className="gallery__item">
+          <li className="gallery__item" onClick={handleClickPageWithScroll}>
             <img src={bord} alt="bord" />
             <div className="gallery__menu">
               <div className="gallery__menu-item">
-                <a className="gallery__menu-link" href="#">АФИШИ & ПЛАКАТЫ</a>
+                <NavLink to="/portfolio/posters" className="gallery__menu-link" href="#">АФИШИ & ПЛАКАТЫ</NavLink>
               </div>
               <div className="gallery__menu-item">
                 <a className="gallery__menu-link" href="#">баннеры</a>
@@ -94,7 +94,7 @@ export function Portfolio() {
             <img src={sticker} alt="sticker" />
             <div className="gallery__menu">
               <div className="gallery__menu-item">
-                <a className="gallery__menu-link" href="#">СТИКЕРЫ & БИРКИ</a>
+                <NavLink to="/portfolio/stickers" className="gallery__menu-link" >СТИКЕРЫ & БИРКИ</NavLink>
               </div>
             </div>
           </li>
