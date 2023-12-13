@@ -3,6 +3,7 @@ import name from '../../images/name.png'
 import career from '../../images/career.png'
 import photo from '../../images/main_photo.jpg'
 import myPhoto from '../../images/my_photo.jpg'
+import { Services } from '../../pages/Services'
 
 export function Main() {
   return (
@@ -42,6 +43,9 @@ export function Main() {
           </div>
         </div>
       </div>
+
+      <Services/>
     </main>
+
   )
 }

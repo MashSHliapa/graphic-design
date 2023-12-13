@@ -94,9 +94,10 @@
     letter-spacing: 1px;
     font-weight: 600;
   }
-   &__menu-item_reduce {
+
+  &__menu-item_reduce {
     font-size: 30px;
-   }
+  }
 
   &__menu-item:not(:last-child) {
     margin-bottom: 25px;
@@ -122,5 +123,10 @@
   &__item:hover::before {
     height: 100%;
     transition: all 1s ease-out;
+  }
+
+  &__and {
+    display: block;
+    padding: 3px;
   }
 }

@@ -11,7 +11,7 @@ export function Services() {
             <div className="services__separator"></div>
             <ul className="services__list">
               <li className="services__item">
-                <a className="services__link" href="#">ЛИСТОВКИ</a>
+                <NavLink to="/portfolio/flyers" className="services__link">ЛИСТОВКИ</NavLink>
               </li>
               <li className="services__item">
                 <a className="services__link" href="#">Визитки</a>
@@ -23,16 +23,16 @@ export function Services() {
                 <a className="services__link" href="#"> СЕРТИФИКАТЫ, ДИПЛОМЫ, БЛАГОДАРНОСТИ</a>
               </li>
               <li className="services__item">
-                <a className="services__link" href="#"> ПЛАКАТЫ, БАННЕРЫ, АФИШИ</a>
+                <a className="services__link" href="#"> ПЛАКАТЫ, АФИШИ & БАННЕРЫ</a>
               </li>
               <li className="services__item">
-                <a className="services__link" href="#">СТИКЕРЫ, ЭТИКЕТКИ, БИРКИ</a>
+                <a className="services__link" href="#">СТИКЕРЫ & БИРКИ</a>
               </li>
               <li className="services__item">
-                <a className="services__link" href="#"> ПОСТ&СТОРИС</a>
+                <a className="services__link" href="#"> ПОСТ & СТОРИС</a>
               </li>
               <li className="services__item">
-                <a className="services__link" href="#"> ЛОГОТИПЫ, ФИРМЕННЫЙ СТИЛЬ</a>
+                <a className="services__link" href="#"> ЛОГОТИПЫ</a>
               </li>
             </ul>
           </div>

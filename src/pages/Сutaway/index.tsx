@@ -12,14 +12,14 @@ import cutaway10 from '../../images/cutaways/cutaway10.jpg'
 import cutaway11 from '../../images/cutaways/cutaway11.jpg'
 import cutaway12 from '../../images/cutaways/cutaway12.jpg'
 import './Cutaway.scss'
-import { Up } from '../../components/Up'
+import { InPortfolio } from '../../components/InPortfolio'
 
 export function Cutaway() {
   return (
     <div className="cutaway">
       <div className="cutaway__container _container">
         <div className="cutaway__body">
-          <div className="cutaway__title">
+          <div className="cutaway__title _title">
             <Title>визитки</Title>
           </div>
           <ul className="cutaway__list">
@@ -60,12 +60,11 @@ export function Cutaway() {
               <img src={cutaway12} alt="cutaway" />
             </li>
           </ul>
-          <div className="cutaway__up _up">
-            <Up />
+          <div className="cutaway__in-portfolio _in-portfolio">
+            <InPortfolio />
           </div>
         </div>
       </div>
     </div>
-
   )
 }

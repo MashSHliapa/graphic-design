@@ -1,5 +1,5 @@
 import { Title } from '../../components/Title'
-import { Up } from '../../components/Up'
+import { InPortfolio } from '../../components/InPortfolio'
 import logo1 from '../../images/logo/logo1.jpg'
 import logo2 from '../../images/logo/logo2.jpg'
 import logo3 from '../../images/logo/logo3.jpg'
@@ -16,7 +16,7 @@ export function Logo() {
     <div className="logo">
       <div className="logo__container _container">
         <div className="logo__body">
-          <div className="logo__title">
+          <div className="logo__title _title">
             <Title>логотипы</Title>
           </div>
           <ul className="logo__list">
@@ -48,8 +48,8 @@ export function Logo() {
               <img src={logo9} alt="logo9" />
             </li>
           </ul>
-          <div className="logo__up _up">
-            <Up />
+          <div className="logo__in-portfolio _in-portfolio">
+            <InPortfolio/>
           </div>
         </div>
       </div>

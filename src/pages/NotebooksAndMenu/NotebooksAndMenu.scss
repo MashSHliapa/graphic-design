@@ -1,0 +1,37 @@
+.notebooks-and-menu {
+  &__container {}
+
+  &__body {}
+
+  &__notebooks {}
+}
+
+.notebooks {
+  &__title {}
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &__item4 {
+    margin-bottom: 28px;
+  }
+
+  &__item {}
+}
+
+.menu1 {
+  &__title {}
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  &__item {}
+}

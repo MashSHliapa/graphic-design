@@ -1,4 +1,5 @@
 .main {
+  padding-top: 23px;
   &__container {
     position: relative;
   }
@@ -36,7 +37,7 @@
   }
 
   &__exposition {
-    margin: 0 auto 90px; // переделать!!
+    margin: 0 auto 103px; // переделать!!
     font-family: 'Bona Nova';
     font-size: 30px;
     line-height: 120%;

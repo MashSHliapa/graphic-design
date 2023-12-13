@@ -9,15 +9,21 @@ import { Services } from './pages/Services'
 import { Stickers } from './pages/Stickers'
 import { Stories } from './pages/Stories'
 import { PostersAndBanners } from './pages/PostersAndBanners'
+import { NotebooksAndMenu } from './pages/NotebooksAndMenu'
+import { Main } from './components/Main'
 
 
 export const router = createBrowserRouter([
   {
     element: <Layout />,
     children: [
+      // {
+      //   path: '/',
+      //   element: <Services />
+      // },
       {
         path: '/',
-        element: <Services />
+        element: <Main />
       },
       {
         path: '/portfolio',
@@ -50,6 +56,10 @@ export const router = createBrowserRouter([
       {
         path: '/portfolio/posters',
         element: <PostersAndBanners />
+      },
+      {
+        path: '/portfolio/notebooks_menu',
+        element: <NotebooksAndMenu />
       },
     ]
   }

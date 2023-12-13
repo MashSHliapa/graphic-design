@@ -61,10 +61,7 @@ export function Portfolio() {
             <img src={notebook} alt="notebook" />
             <div className="gallery__menu">
               <div className="gallery__menu-item">
-                <a className="gallery__menu-link" href="#">блокноты</a>
-              </div>
-              <div className="gallery__menu-item">
-                <a className="gallery__menu-link" href="#">меню</a>
+                <NavLink to="/portfolio/notebooks_menu" className="gallery__menu-link" >блокноты <span className='gallery__and'>&</span> меню</NavLink>
               </div>
             </div>
           </li>
@@ -72,29 +69,29 @@ export function Portfolio() {
             <img src={diploma} alt="diploma" />
             <div className="gallery__menu">
               <div className="gallery__menu-item gallery__menu-item_reduce">
-                <NavLink to="/portfolio/diplomas_and_certificates" className="gallery__menu-link">ДИПЛОМЫ & БЛАГОДАРНОСТИ</NavLink>
+                <NavLink to="/portfolio/diplomas_and_certificates" className="gallery__menu-link">ДИПЛОМЫ, БЛАГОДАРНОСТИ <span className='gallery__and'>&</span> СЕРТИФИКАТЫ, пригласительные</NavLink>
               </div>
-              <div className="gallery__menu-item gallery__menu-item_reduce">
+              {/* <div className="gallery__menu-item gallery__menu-item_reduce">
                 <a className="gallery__menu-link" href="#">СЕРТИФИКАТЫ & пригласительные</a>
-              </div>
+              </div> */}
             </div>
           </li>
           <li className="gallery__item" onClick={handleClickPageWithScroll}>
             <img src={bord} alt="bord" />
             <div className="gallery__menu">
               <div className="gallery__menu-item">
-                <NavLink to="/portfolio/posters" className="gallery__menu-link" href="#">АФИШИ & ПЛАКАТЫ</NavLink>
+                <NavLink to="/portfolio/posters" className="gallery__menu-link">АФИШИ, ПЛАКАТЫ <span className='gallery__and'>&</span>баннеры</NavLink>
               </div>
-              <div className="gallery__menu-item">
+              {/* <div className="gallery__menu-item">
                 <a className="gallery__menu-link" href="#">баннеры</a>
-              </div>
+              </div> */}
             </div>
           </li>
-          <li className="gallery__item">
+          <li className="gallery__item" onClick={handleClickPageWithScroll}>
             <img src={sticker} alt="sticker" />
             <div className="gallery__menu">
               <div className="gallery__menu-item">
-                <NavLink to="/portfolio/stickers" className="gallery__menu-link" >СТИКЕРЫ & БИРКИ</NavLink>
+                <NavLink to="/portfolio/stickers" className="gallery__menu-link" >СТИКЕРЫ <span className='gallery__and'>&</span> БИРКИ</NavLink>
               </div>
             </div>
           </li>
@@ -102,7 +99,7 @@ export function Portfolio() {
             <img src={post} alt="post" />
             <div className="gallery__menu">
               <div className="gallery__menu-item">
-                <NavLink to="/portfolio/stories" className="gallery__menu-link" >ПОСТ & СТОРИС
+                <NavLink to="/portfolio/stories" className="gallery__menu-link" >ПОСТ <span className='gallery__and'>&</span> СТОРИС
                 </NavLink>
               </div>
             </div>

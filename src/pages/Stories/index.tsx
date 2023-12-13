@@ -10,7 +10,7 @@ import stories8 from '../../images/stories/stories8.jpg'
 import stories9 from '../../images/stories/stories9.jpg'
 import stories10 from '../../images/stories/stories10.jpg'
 import './Stories.scss'
-import { Up } from '../../components/Up'
+import { InPortfolio } from '../../components/InPortfolio'
 
 export function Stories() {
   return (
@@ -54,8 +54,8 @@ export function Stories() {
               </li>
             </ul>
           </div>
-          <div className="stories__up _up">
-            <Up />
+          <div className="stories__in-portfolio _in-portfolio">
+            <InPortfolio />
           </div>
         </div>
       </div>

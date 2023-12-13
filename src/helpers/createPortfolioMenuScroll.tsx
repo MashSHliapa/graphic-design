@@ -1,5 +1,5 @@
 export function createPortfolioMenuScroll(pageElement: unknown) {
-  const yOffset = -350
+  const yOffset = -310
 
   const element = pageElement.current
   const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset

@@ -14,7 +14,7 @@ import stiker12 from '../../images/stickers/sticker12.jpg'
 import stiker13 from '../../images/stickers/sticker13.jpg'
 
 import './Stickers.scss'
-import { Up } from '../../components/Up'
+import { InPortfolio } from '../../components/InPortfolio'
 
 export function Stickers() {
   return (
@@ -76,8 +76,8 @@ export function Stickers() {
             </div>
           </div>
 
-          <div className="sticker__up _up">
-            <Up/>
+          <div className="sticker__in-portfolio _in-portfolio">
+            <InPortfolio/>
           </div>
         </div>
       </div>
