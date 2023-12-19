@@ -5,12 +5,13 @@ import { Cutaway } from './pages/Сutaway'
 import { DiplomasAndCertificates } from './pages/DiplomasAndCertificates'
 import { Portfolio } from './pages/Portfolio'
 import { Logo } from './pages/Logo'
-import { Services } from './pages/Services'
+// import { Services } from './pages/Services'
 import { Stickers } from './pages/Stickers'
 import { Stories } from './pages/Stories'
 import { PostersAndBanners } from './pages/PostersAndBanners'
 import { NotebooksAndMenu } from './pages/NotebooksAndMenu'
 import { Main } from './components/Main'
+import { Cost } from './pages/Cost'
 
 
 export const router = createBrowserRouter([
@@ -28,6 +29,10 @@ export const router = createBrowserRouter([
       {
         path: '/portfolio',
         element: <Portfolio />
+      },
+      {
+        path: '/cost',
+        element: <Cost />
       },
       {
         path: '/portfolio/flyers',

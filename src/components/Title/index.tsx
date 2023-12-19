@@ -1,5 +1,5 @@
 import './Title.scss'
-export function Title(props:string) {
+export function Title(props: { children: React.ReactNode }) {
   return (
     <div className="title">
       <div className="title__container _container">

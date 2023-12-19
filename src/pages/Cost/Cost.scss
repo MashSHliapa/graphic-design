@@ -1,0 +1,84 @@
+.cost {
+  &__container {
+    max-width: 1300px;
+  }
+
+  &__body {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 25px;
+    line-height: 118%;
+    border: black 1px solid;
+  }
+
+  &__title {
+    padding: 71px 5px 88px;
+  }
+
+  &__info {
+    padding: 5px;
+    margin: 0 auto;
+    max-width: 980px;
+  }
+
+  &__info p {
+    padding-top: 19px;
+  }
+
+  &__text {}
+
+  &__text-with-contacts {
+    margin-top: 60px;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 18px;
+    margin-top: 23px;
+  }
+
+  &__icons img {
+    align-self: center;
+  }
+
+  &__icons-group {
+    gap: 18px;
+  }
+
+  &__condition-box {
+    margin: 44px 0px;
+  }
+
+  &__buttons-group {
+    display: flex;
+    margin: 0 0 74px 265px;
+  }
+}
+
+.condition-box {
+  background-color: #05921C;
+  color: #FFFFFF;
+  padding: 20px 20px;
+
+  &__body {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__list {}
+
+  &__list li::before {
+    content: "•";
+    display: inline-block;
+    width: 23px;
+  }
+
+  &__item {}
+
+  &__reduce {
+    font-size: 20px;
+  }
+}

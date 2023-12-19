@@ -1,7 +1,7 @@
 .portfolio {
 
   &__section {
-    max-width: 1510px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 
@@ -41,24 +41,8 @@
 
   &__vector-here {}
 
-  //// вернуться на главную
-  &__to-main {
+  &__go-to-main {
     margin: 24px auto 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  &__to-main img {
-    text-align: center;
-    align-self: center;
-  }
-
-  &__to-main-text {
-    font-size: 18px;
-    line-height: 138%;
-    text-align: center;
-    padding: 10px;
   }
 }
 
@@ -89,14 +73,14 @@
   }
 
   &__menu-item {
-    font-size: 35px;
+    font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 600;
   }
 
   &__menu-item_reduce {
-    font-size: 30px;
+    font-size: 24px;
   }
 
   &__menu-item:not(:last-child) {
@@ -113,7 +97,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 1px;
+    height: 5px;
     background: #FF3D00;
     z-index: 1;
     opacity: 0.8;

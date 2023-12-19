@@ -21,7 +21,7 @@ export function DiplomasAndCertificates() {
         <div className="diplomas-certificates__body">
           <div className="diplomas-certificates__certificate certificate">
             <div className="certificates__title _title">
-              <Title>сертификаты <span className="green-and">&</span> пригласительные</Title>
+              <Title>дипломы <span className="green-and">&</span> благодарности</Title>
             </div>
             <ul className="certificates__list">
               <li className="certificates__item">
@@ -47,7 +47,7 @@ export function DiplomasAndCertificates() {
 
           <div className="diplomas-certificates__diplomas diplomas">
             <div className="diplomas__title _title">
-              <Title>дипломы <span className="green-and">&</span> благодарности</Title>
+              <Title>сертификаты <span className="green-and">&</span> пригласительные</Title>
             </div>
             <ul className="diplomas__list">
               <li className="diplomas__item">

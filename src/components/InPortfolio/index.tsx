@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom'
-import { useRef } from 'react'
-import { createMainScroll } from '../../helpers/createMainScroll'
+// import { useRef } from 'react'
+// import { createMainScroll } from '../../helpers/createMainScroll'
 import vector_up from '../../images/vector_up.png'
 import './InPortfolio.scss'
 
@@ -19,7 +19,7 @@ export function InPortfolio() {
             <img src={vector_up} alt="vector" />
           </div>
           <div className="in-portfolio__title">
-            <NavLink to="/portfolio">в портфолио</NavLink>
+            <NavLink to="/portfolio" target="_top">в портфолио</NavLink>
           </div>
         </div>
       </div>

@@ -1,0 +1,31 @@
+.main-theme {
+  background-color: #ECECEC;
+
+  &__container {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__body {
+    text-transform: uppercase;
+    font-family: 'ABeeZee', sans-serif;
+    padding-left: 120px;
+  }
+
+  &__red-rectangle {
+    height: 626px;
+    width: 100px;
+    background-color: #FF3D00;
+    position: absolute;
+    bottom: -51px;
+    left: -30px;
+    z-index: 30;
+  }
+
+  &__image {
+    position: absolute;
+    bottom: -27px;
+    right: -22px;
+    z-index: -1;
+  }
+}

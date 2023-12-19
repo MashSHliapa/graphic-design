@@ -1,6 +1,5 @@
-import telegram from '../../images/Telegram.png'
-import whatsapp from '../../images/WatsApp.png'
-import viber from '../../images/Viber.png'
+import telegram from '../../images/telegram.png'
+import whatsapp from '../../images/watsapp.png'
 import './Contacts.scss'
 
 export function Contacts() {
@@ -17,20 +16,15 @@ export function Contacts() {
           <div className="contacts__title footer-title">Дополнительные способы для
             связи со мной
           </div>
-          <div className="contacts__icons-group">
-            <div className="contacts__icon">
+          <div className="contacts__icons-group icons-group1-contacts">
+            <div className="icons-group1-contacts__icon">
               <a href="https://t.me/@LevkovaAlena" target="_blank">
                 <img src={telegram} alt="telegram" />
               </a>
             </div>
-            <div className="contacts__icon">
+            <div className="icons-group1-contacts__icon">
               <a href="https://api.whatsapp.com/send?phone=375298597118" target="_blank">
                 <img src={whatsapp} alt="whatsapp" />
-              </a>
-            </div>
-            <div className="contacts__icon">
-              <a href="viber://chat?number=%2B375298597118" target="_blank">
-                <img src={viber} alt="viber" />
               </a>
             </div>
           </div>

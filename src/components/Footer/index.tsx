@@ -3,6 +3,7 @@ import instagram from '../../images/instagram.png'
 import vk from '../../images/vk.png'
 import logo from '../../images/logo-footer.png'
 import './Footer.scss'
+import { GoToMain } from '../../components/GoToMain'
 
 export function Footer() {
   return (
@@ -46,8 +47,9 @@ export function Footer() {
                 </div>
               </div>
             </div>
-
           </div>
+
+          <div className="footer__copyright">Портфолио графического дизайнера Алёны Левковой © Все права защищены.</div>
         </div>
       </div>
     </footer>

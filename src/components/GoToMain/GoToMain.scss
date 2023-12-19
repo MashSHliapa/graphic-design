@@ -1,0 +1,19 @@
+.go-to-main {
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__body img {
+    text-align: center;
+    align-self: center;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 138%;
+    text-align: center;
+    padding: 10px;
+  }
+}

@@ -11,7 +11,7 @@
   &__row {
     display: flex;
     justify-content: space-between;
-    padding: 31.6px 5px 43px;
+    padding: 31.6px 5px 0px;
   }
 
   &__social {
@@ -28,7 +28,14 @@
     margin-bottom: 59px;
   }
 
-  &__icon {}
+  &__icon {
+    transition: transform 0.3s ease;
+  }
+
+  &__icon:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+  }
 
   &__icon-title {
     font-size: 25px;
@@ -49,6 +56,13 @@
   &__name {
     padding: 0 0 6px 0;
     text-align: end;
+  }
+
+  &__copyright {
+    font-size: 12px;
+    line-height: 120%;
+    padding: 20px 5px 33px;
+    margin-left: 475px;
   }
 }
 

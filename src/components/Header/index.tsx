@@ -28,7 +28,7 @@ export function Header() {
                 <NavLink to="/" className="menu__link">Услуги</NavLink>
               </li>
               <li className="menu__item">
-                <a className="menu__link" href="#">Цены</a>
+                <NavLink to="/cost" className="menu__link" >Цены</NavLink>
               </li>
               <li className="menu__item">
                 <a className="menu__link" href="#сontacts">Контакты</a>

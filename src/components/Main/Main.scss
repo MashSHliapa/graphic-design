@@ -1,5 +1,5 @@
 .main {
-  padding-top: 23px;
+  padding-top: 28px;
   &__container {
     position: relative;
   }
@@ -22,8 +22,8 @@
 
   &__image {
     position: absolute;
-    top: 0;
-    left: -125px;
+    top: -6px;
+    left: -48px;
     z-index: -1;
   }
 
@@ -32,7 +32,7 @@
   }
 
   &__about {
-    margin: 104px 0 91px 445px;
+    margin: 95px 0 91px 445px;
     padding: 5px;
   }
 
@@ -73,5 +73,6 @@
 
   &__text span {
     font-size: 18px;
+    color: #05921C;
   }
 }
