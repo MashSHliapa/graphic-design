@@ -3,6 +3,8 @@ import vector_right from '../../images/vector_right.png'
 import telegram from '../../images/telegram.png'
 import whatsapp from '../../images/watsapp.png'
 import './Cost.scss'
+import { Price } from '../../components/Price'
+import { GoToMain } from '../../components/GoToMain'
 
 export function Cost() {
 
@@ -54,8 +56,12 @@ export function Cost() {
           <div className="cost__buttons-group buttons-group">
             <a href="#" className="buttons-group__button buttons-group__button_booking">Скачать бланк ТЗ</a>
           </div>
-
         </div>
+      </div>
+
+      <Price />
+      <div className="cost___go-to-main _go-to-main">
+        <GoToMain />
       </div>
     </div>
   )

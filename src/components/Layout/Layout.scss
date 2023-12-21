@@ -43,7 +43,7 @@ body {
   font-size: 20px;
   color: #000000;
 }
-
+/////////////////////////////////////////////////////////////////////
 ._container {
   max-width: 1181px;
   // max-width: 1273px;
@@ -60,7 +60,64 @@ body {
   margin: 45px 0;
 }
 
+._go-to-main {
+  margin: 24px auto 20px;
+}
+
+._title-main {
+  padding-top: 110px;
+  font-family: 'Bona Nova';
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 120%;
+  letter-spacing: 1.5px;
+  margin-bottom: 36px;
+}
+//////////////////////////////////////////////////////////////////////
 .layout {}
+
+.menu-main {
+  // &__menu {
+  //   display: flex;
+  // }
+
+  &__separator {
+    width: 5px;
+    height: 290px;
+    background-color: #05921C;
+    margin-right: 26px;
+  }
+
+  &__separator_long {
+    height: 380px;
+  }
+
+  &__list {
+    margin-bottom: 35px;
+  }
+
+  &__item {
+    font-size: 20px;
+    line-height: 118%;
+    letter-spacing: 1.5px;
+    // margin-top: 2px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 11px;
+  }
+
+  &__link {
+    color: #000000;
+    position: relative;
+    transition: all .1s ease-out;
+  }
+
+  &__link:hover {
+    background: #A0C860;
+    transition: all .2s ease-out;
+  }
+}
 
 .buttons-group {
   &__button:not(:last-child) {

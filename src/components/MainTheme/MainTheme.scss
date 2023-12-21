@@ -28,4 +28,10 @@
     right: -22px;
     z-index: -1;
   }
+
+  &__image img {
+    max-width: 100%;
+    // object-fit: cover;
+  }
 }
+

@@ -1,56 +1,13 @@
 .services {
-
-  &__title {
-    padding-top: 110px;
-    font-family: 'Bona Nova';
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 120%;
-    letter-spacing: 1.5px;
-    margin-bottom: 36px;
-  }
-
   &__menu {
     display: flex;
   }
-
-  &__separator {
-    width: 5px;
-    height: 290px;
-    background-color: #05921C;
-    margin-right: 26px;
-  }
-
-  &__list {
-    margin-bottom: 35px;
-  }
-
-  &__item {
-    font-size: 20px;
-    line-height: 118%;
-    letter-spacing: 1.5px;
-    // margin-top: 2px;
-  }
-
-  &__item:not(:last-child) {
-    margin-bottom: 11px;
-  }
-
-  &__link {
-    color: #000000;
-    position: relative;
-    transition: all .1s ease-out;
-  }
-
-  &__link:hover {
-    background: #A0C860;
-    transition: all .2s ease-out;
-  }
-
   &__buttons-group {
     display: flex;
     padding-bottom: 35px;
-    margin-bottom: 151px;
+    // margin-bottom: 151px;
+    margin-bottom: 120px;
     flex-wrap: wrap;
   }
 }
+

@@ -1,0 +1,27 @@
+.price {
+  padding-bottom: 20px; // 30px
+  // margin-bottom: 151px;
+  margin-bottom: 110px;
+
+  &__menu {
+    display: flex;
+  }
+}
+
+.menu-main {
+  &__list {}
+
+  &__item_price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 530px;
+    gap: 4px;
+    border-bottom: 1px #05921C dashed;
+  }
+
+  &__price {
+    text-transform: lowercase;
+  }
+}
+

@@ -114,10 +114,9 @@ export function Portfolio() {
             </div>
           </li>
         </ul>
-        <div className="portfolio__go-to-main">
+        <div className="portfolio__go-to-main _go-to-main">
           <GoToMain />
         </div>
-
       </div>
     </div>
   )
