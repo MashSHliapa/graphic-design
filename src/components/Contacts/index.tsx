@@ -7,13 +7,13 @@ export function Contacts() {
     <div className="contacts">
       <div className="contacts__body">
         <div className="contacts__data">
-          <div className="contacts__title footer-title">Контактная информация</div>
+          <div className="contacts__title">Контактная информация</div>
           <div className="contacts__phone">+375 29 859 71 18 </div>
           <div className="contacts__email">levkova.alena81@gmail.com </div>
         </div>
 
         <div className="contacts__extra-data">
-          <div className="contacts__title footer-title">Дополнительные способы для
+          <div className="contacts__title">Дополнительные способы для
             связи со мной
           </div>
           <div className="contacts__icons-group icons-group1-contacts">

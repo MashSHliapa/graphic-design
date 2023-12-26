@@ -16,7 +16,7 @@ export function Main() {
               <img src={name} alt="name" />
             </div>
             <div className="main__career">
-              <img src={career} alt="name" />
+              <img src={career} alt="career" />
             </div>
           </div>
           <div className="main__about about">

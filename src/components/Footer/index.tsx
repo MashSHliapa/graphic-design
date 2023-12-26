@@ -3,7 +3,6 @@ import instagram from '../../images/instagram.png'
 import vk from '../../images/vk.png'
 import logo from '../../images/logo-footer.png'
 import './Footer.scss'
-import { GoToMain } from '../../components/GoToMain'
 
 export function Footer() {
   return (
@@ -18,7 +17,7 @@ export function Footer() {
 
             <div className="footer__col">
               <div className="footer__social">
-                <div className="footer__title footer-title">Социальные сети</div>
+                <div className="footer__title">Социальные сети</div>
                 <div className="footer__icon-group">
                   <div className="footer__icon">
                     <a href="https://instagram.com/artdesign_81?igshid=MmVlMjlkMTBhMg==" target="_blank">
@@ -26,13 +25,14 @@ export function Footer() {
                     </a>
                     <div className="footer__icon-title">Instagram</div>
                   </div>
-                  <div className="footer__icon">
+                  <div className="footer__icon footer__icon_vk">
                     <a href="https://vk.com/designalenalev" target="_blank">
                       <img src={vk} alt="vk" />
                     </a>
                     <div className="footer__icon-title">ВКонтакте</div>
                   </div>
                 </div>
+                <div className="footer__copyright">Портфолио графического дизайнера Алёны Левковой © Все права защищены.</div>
               </div>
             </div>
 
@@ -48,8 +48,6 @@ export function Footer() {
               </div>
             </div>
           </div>
-
-          <div className="footer__copyright">Портфолио графического дизайнера Алёны Левковой © Все права защищены.</div>
         </div>
       </div>
     </footer>

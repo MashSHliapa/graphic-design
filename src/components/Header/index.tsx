@@ -31,12 +31,13 @@ export function Header() {
                 <NavLink to="/cost" className="menu__link" >Цены</NavLink>
               </li>
               <li className="menu__item">
-                <a className="menu__link" href="#сontacts">Контакты</a>
+                <a className="menu__link" href="#contacts">Контакты</a>
               </li>
             </ul>
           </div>
-          <div className="header__red-rectangle red-rectangle"></div>
+          {/* <div className="header__red-rectangle red-rectangle"></div> */}
         </div>
+        <div className="header__red-rectangle red-rectangle"></div>
       </div>
     </header>
   )

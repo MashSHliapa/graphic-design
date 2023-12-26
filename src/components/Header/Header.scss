@@ -1,5 +1,4 @@
 .header {
-
   &__container {
     position: relative;
   }
@@ -8,17 +7,49 @@
     padding: 17px 5px 0 5px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   &__logo {}
 
-  &__menu {
-    margin-left: 237px;
-    align-items: center;
+  &__menu {}
+
+  @media screen and (max-width: 1200px) {
+    &__logo img {
+      max-width: 209px;
+      max-height: 56px;
+    }
+  }
+
+
+  @media screen and (max-width: 992px) {
+    &__body {
+      padding: 86px 5px 86px 5px; // предложить меньше отступа
+      padding: 36px 5px 30px 5px;
+    }
+
+    &__logo img {
+      // max-width: 209px;// предложить меньше высоты
+      // max-height: 56px;
+      max-width: 150px;
+      max-height: 45px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__logo img {
+      max-width: 113px;
+      max-height: 30px;
+    }
+
+    &__menu {
+      display: none;
+    }
   }
 }
 
 .menu {
+
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -27,6 +58,10 @@
 
   &__item:not(:last-child) {
     margin-right: 81px;
+  }
+
+  &__item:last-child {
+    margin-right: 140px;
   }
 
   &__link {
@@ -41,6 +76,31 @@
   }
 
   &__red-rectangle {}
+
+
+  @media screen and (max-width: 1200px) {
+    &__item:not(:last-child) {
+      margin-right: 72px;
+    }
+
+    &__item:last-child {
+      margin-right: 100px;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    &__list {
+      font-size: 18px;
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 55px;
+    }
+
+    &__item:last-child {
+      margin-right: 70px;
+    }
+  }
 }
 
 .red-rectangle {
@@ -51,4 +111,20 @@
   top: 0;
   right: 0px;
   z-index: -1;
+
+  @media screen and (max-width: 1200px) {
+    width: 80px;
+    height: 238px;
+    position: absolute;
+    top: 0;
+    right: -10px;
+  }
+
+  @media screen and (max-width: 991.98px) {
+    width: 60px;
+    height: 238px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
 }

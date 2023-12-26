@@ -6,22 +6,9 @@
   &__menu {
     display: flex;
   }
-}
 
-.menu-main {
-  &__list {}
-
-  &__item_price {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-width: 530px;
-    gap: 4px;
-    border-bottom: 1px #05921C dashed;
-  }
-
-  &__price {
-    text-transform: lowercase;
+  @media screen and (max-width: 992px) {
+    padding-bottom: 30px;
+    margin-bottom: 38px;
   }
 }
-

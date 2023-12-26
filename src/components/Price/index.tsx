@@ -1,5 +1,4 @@
 import { MainTheme } from '../MainTheme'
-import { NavLink } from 'react-router-dom'
 import './Price.scss'
 
 export function Price() {
@@ -56,47 +55,16 @@ export function Price() {
               <span>СТИКЕРЫ,БИРКИ</span>
               <span className="menu-main__price">от 15$</span>
             </li>
+
             <li className="menu-main__item menu-main__item_price">
               <span>ПОСТ & СТОРИС</span>
               <span className="menu-main__price">от 15$</span>
             </li>
+
             <li className="menu-main__item menu-main__item_price">
               <span>ЛОГОТИПЫ</span>
               <span className="menu-main__price">от 15$</span>
             </li>
-
-
-
-            {/* <li className="menu-main__item">
-              Визитки<span>от</span> 5$
-            </li>
-            <li className="menu-main__item">
-              БЛОКНОТЫ<span>от</span> 18$
-            </li>
-            <li className="menu-main__item">
-              МЕНЮ.................................................<span>от</span> 20$
-            </li>
-            <li className="menu-main__item">
-              ДИПЛОМЫ, БЛАГОДАРНОСТИ...............<span>от</span> 8$
-            </li>
-            <li className="menu-main__item">
-              СЕРТИФИКАТЫ, Пригласительные....<span>от</span> 8$
-            </li>
-            <li className="menu-main__item">
-              ПЛАКАТЫ, АФИШИ................................<span>от</span> 15$
-            </li>
-            <li className="menu-main__item">
-              БАННЕРЫ............................................<span>от</span> 16$
-            </li>
-            <li className="menu-main__item">
-              СТИКЕРЫ,БИРКИ.................................<span>от</span> 3$
-            </li>
-            <li className="menu-main__item">
-              ПОСТ & СТОРИС..................................<span>от</span> 17$
-            </li>
-            <li className="menu-main__item">
-              ЛОГОТИПЫ..........................................<span>от</span> 30$
-            </li> */}
           </ul>
         </div>
       </div>

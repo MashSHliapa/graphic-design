@@ -19,7 +19,7 @@
     position: absolute;
     bottom: -51px;
     left: -30px;
-    z-index: 30;
+    z-index: 5;
   }
 
   &__image {
@@ -31,7 +31,6 @@
 
   &__image img {
     max-width: 100%;
-    // object-fit: cover;
+    object-fit: cover;
   }
 }
-

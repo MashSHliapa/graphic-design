@@ -11,14 +11,23 @@
   &__row {
     display: flex;
     justify-content: space-between;
-    padding: 31.6px 5px 0px;
+    padding: 32px 5px 0px;
+    flex-wrap: wrap;
   }
+
+  &__col {}
 
   &__social {
     text-align: center;
+    margin-right: 130px;
   }
 
-  &__social {}
+  &__title {
+    font-family: 'Abel', sans-serif;
+    line-height: 127%;
+    color: #808080;
+    padding: 10px 0px;
+  }
 
   &__icon-group {
     margin-top: 50px;
@@ -45,6 +54,7 @@
 
   &__data {
     margin-top: 10px;
+    text-align: end;
   }
 
   &__logo {}
@@ -55,20 +65,177 @@
 
   &__name {
     padding: 0 0 6px 0;
-    text-align: end;
   }
 
   &__copyright {
     font-size: 12px;
-    line-height: 120%;
-    padding: 20px 5px 33px;
-    margin-left: 475px;
+    line-height: 150%;
+    padding: 30px 5px 20px;
   }
-}
 
-.footer-title {
-  font-family: 'Abel', sans-serif;
-  line-height: 127%;
-  color: #808080;
-  padding: 10px 0px;
+  @media screen and (max-width: 1200px) {
+    &__copyright {
+      font-size: 10px;
+      padding: 40px 5px 25px;
+      max-width: 270px;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    &__row {
+      padding: 22px 25px 0px;
+    }
+
+    &__col {
+      flex: 0 1 33.33%;
+    }
+
+    &__social {
+      margin-right: 0;
+    }
+
+    &__title {
+      font-size: 12px;
+    }
+
+    &__icon-group {
+      margin-top: 12px;
+    }
+
+    &__icon:not(:last-child) {
+      margin-bottom: 11px;
+    }
+
+    &__icon img {
+      width: 21px;
+      height: 24px;
+    }
+
+    &__icon_vk img {
+      width: 21px;
+      height: 14px;
+    }
+
+    &__icon-title {
+      font-size: 15px;
+    }
+
+    &__logo img {
+      width: 93px;
+      height: 120px;
+    }
+
+    &__info {
+      padding-top: 30px;
+      font-size: 12px;
+    }
+
+    &__copyright {
+      margin: 0 auto;
+      font-size: 8px;
+      padding: 15px 5px 25px; // предложить другие размеры
+      padding: 30px 5px 25px;
+      text-align: center;
+      max-width: 220px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__row {
+      padding: 5px 5px 0px;
+    }
+
+    &__col {
+      padding: 5px 15px;
+    }
+
+    &__social {}
+
+    &__title {
+      font-size: 8px;
+    }
+
+    &__icon img {
+      width: 23px;
+      height: 25px;
+      margin-bottom: 4px;
+    }
+
+    &__icon_vk img {
+      width: 23px;
+      height: 14px;
+      margin-bottom: 0px;
+    }
+
+    &__icon-title {
+      font-size: 9px;
+      padding: 0px;
+    }
+
+    &__data {}
+
+    &__logo {}
+
+    &__logo img {
+      width: 80px;
+      height: 100px;
+    }
+
+    &__info {
+      font-size: 6px; // предложить больше
+      font-size: 10px;
+    }
+
+    &__name {}
+
+    &__copyright {
+      font-size: 6px;
+      padding: 30px 0px 10px 0px;
+      max-width: 155px;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    &__row {
+      justify-content: space-around;
+    }
+
+    &__col {
+      padding: 3px 5px;
+    }
+
+    &__social {
+      text-align: end;
+    }
+
+    &__icon-group {
+      margin-top: 2px;
+    }
+
+    &__data {
+      display: flex;
+      min-width: 180px;
+      justify-content: space-around;
+      margin: 20px 0;
+    }
+
+    &__logo img {
+      width: 60px;
+      height: 70px;
+    }
+
+    &__info {
+      text-align: start;
+      padding-top: 20px;
+    }
+
+    &__copyright {
+      font-size: 5px;
+      padding: 15px 0px 0px 0px;
+      margin-right: 0;
+      text-align: end;
+      max-width: 130px;
+      min-width: 90px;
+    }
+  }
 }

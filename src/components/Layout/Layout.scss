@@ -43,6 +43,7 @@ body {
   font-size: 20px;
   color: #000000;
 }
+
 /////////////////////////////////////////////////////////////////////
 ._container {
   max-width: 1181px;
@@ -50,6 +51,18 @@ body {
   margin: 0 auto;
   padding: 0 15px;
   box-sizing: content-box;
+
+  @media screen and (max-width: 1200px) {
+    max-width: 1050px;
+  }
+
+  @media screen and (max-width: 992px) {
+    max-width: 984px;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: none;
+  }
 }
 
 ._title {
@@ -65,21 +78,25 @@ body {
 }
 
 ._title-main {
-  padding-top: 110px;
+  padding: 110px 0 36px;
   font-family: 'Bona Nova';
   font-weight: 700;
   font-size: 60px;
   line-height: 120%;
   letter-spacing: 1.5px;
-  margin-bottom: 36px;
+
+
+  @media screen and (max-width: 992px) {
+    padding: 46px 0 20px;
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
 }
+
 //////////////////////////////////////////////////////////////////////
 .layout {}
 
 .menu-main {
-  // &__menu {
-  //   display: flex;
-  // }
 
   &__separator {
     width: 5px;
@@ -107,6 +124,19 @@ body {
     margin-bottom: 11px;
   }
 
+  &__item_price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 530px;
+    gap: 4px;
+    border-bottom: 1px #05921C dashed;
+  }
+
+  &__price {
+    text-transform: lowercase;
+  }
+
   &__link {
     color: #000000;
     position: relative;
@@ -116,6 +146,38 @@ body {
   &__link:hover {
     background: #A0C860;
     transition: all .2s ease-out;
+  }
+
+  @media screen and (max-width: 992px) {
+    &__separator {
+      width: 4px;
+      height: 243px;
+      margin-right: 17px;
+    }
+
+    &__separator_long {
+      height: 330px;
+    }
+
+    &__list {
+      margin-bottom: 25px;
+    }
+
+    &__item {
+      font-size: 15px;
+      line-height: 137%;
+      letter-spacing: 1px;
+      // margin-top: 2px;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 9px;
+    }
+
+    &__item_price {
+      min-width: 400px;
+      gap: 0px;
+    }
   }
 }
 
@@ -151,11 +213,29 @@ body {
   &__button_booking:hover {
     color: #FF3D00;
   }
+
+  @media screen and (max-width: 992px) {
+    &__button:not(:last-child) {
+      margin-right: 25px;
+    }
+
+    &__button {
+      padding: 16px 0px;
+      font-size: 20px;
+      border: #000000 solid 2px;
+      min-width: 200px;
+    }
+
+    &__button_booking {
+      color: #FF3D00;
+      font-size: 15px;
+      padding: 19px 0px;
+    }
+  }
 }
 
 .icons-group1-contacts {
-    display: flex;
-    gap: 29px;
+  display: flex;
 
   &__icon {
     transition: transform 0.3s ease;
@@ -164,5 +244,21 @@ body {
   &__icon:hover {
     transform: scale(1.2);
     transition: transform 0.5s ease;
+  }
+
+  @media screen and (max-width: 992px) {
+    gap: 16px;
+
+    &__icon img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__icon img {
+      width: 31px;
+      height: 31px;
+    }
   }
 }
