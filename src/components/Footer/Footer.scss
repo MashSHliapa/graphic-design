@@ -31,20 +31,15 @@
 
   &__icon-group {
     margin-top: 50px;
+    display: inline-block;
   }
 
   &__icon:not(:last-child) {
     margin-bottom: 59px;
   }
 
-  &__icon {
-    transition: transform 0.3s ease;
-  }
+  &__icon {}
 
-  &__icon:hover {
-    transform: scale(1.2);
-    transition: transform 0.5s ease;
-  }
 
   &__icon-title {
     font-size: 25px;

@@ -9,7 +9,7 @@ export function MainTheme(props) {
           <div className="main-theme__image">
             <img src={services} alt="services" />
           </div>
-          <div className="main-theme__red-rectangle"></div>
+          <div className="main-theme__red-rectangle-main _red-rectangle"></div>
         </div>
       </div>
     </div>

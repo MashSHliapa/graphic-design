@@ -16,13 +16,13 @@ export function Contacts() {
           <div className="contacts__title">Дополнительные способы для
             связи со мной
           </div>
-          <div className="contacts__icons-group icons-group1-contacts">
-            <div className="icons-group1-contacts__icon">
+          <div className="contacts__icons-group icons-group-contacts">
+            <div className="icons-group-contacts__icon _icon">
               <a href="https://t.me/@LevkovaAlena" target="_blank">
                 <img src={telegram} alt="telegram" />
               </a>
             </div>
-            <div className="icons-group1-contacts__icon">
+            <div className="icons-group-contacts__icon _icon">
               <a href="https://api.whatsapp.com/send?phone=375298597118" target="_blank">
                 <img src={whatsapp} alt="whatsapp" />
               </a>

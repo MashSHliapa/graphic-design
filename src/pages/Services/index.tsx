@@ -9,7 +9,7 @@ export function Services() {
         <div className="services__title _title-main">Мои Услуги</div>
 
         <div className="services__menu menu-main">
-          <div className="menu-main__separator"></div>
+          <div className="menu-main__separator-main _separator"></div>
           <ul className="menu-main__list">
             <li className="menu-main__item">
               <NavLink to="/portfolio/flyers" target="_top" className="menu-main__link">ЛИСТОВКИ</NavLink>

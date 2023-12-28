@@ -8,7 +8,7 @@ export function Price() {
       <div className="price">
         <div className="price__title _title-main">Прайс</div>
         <div className="price__menu menu-main">
-          <div className="menu-main__separator menu-main__separator_long"></div>
+          <div className="menu-main__separator-main menu-main__separator-main_long _separator"></div>
           <ul className="menu-main__list">
 
             <li className="menu-main__item menu-main__item_price">

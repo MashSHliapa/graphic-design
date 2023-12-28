@@ -8,7 +8,7 @@ export function Footer() {
   return (
     <footer className="footer">
       <div className="footer__container _container">
-        <div className="footer__body" id="сontacts">
+        <div className="footer__body" id="contacts">
           <div className="footer__row">
 
             <div className="footer__col">
@@ -19,17 +19,19 @@ export function Footer() {
               <div className="footer__social">
                 <div className="footer__title">Социальные сети</div>
                 <div className="footer__icon-group">
-                  <div className="footer__icon">
+                  <div className="footer__icon _icon">
                     <a href="https://instagram.com/artdesign_81?igshid=MmVlMjlkMTBhMg==" target="_blank">
                       <img src={instagram} alt="instagram" />
+                      <div className="footer__icon-title">Instagram</div>
                     </a>
-                    <div className="footer__icon-title">Instagram</div>
+
                   </div>
-                  <div className="footer__icon footer__icon_vk">
+                  <div className="footer__icon footer__icon_vk _icon">
                     <a href="https://vk.com/designalenalev" target="_blank">
                       <img src={vk} alt="vk" />
+                      <div className="footer__icon-title">ВКонтакте</div>
                     </a>
-                    <div className="footer__icon-title">ВКонтакте</div>
+
                   </div>
                 </div>
                 <div className="footer__copyright">Портфолио графического дизайнера Алёны Левковой © Все права защищены.</div>

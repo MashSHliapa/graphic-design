@@ -26,13 +26,13 @@ export function Cost() {
 
               <div className="cost__icons">
                 <img src={vector_right} width={22} height={22} alt="vector_right" />
-                <div className="cost__icons-group icons-group1-contacts">
-                  <div className="icons-group1-contacts__icon">
+                <div className="cost__icons-group icons-group-contacts">
+                  <div className="icons-group-contacts__icon _icon">
                     <a href="https://t.me/@LevkovaAlena" target="_blank">
                       <img src={telegram} width={40} height={40} alt="telegram" />
                     </a>
                   </div>
-                  <div className="icons-group1-contacts__icon">
+                  <div className="icons-group-contacts__icon _icon">
                     <a href="https://api.whatsapp.com/send?phone=375298597118" target="_blank">
                       <img src={whatsapp} width={40} height={40} alt="whatsapp" />
                     </a>

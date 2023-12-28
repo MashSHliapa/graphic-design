@@ -21,7 +21,7 @@ export function Main() {
           </div>
           <div className="main__about about">
             <div className="about__description">
-              <div className="about__separator"></div>
+              <div className="about__separator-about _separator"></div>
               <p className="about__text">
                 <span>Обо мне</span><br />
                 Меня зовут Алёна Левкова. Я графический дизайнер<br />

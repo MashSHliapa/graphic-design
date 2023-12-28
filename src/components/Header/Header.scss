@@ -12,7 +12,7 @@
 
   &__logo {}
 
-  &__menu {}
+  &__navbar {}
 
   @media screen and (max-width: 1200px) {
     &__logo img {
@@ -20,7 +20,6 @@
       max-height: 56px;
     }
   }
-
 
   @media screen and (max-width: 992px) {
     &__body {
@@ -37,94 +36,103 @@
   }
 
   @media screen and (max-width: 768px) {
+    &__body {
+      padding: 20px 5px 0px 5px;
+    }
+
+    &__logo {
+      position: relative;
+      z-index: 5;
+      background-color: #FFFFFF;
+      display: inline;
+      padding: 10px 10px 5px;
+    }
+
     &__logo img {
       max-width: 113px;
       max-height: 30px;
     }
 
-    &__menu {
+    &__navbar {
       display: none;
     }
   }
 }
 
-.menu {
-
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  &__item:not(:last-child) {
-    margin-right: 81px;
-  }
-
-  &__item:last-child {
-    margin-right: 140px;
-  }
-
-  &__link {
-    color: #727272;
-    line-height: 125%;
-  }
-
-  &__link:hover {
-    color: #05921C;
-    border-bottom: #05921C solid 1px;
-    transition: 0.3s;
-  }
-
-  &__red-rectangle {}
-
-
-  @media screen and (max-width: 1200px) {
-    &__item:not(:last-child) {
-      margin-right: 72px;
-    }
-
-    &__item:last-child {
-      margin-right: 100px;
-    }
-  }
-
-  @media screen and (max-width: 992px) {
-    &__list {
-      font-size: 18px;
-    }
-
-    &__item:not(:last-child) {
-      margin-right: 55px;
-    }
-
-    &__item:last-child {
-      margin-right: 70px;
-    }
-  }
-}
-
-.red-rectangle {
-  width: 100px;
-  height: 553px;
-  background-color: #FF3D00;
+.red-rectangle-header {
+  // height: 553px;
   position: absolute;
   top: 0;
   right: 0px;
-  z-index: -1;
+  z-index: 2;
+
+  &__burger-menu,
+  &__burger-close {
+    display: none;
+  }
+
+  &__icons-group {
+    text-align: center;
+    padding: 240px 0 45px;
+  }
+
+  &__icon-vk img {
+    width: 25px;
+    height: 14px;
+  }
+
+  &__icon:not(:last-child) {
+    margin-bottom: 41px;
+  }
 
   @media screen and (max-width: 1200px) {
-    width: 80px;
-    height: 238px;
     position: absolute;
     top: 0;
     right: -10px;
   }
 
-  @media screen and (max-width: 991.98px) {
-    width: 60px;
-    height: 238px;
+  @media screen and (max-width: 992px) {
     position: absolute;
     top: 0;
     right: 10px;
+    max-height: 331px;
+
+    &__icons-group {
+      padding: 230px 0 29px;
+    }
+
+    &__icon img {
+      width: 21px;
+      height: 19px;
+    }
+
+    &__icon-vk img {
+      width: 21px;
+      height: 12px;
+    }
+
+    &__icon:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    max-height: 250px;
+
+    &__burger-menu {
+      display: block;
+      padding: 37px 0 0 12px;
+    }
+
+    &__icons-group {
+      padding: 112px 0 17px;
+      position: relative;
+      top: 0px;
+      left: 0;
+      z-index: 5;
+    }
   }
 }
