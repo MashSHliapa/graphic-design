@@ -11,6 +11,9 @@ export function Main() {
     <main className="main">
       <div className="main__container _container">
         <div className="main__body">
+          <div className="main__image">
+            <img src={photo} alt="" />
+          </div>
           <div className="main__data">
             <div className="main__name">
               <img src={name} alt="name" />
@@ -19,6 +22,8 @@ export function Main() {
               <img src={career} alt="career" />
             </div>
           </div>
+
+
           <div className="main__about about">
             <div className="about__description">
               <div className="about__separator-about _separator"></div>
@@ -37,10 +42,10 @@ export function Main() {
               <img src={myPhoto} alt="photo" />
             </div>
           </div>
+
+
           <div className="main__exposition">ЗДЕСЬ БУДЕТ ОТЛИЧНЫЙ ТЕКСТ ПРО МЕНЯ, ТО КТО ЧЕМ ЗАНИМАЮСЬ. ЧЕМ Я ПОМОГУ ВАШЕМУ БИЗНЕСУ СТАТЬ УСПЕШНЕЕ. СДЕЛАЮ ВАШ БРЕНД ОРИГИНАЛЬНЫМ
-            И ВЫДЕЛИТ ЕГО СРЕДИ ВАШИХ КОНКУРЕНТОВ. </div>
-          <div className="main__image">
-            <img src={photo} alt="" />
+            И ВЫДЕЛИТ ЕГО СРЕДИ ВАШИХ КОНКУРЕНТОВ.
           </div>
         </div>
       </div>
