@@ -16,4 +16,14 @@
     text-align: center;
     padding: 10px;
   }
+
+  @media screen and (max-width: 992px) {
+    &__text {
+      font-size: 17px;
+      padding: 7px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }

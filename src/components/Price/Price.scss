@@ -1,14 +1,17 @@
 .price {
-  padding-bottom: 20px; // 30px
-  // margin-bottom: 151px;
-  margin-bottom: 110px;
+  padding-bottom: 20px;
+  margin-bottom: 100px;
 
   &__menu {
     display: flex;
   }
 
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 80px;
+  }
+
   @media screen and (max-width: 992px) {
-    padding-bottom: 30px;
-    margin-bottom: 38px;
+    padding-bottom: 45px;
+    margin-bottom: 50px;
   }
 }

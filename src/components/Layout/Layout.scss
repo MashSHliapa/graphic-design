@@ -88,22 +88,37 @@ body {
   letter-spacing: 1.5px;
 
   @media screen and (max-width: 1200px) {
-    // padding: 100px 0 56px;
-    font-size: 50px;
+    padding: 70px 0 30px;
+    font-size: 45px;
     letter-spacing: 1px;
   }
 
-
   @media screen and (max-width: 992px) {
-    padding: 46px 0 20px;
+    padding: 40px 0 30px;
     font-size: 28px;
     letter-spacing: 1px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 40px 0 24px;
+  }
+
+  @media screen and (max-width: 576px) {
+    padding: 137px 0 24px;
   }
 }
 
 ._separator {
   width: 5px;
   background-color: #05921C;
+
+  @media screen and (max-width: 992px) {
+    width: 4px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 2.5px;
+  }
 }
 
 ._red-rectangle {
@@ -119,7 +134,7 @@ body {
   }
 
   @media screen and (max-width: 768px) {
-    width: 50px;
+    width: 30px;
   }
 }
 
@@ -154,7 +169,6 @@ body {
     font-size: 20px;
     line-height: 118%;
     letter-spacing: 1.5px;
-    // margin-top: 2px;
   }
 
   &__item:not(:last-child) {
@@ -165,13 +179,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 530px;
-    gap: 4px;
+    min-width: 520px;
     border-bottom: 1px #05921C dashed;
   }
 
   &__price {
     text-transform: lowercase;
+    max-width: 80px;
+    min-width: 75px;
   }
 
   &__link {
@@ -185,26 +200,24 @@ body {
     transition: all .2s ease-out;
   }
 
-  @media screen and (max-width: 992px) {
-    &__separator {
-      width: 4px;
+  @media screen and (max-width: 1200px) {
+    &__separator-main {
       height: 243px;
       margin-right: 17px;
     }
 
-    &__separator_long {
+    &__separator-main_long {
       height: 330px;
     }
 
     &__list {
-      margin-bottom: 25px;
+      margin-bottom: 40px;
     }
 
     &__item {
       font-size: 15px;
       line-height: 137%;
       letter-spacing: 1px;
-      // margin-top: 2px;
     }
 
     &__item:not(:last-child) {
@@ -212,61 +225,82 @@ body {
     }
 
     &__item_price {
-      min-width: 400px;
-      gap: 0px;
+      min-width: 430px;
     }
-  }
-}
 
-.buttons-group {
-  &__button:not(:last-child) {
-    margin-right: 47px;
-  }
-
-  &__button {
-    color: #000000;
-    text-transform: none;
-    padding: 18px 0px;
-    font-size: 25px;
-    line-height: 118%;
-    border: #000000 solid 3px;
-    min-width: 250px;
-    text-align: center;
-    transition: all .2s ease;
-  }
-
-  &__button:hover {
-    color: #FFFFFF;
-    background-color: #000000;
-    transition: all .2s ease;
-  }
-
-  &__button_booking {
-    color: #FF3D00;
-    font-size: 20px;
-    padding: 22px 0px;
-  }
-
-  &__button_booking:hover {
-    color: #FF3D00;
+    &__price {
+      max-width: 60px;
+      min-width: 55px;
+    }
   }
 
   @media screen and (max-width: 992px) {
-    &__button:not(:last-child) {
-      margin-right: 25px;
+    display: flex;
+
+    &__separator-main {
+      height: 225px;
+      margin-right: 12px;
     }
 
-    &__button {
-      padding: 16px 0px;
-      font-size: 20px;
-      border: #000000 solid 2px;
-      min-width: 200px;
+    &__separator-main_long {
+      height: 273px;
     }
 
-    &__button_booking {
-      color: #FF3D00;
-      font-size: 15px;
-      padding: 19px 0px;
+    &__list {
+      margin-bottom: 25px;
+    }
+
+    &__item {
+      font-size: 14px;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    &__item_price {
+      min-width: 320px;
+      font-size: 12px;
+      line-height: 141%;
+    }
+
+    &__price {
+      max-width: 50px;
+      min-width: 45px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__separator-main {
+      height: 152px;
+      margin-right: 12px;
+    }
+
+    &__separator-main_long {
+      height: 190px;
+    }
+
+    &__list {
+      margin-bottom: 32px;
+    }
+
+    &__item {
+      font-size: 9px;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 6px;
+    }
+
+    &__item_price {
+      min-width: 230px;
+      font-size: 8px;
+      line-height: 130%;
+    }
+
+    &__price {
+      max-width: none;
+      min-width: 33px;
     }
   }
 }
