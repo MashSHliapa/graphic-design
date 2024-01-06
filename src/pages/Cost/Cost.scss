@@ -7,6 +7,7 @@
     font-family: 'ABeeZee', sans-serif;
     font-size: 25px;
     line-height: 118%;
+    padding-left: 5px;
   }
 
   &__title {
@@ -48,16 +49,118 @@
     margin: 44px 0px;
   }
 
-  &__buttons-group {
-    display: flex;
+  &__button {
     margin: 0 0 74px 180px;
+  }
+
+  @media screen and (max-width: 1200px) {
+
+    &__body {
+      font-size: 23px;
+      line-height: 118%;
+    }
+
+    &__title {
+      padding: 50px 5px 30px;
+    }
+
+    &__info {
+      padding: 5px 90px 5px 5px;
+    }
+
+    &__info p {
+      padding-top: 15px;
+    }
+
+    &__text {}
+
+    &__text-with-contacts {
+      margin-top: 30px;
+    }
+
+    &__button {
+      display: flex;
+      margin: 0 0 74px 100px;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+
+    &__body {
+      font-size: 20px;
+    }
+
+    &__title {
+      padding: 40px 5px 30px;
+    }
+
+    &__info {
+      padding: 5px 70px 5px 5px;
+      max-width: 850px;
+    }
+
+    &__button {
+      display: flex;
+      margin: 0 0 74px 50px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+
+    &__body {
+      font-size: 10px;
+    }
+
+    &__title {
+      padding: 20px 5px 20px;
+    }
+
+    &__info {
+      max-width: 670px;
+    }
+
+    &__info p {
+      padding-top: 10px;
+    }
+
+    &__text-with-contacts {
+      margin-top: 20px;
+    }
+
+    &__icons {
+      display: flex;
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    &__icons >img {
+      width: 15px;
+      height: 15px;
+    }
+
+    &__condition-box {
+      margin: 25px 0px;
+    }
+
+    &__button {
+      display: flex;
+      margin: 0 0 74px 50px;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+
+    &__button {
+      display: flex;
+      margin: 0 0 110px 0px;
+    }
   }
 }
 
 .condition-box {
   background-color: #05921C;
   color: #FFFFFF;
-  padding: 20px 20px;
+  padding: 20px;
 
   &__body {
     max-width: 980px;
@@ -68,17 +171,48 @@
     margin-bottom: 40px;
   }
 
-  &__list {}
-
   &__list li::before {
     content: "•";
     display: inline-block;
-    width: 23px;
+    margin: 0px 20px 5px 0px;
   }
 
   &__item {}
 
   &__reduce {
     font-size: 20px;
+  }
+
+  @media screen and (max-width: 992px) {
+    &__body {
+      max-width: 840px;
+    }
+
+    &__list li::before {
+      margin: 0px 15px 7px 0px;
+    }
+
+    &__reduce {
+      font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+
+    &__body {
+      max-width: 660px;
+    }
+
+    &__title {
+      margin-bottom: 12px;
+    }
+
+    &__list li::before {
+      margin: 0px 10px 7px 0px;
+    }
+
+    &__reduce {
+      font-size: 8px;
+    }
   }
 }

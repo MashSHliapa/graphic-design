@@ -1,10 +1,10 @@
 import { Title } from '../../components/Title'
+import { Price } from '../../components/Price'
+import { GoToMain } from '../../components/GoToMain'
 import vector_right from '../../images/vector_right.png'
 import telegram from '../../images/telegram.png'
 import whatsapp from '../../images/watsapp.png'
 import './Cost.scss'
-import { Price } from '../../components/Price'
-import { GoToMain } from '../../components/GoToMain'
 
 export function Cost() {
 
@@ -17,10 +17,10 @@ export function Cost() {
           </div>
 
           <div className="cost__info">
-            <div className="cost__text">
-              Все цены приведеные в прайсе ориентировочные и не включают в себя покупку клипарта, работы иллюстратора и прочие расходы. <br />
-              <p>Заказы просчитываются индивидуально в соответствии с Вашим техническим заданием.</p>
-            </div>
+              <div className="cost__text">
+                Все цены приведеные в прайсе ориентировочные и не включают в себя покупку клипарта, работы иллюстратора и прочие расходы. <br />
+                <p>Заказы просчитываются индивидуально в соответствии с Вашим техническим заданием.</p>
+              </div>
             <div className="cost__text-with-contacts">
               <div className="cost__text">Узнать точную цену можно связавшись со мной удобным для Вас способом</div>
 
@@ -46,14 +46,14 @@ export function Cost() {
             <div className="condition-box__body">
               <div className="condition-box__title">Предварительно подготовьте и пришлите следующее:</div>
               <ul className="condition-box__list">
-                <li className="condition-box__item">бланк технического задания</li>
-                <li className="condition-box__item">понравившиеся Вам референсы <span className="condition-box__reduce">(картинки и/или фото)</span></li>
+                <li className="condition-box__item">Бланк технического задания</li>
+                <li className="condition-box__item">Понравившиеся Вам референсы <span className="condition-box__reduce">(картинки и/или фото)</span></li>
                 <li className="condition-box__item">Ваши: логотип и/или фирменный стиль, прежние наработки <span className="condition-box__reduce">(при необходимости)</span></li>
               </ul>
             </div>
           </div>
 
-          <div className="cost__buttons-group buttons-group">
+          <div className="cost__button buttons-group">
             <a href="#" className="buttons-group__button buttons-group__button_booking">Скачать бланк ТЗ</a>
           </div>
         </div>
