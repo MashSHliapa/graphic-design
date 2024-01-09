@@ -53,11 +53,10 @@
     margin: 0 0 74px 180px;
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199.98px) {
 
     &__body {
       font-size: 23px;
-      line-height: 118%;
     }
 
     &__title {
@@ -84,7 +83,7 @@
     }
   }
 
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 991.98px) {
 
     &__body {
       font-size: 20px;
@@ -105,10 +104,10 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767.98px) {
 
     &__body {
-      font-size: 10px;
+      font-size: 11px;
     }
 
     &__title {
@@ -133,7 +132,7 @@
       margin-top: 20px;
     }
 
-    &__icons >img {
+    &__icons>img {
       width: 15px;
       height: 15px;
     }
@@ -148,7 +147,7 @@
     }
   }
 
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 575.98px) {
 
     &__button {
       display: flex;
@@ -177,13 +176,11 @@
     margin: 0px 20px 5px 0px;
   }
 
-  &__item {}
-
   &__reduce {
     font-size: 20px;
   }
 
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 991.98px) {
     &__body {
       max-width: 840px;
     }
@@ -197,22 +194,26 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
-
-    &__body {
-      max-width: 660px;
-    }
+  @media screen and (max-width: 767.98px) {
 
     &__title {
-      margin-bottom: 12px;
+      margin-bottom: 18px;
     }
 
     &__list li::before {
-      margin: 0px 10px 7px 0px;
+      margin: 0px 10px 0px 0px;
+    }
+
+    &__list {
+      margin: 0px 10px 0px 0px;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 10px;
     }
 
     &__reduce {
-      font-size: 8px;
+      font-size: 9.5px;
     }
   }
 }

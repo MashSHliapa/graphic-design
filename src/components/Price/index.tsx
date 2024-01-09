@@ -37,7 +37,7 @@ export function Price() {
             </li>
 
             <li className="menu-main__item menu-main__item_price">
-              <span>СЕРТИФИКАТЫ, Пригласительные</span>
+              <span className='menu-main__link-reduced'>СЕРТИФИКАТЫ, Пригласительные</span>
               <span className="menu-main__price">от 8$</span>
             </li>
 

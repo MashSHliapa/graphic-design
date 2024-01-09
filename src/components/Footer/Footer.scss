@@ -68,7 +68,7 @@
     padding: 30px 5px 20px;
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199.98px) {
     &__copyright {
       font-size: 10px;
       padding: 40px 5px 25px;
@@ -76,7 +76,7 @@
     }
   }
 
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 991.98px) {
     &__row {
       padding: 22px 25px 0px;
     }
@@ -135,7 +135,7 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767.98px) {
     &__row {
       padding: 5px 5px 0px;
     }
@@ -190,7 +190,7 @@
     }
   }
 
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 575.98px) {
     &__row {
       justify-content: space-around;
     }
@@ -221,7 +221,7 @@
 
     &__info {
       text-align: start;
-      padding-top: 20px;
+      padding: 20px 0 0 20px;
     }
 
     &__copyright {

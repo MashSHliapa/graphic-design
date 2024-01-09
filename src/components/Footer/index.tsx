@@ -6,9 +6,9 @@ import './Footer.scss'
 
 export function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" id="contacts">
       <div className="footer__container _container">
-        <div className="footer__body" id="contacts">
+        <div className="footer__body">
           <div className="footer__row">
 
             <div className="footer__col">

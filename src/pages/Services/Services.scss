@@ -10,14 +10,14 @@
     flex-wrap: wrap;
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199.99px) {
     &__buttons-group {
       padding-bottom: 40px;
       margin-bottom: 80px;
     }
   }
 
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 991.98px) {
     &__buttons-group {
       padding-bottom: 40px;
       margin-bottom: 50px;
@@ -62,7 +62,7 @@
     color: #FF3D00;
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199.98px) {
     &__button:not(:last-child) {
       margin-right: 30px;
     }
@@ -79,7 +79,7 @@
     }
   }
 
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 991.98px) {
     &__button:not(:last-child) {
       margin-right: 10px;
     }
@@ -97,13 +97,12 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767.98px) {
 
     &__button {
       padding: 10px 0px;
       font-size: 12px;
       min-width: 128px;
-      border: #000000 solid 1px;
     }
 
     &__button_booking {

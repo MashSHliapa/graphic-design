@@ -1,14 +1,15 @@
 import { NavLink } from 'react-router-dom'
 import { useRef } from 'react'
-import { createMainScroll } from '../../helpers/createMainScroll'
+import { createServicesScroll } from '../../helpers/createServicesScroll'
 import './Navbar.scss'
 
 export function Navbar() {
   const pageElement = useRef(null)
 
   function handleClickPageWithScroll() {
-    createMainScroll(pageElement)
+    setTimeout(() => createServicesScroll(pageElement), 100)
   }
+
 
   return (
     <div className="navbar">
@@ -16,10 +17,13 @@ export function Navbar() {
         <ul className="navbar__list" ref={pageElement}>
           <li className="navbar__item" >
             <NavLink to="/portfolio" className="navbar__link">Портфолио</NavLink>
+            {/* <a href="#" className="navbar__link">Портфолио</a> */}
           </li>
+
           <li className="navbar__item" onClick={handleClickPageWithScroll}>
             <NavLink to="/" className="navbar__link">Услуги</NavLink>
           </li>
+
           <li className="navbar__item">
             <NavLink to="/cost" className="navbar__link" >Цены</NavLink>
           </li>

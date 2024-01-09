@@ -32,7 +32,7 @@
     object-fit: cover;
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199.98px) {
     &__body {
       padding-left: 100px;
     }
@@ -50,7 +50,7 @@
     }
   }
 
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 991.98px) {
 
     &__body {
       padding-left: 75px;
@@ -69,14 +69,14 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767.98px) {
     &__body {
-      padding-left: 60px;
+      padding-left: 45px;
     }
 
     &__red-rectangle-main {
       height: 450px;
-      left: 10px;
+      left: 5px;
     }
 
     &__image {
@@ -87,7 +87,7 @@
     }
   }
 
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 575.98px) {
     &__body {
       padding-left: 30px;
     }
@@ -95,7 +95,7 @@
     &__red-rectangle-main {
       height: 480px;
       bottom: -45px;
-      left: 0px;
+      left: -0px;
     }
 
     &__image {

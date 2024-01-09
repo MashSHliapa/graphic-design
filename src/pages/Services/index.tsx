@@ -21,7 +21,7 @@ export function Services() {
               <a className="menu-main__link" href="#"> БЛОКНОТЫ, МЕНЮ</a>
             </li>
             <li className="menu-main__item">
-              <a className="menu-main__link" href="#">ДИПЛОМЫ & БЛАГОДАРНОСТИ<br />  СЕРТИФИКАТЫ & Пригласительные</a>
+              <a className="menu-main__link" href="#">ДИПЛОМЫ & БЛАГОДАРНОСТИ<br /> СЕРТИФИКАТЫ & Пригласительные</a>
             </li>
             <li className="menu-main__item">
               <NavLink to="/portfolio/posters" className="menu-main__link" target="_top"> ПЛАКАТЫ, АФИШИ & БАННЕРЫ</NavLink>

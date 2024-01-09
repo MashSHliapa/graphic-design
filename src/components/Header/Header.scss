@@ -14,17 +14,18 @@
 
   &__navbar {}
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199.98px) {
+
     &__logo img {
       max-width: 209px;
       max-height: 56px;
     }
   }
 
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 991.98px) {
     &__body {
       padding: 86px 5px 86px 5px; // предложить меньше отступа
-      padding: 36px 5px 20px 5px;
+      padding: 36px 5px 0px 5px;
     }
 
     &__logo img {
@@ -35,7 +36,7 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767.98px) {
     &__body {
       padding: 20px 5px 0px 5px;
     }
@@ -45,7 +46,7 @@
       z-index: 5;
       background-color: #FFFFFF;
       display: inline;
-      padding: 10px 10px 5px;
+      padding: 10px 10px 5px 5px;
     }
 
     &__logo img {
@@ -85,13 +86,13 @@
     margin-bottom: 41px;
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199.98px) {
     position: absolute;
     top: 0;
     right: 0px;
   }
 
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 991.98px) {
     position: absolute;
     top: 0;
     right: 10px;
@@ -116,7 +117,7 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767.98px) {
     min-width: 50px;
     position: absolute;
     top: 0;
@@ -136,7 +137,7 @@
       z-index: 5;
     }
   }
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 575.98px) {
     position: absolute;
     top: 0;
     right: 5px;
