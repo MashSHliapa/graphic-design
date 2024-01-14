@@ -1,17 +1,34 @@
 import { Title } from '../../components/Title'
 import { InPortfolio } from '../../components/InPortfolio'
 import './Logo.scss'
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import { Post } from '../../components/Post'
+import { useDispatch, useSelector } from 'react-redux'
+import { fetchLogo } from '../../redux/logoSlice'
 
 export function Logo() {
 
-  const [posts, setPosts] = useState([])
+  // const [posts, setPosts] = useState([])
+  // useEffect(() => {
+  //   fetch('http://localhost:8035/pictures')
+  //     .then(res => res.json())
+  //     .then(data => setPosts(data))
+  // }, [])
+
+  const { data: posts, loading, error } = useSelector(state => state.logo)
+  const dispatch = useDispatch()
+
   useEffect(() => {
-    fetch('http://localhost:8035/pictures')
-      .then(res => res.json())
-      .then(data => setPosts(data))
-  }, [])
+    dispatch(fetchLogo())
+  }, [dispatch])
+
+  if (loading) {
+    return <div>Loading...</div>
+  }
+
+  if (error) {
+    return <div className="text-danger">{error}</div>
+  }
 
   const logoPage = posts.map((item) => <Post key={item.id} post={item} />)
 
