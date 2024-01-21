@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { logoReducer } from "./logoSlice";
+import { cutawaysReducer } from "./cutawaysSlice";
 
 export const store = configureStore({
   reducer: {
-    logo: logoReducer
+    logo: logoReducer,
+    cutaways: cutawaysReducer
   },
 })

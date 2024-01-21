@@ -1,7 +1,8 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 const fetchLogo = createAsyncThunk('logo/fetchLogo', async () => {
-  const res = await fetch('http://localhost:8035/pictures')
+  const res = await fetch('http://localhost:8035/logos')
+  // const res = await fetch('https://jsonplaceholder.typicode.com/photos')
   const data = await res.json()
   console.log(data)
   return data

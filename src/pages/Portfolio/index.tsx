@@ -54,7 +54,7 @@ export function Portfolio() {
             <img src={cutaway} alt="cutaway" />
             <div className="gallery__menu">
               <div className="gallery__menu-item">
-                <NavLink to="/portfolio/cutaway" target="_top" className="gallery__menu-link">визитки</NavLink>
+                <NavLink to="/portfolio/cutaways" target="_top" className="gallery__menu-link">визитки</NavLink>
               </div>
             </div>
           </li>

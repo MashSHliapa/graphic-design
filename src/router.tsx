@@ -1,7 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom'
 import { Layout } from './components/Layout'
 import { Flyers } from './pages/Flyers'
-import { Cutaway } from './pages/Сutaway'
+import { Cutaways } from './pages/Сutaways'
 import { DiplomasAndCertificates } from './pages/DiplomasAndCertificates'
 import { Portfolio } from './pages/Portfolio'
 import { Logo } from './pages/Logo'
@@ -39,8 +39,8 @@ export const router = createBrowserRouter([
         element: <Flyers />
       },
       {
-        path: '/portfolio/cutaway',
-        element: <Cutaway />
+        path: '/portfolio/cutaways',
+        element: <Cutaways />
       },
       {
         path: '/portfolio/diplomas_and_certificates',
