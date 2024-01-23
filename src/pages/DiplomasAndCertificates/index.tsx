@@ -19,9 +19,35 @@ export function DiplomasAndCertificates() {
     <div className="diplomas-certificates">
       <div className="diplomas-certificates__container _container">
         <div className="diplomas-certificates__body">
+          <div className="diplomas-certificates__diplomas diplomas">
+            <div className="diplomas__title _title">
+              <Title>дипломы <span className="green-and">&</span> благодарности</Title>
+            </div>
+            <ul className="diplomas__list">
+              <li className="diplomas__item">
+                <img src={diploma1} alt="diploma" />
+              </li>
+              <li className="diplomas__item">
+                <img src={diploma2} alt="diploma" />
+              </li>
+              <li className="diplomas__item">
+                <img src={diploma3} alt="diploma" />
+              </li>
+              <li className="diplomas__item">
+                <img src={diploma4} alt="diploma" />
+              </li>
+              <li className="diplomas__item">
+                <img src={diploma5} alt="diploma" />
+              </li>
+              <li className="diplomas__item">
+                <img src={diploma6} alt="diploma" />
+              </li>
+            </ul>
+          </div>
+
           <div className="diplomas-certificates__certificate certificate">
             <div className="certificates__title _title">
-              <Title>дипломы <span className="green-and">&</span> благодарности</Title>
+              <Title>сертификаты <span className="green-and">&</span> пригласительные</Title>
             </div>
             <ul className="certificates__list">
               <li className="certificates__item">
@@ -44,35 +70,10 @@ export function DiplomasAndCertificates() {
               </li>
             </ul>
           </div>
+        </div>
 
-          <div className="diplomas-certificates__diplomas diplomas">
-            <div className="diplomas__title _title">
-              <Title>сертификаты <span className="green-and">&</span> пригласительные</Title>
-            </div>
-            <ul className="diplomas__list">
-              <li className="diplomas__item">
-                <img src={diploma1} alt="diploma" />
-              </li>
-              <li className="diplomas__item">
-                <img src={diploma2} alt="diploma" />
-              </li>
-              <li className="diplomas__item">
-                <img src={diploma3} alt="diploma" />
-              </li>
-              <li className="diplomas__item">
-                <img src={diploma4} alt="diploma" />
-              </li>
-              <li className="diplomas__item">
-                <img src={diploma5} alt="diploma" />
-              </li>
-              <li className="diplomas__item">
-                <img src={diploma6} alt="diploma" />
-              </li>
-            </ul>
-            <div className="diplomas__in-portfolio _in-portfolio">
-              <InPortfolio />
-            </div>
-          </div>
+        <div className="diplomas__in-portfolio _in-portfolio">
+          <InPortfolio />
         </div>
       </div>
     </div>

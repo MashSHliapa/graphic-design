@@ -6,8 +6,8 @@ import { DiplomasAndCertificates } from './pages/DiplomasAndCertificates'
 import { Portfolio } from './pages/Portfolio'
 import { Logo } from './pages/Logo'
 // import { Services } from './pages/Services'
-import { Stickers } from './pages/Stickers'
-import { Stories } from './pages/Stories'
+import { StickersAndTags } from './pages/StickersAndTags'
+import { PostsAndStories } from './pages/PostsAndStories'
 import { PostersAndBanners } from './pages/PostersAndBanners'
 import { NotebooksAndMenu } from './pages/NotebooksAndMenu'
 import { Main } from './components/Main'
@@ -51,19 +51,19 @@ export const router = createBrowserRouter([
         element: <Logo />
       },
       {
-        path: '/portfolio/stickers',
-        element: <Stickers />
+        path: '/portfolio/stickers_and_tags',
+        element: <StickersAndTags />
       },
       {
-        path: '/portfolio/stories',
-        element: <Stories />
+        path: '/portfolio/posts_and_stories',
+        element: <PostsAndStories />
       },
       {
-        path: '/portfolio/posters',
+        path: '/portfolio/posters_and_banners',
         element: <PostersAndBanners />
       },
       {
-        path: '/portfolio/notebooks_menu',
+        path: '/portfolio/notebooks_and_menu',
         element: <NotebooksAndMenu />
       },
     ]

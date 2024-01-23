@@ -15,7 +15,7 @@ export function Services() {
               <NavLink to="/portfolio/flyers" target="_top" className="menu-main__link">ЛИСТОВКИ</NavLink>
             </li>
             <li className="menu-main__item">
-              <NavLink to="/portfolio/cutaway" target="_top" className="menu-main__link" >Визитки</NavLink>
+              <NavLink to="/portfolio/cutaways" target="_top" className="menu-main__link" >Визитки</NavLink>
             </li>
             <li className="menu-main__item">
               <a className="menu-main__link" href="#"> БЛОКНОТЫ, МЕНЮ</a>
@@ -33,7 +33,7 @@ export function Services() {
               <NavLink to="/portfolio/stories" className="menu-main__link" target="_top"> ПОСТ & СТОРИС</NavLink>
             </li>
             <li className="menu-main__item">
-              <a className="menu-main__link" href="#"> ЛОГОТИПЫ</a>
+              <NavLink to="/portfolio/logo"> ЛОГОТИПЫ</NavLink>
             </li>
           </ul>
         </div>

@@ -54,13 +54,11 @@ export function PostersAndBanners() {
               </li>
             </ul>
           </div>
-
-          <div className="posters__in-portfolio _in-portfolio">
-            <InPortfolio />
-          </div>
         </div >
+        <div className="posters__in-portfolio _in-portfolio">
+          <InPortfolio />
+        </div>
       </div >
     </div >
   )
-
 }

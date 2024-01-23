@@ -8,9 +8,9 @@
   &__list {
     display: grid;
     justify-content: center;
-    grid-template-rows: 526px 498x;
-    grid-template-columns: 362px 130px 202px 240px;
-    gap: 26px;
+    grid-template-columns: 362px 140px 202px 240px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
   }
 
   &__item1 {
@@ -31,6 +31,30 @@
 
   &__item5 {
     grid-area: 2/3/3/5;
+  }
+
+  @media screen and (max-width: 1199.98px) {
+    &__list {
+      grid-template-columns: 278px 103px 160px 171px;
+      grid-column-gap: 15px;
+    }
+  }
+
+  @media screen and (max-width: 991.98px) {
+    &__list {
+      grid-template-columns: 240px 87px 138px 147px;
+      grid-column-gap: 15px;
+    }
+  }
+
+  @media screen and (max-width: 767.98px) {
+    &__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 15px;
+    }
   }
 }
 

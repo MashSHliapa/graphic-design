@@ -3,28 +3,12 @@
 
   &__body {}
 
-  ::-webkit-scrollbar {
-    width: 10px;
-    /* ширина для вертикального скролла */
-    background-color: rgb(248, 247, 247);
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background-color: #FF3D00;
-    // border-radius: 9em;
-    // box-shadow: inset 1px 1px 10px #f3faf7;
-  }
-
   &__title {}
 
   &__list {
-    // height: 100vh;
-    // /* Высота блока */
-    // overflow-y: scroll;
     display: grid;
     justify-content: center;
     grid-template-columns: 430px 430px;
-    // grid-template-rows: 600px 610px 235px 270px 15px 500px 1px 300px;
     grid-column-gap: 40px;
     grid-row-gap: 20px;
     grid-template-areas: "a1 a2"
@@ -80,5 +64,48 @@
 
   &__item-small {
     grid-area: s;
+  }
+
+  @media screen and (max-width: 1199.98px) {
+    &__list {
+      grid-template-columns: 380px 380px;
+      grid-column-gap: 30px;
+    }
+
+    &__item5 img {
+      min-height: 100%;
+      max-width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 991.98px) {
+    &__list {
+      grid-template-columns: 280px 280px;
+      grid-column-gap: 20px;
+    }
+  }
+
+  @media screen and (max-width: 767.98px) {
+    &__list {
+      grid-template-columns: 320px 0px;
+      grid-column-gap: 0px;
+      grid-template-areas: "a1"
+                           "a2"
+                           "a3"
+                           "a4"
+                           "a5"
+                           "a6"
+                           "a7"
+                           "a8"
+                           "s"
+                           "b";
+    }
+  }
+
+  @media screen and (max-width: 575.98px) {
+    &__list {
+      grid-template-columns: 260px 0px;
+      grid-row-gap: 25px;
+    }
   }
 }

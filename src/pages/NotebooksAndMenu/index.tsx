@@ -36,10 +36,10 @@ import './NotebooksAndMenu.scss'
 export function NotebooksAndMenu() {
 
   return (
-    <div className="notebooks-and-menu">
-      <div className="notebooks-and-menu__container _container">
-        <div className="notebooks-and-menu__body">
-          <div className="notebooks-and-menu__notebooks notebooks">
+    <div className="notebooks-menu">
+      <div className="notebooks-menu__container _container">
+        <div className="notebooks-menu__body">
+          <div className="notebooks-menu__notebooks notebooks">
             <div className="notebooks__title _title">
               <Title>блокноты</Title>
             </div>
@@ -71,85 +71,84 @@ export function NotebooksAndMenu() {
             </ul>
           </div>
 
-          <div className="notebooks-and-menu__menu1 menu1">
-            <div className="menu1__title _title">
+          <div className="notebooks-menu__menu menu">
+            <div className="menu__title _title">
               <Title>меню</Title>
             </div>
-            <ul className="menu1__list">
-              <li className="menu1__item">
+            <ul className="menu__list">
+              <li className="menu__item">
                 <img src={menu22} alt="menu22" />
               </li>
-              <li className="menu1__item">
+              <li className="menu__item">
                 <img src={menu21} alt="menu21" />
               </li>
-              <li className="menu1__item">
+              <li className="menu__item">
                 <img src={menu20} alt="menu20" />
               </li>
-              <li className="menu1__item">
-                <img src={menu19} alt="menu18" />
+              <li className="menu__item">
+                <img src={menu19} alt="menu19" />
               </li>
-              <li className="menu1__item">
+              <li className="menu__item">
                 <img src={menu18} alt="menu18" />
               </li>
-              <li className="menu1__item">
+              <li className="menu__item">
                 <img src={menu17} alt="menu17" />
               </li>
-              <li className="menu1__item">
+              <li className="menu__item">
                 <img src={menu16} alt="menu16" />
               </li>
-              <li className="menu1__item">
+              <li className="menu__item">
                 <img src={menu15} alt="menu15" />
               </li>
-              <li className="menu1__item">
+              <li className="menu__item">
                 <img src={menu14} alt="menu14" />
               </li>
-              <li className="menu1__item">
+              <li className="menu__item">
                 <img src={menu13} alt="menu13" />
               </li>
-              <li className="menu1__item">
+              <li className="menu__item">
                 <img src={menu12} alt="menu12" />
               </li>
-              <li className="menu1__item">
+              <li className="menu__item">
                 <img src={menu11} alt="menu11" />
               </li>
-              <li className="menu1__item">
+              <li className="menu__item">
                 <img src={menu10} alt="menu10" />
               </li>
-              <li className="menu1__item">
+              <li className="menu__item">
                 <img src={menu9} alt="menu9" />
               </li>
-              <li className="menu1__item">
+              <li className="menu__item">
                 <img src={menu8} alt="menu8" />
               </li>
-              <li className="menu1__item">
+              <li className="menu__item">
                 <img src={menu7} alt="menu7" />
               </li>
-              <li className="menu1__item">
+              <li className="menu__item">
                 <img src={menu6} alt="menu6" />
               </li>
-              <li className="menu1__item">
+              <li className="menu__item">
                 <img src={menu5} alt="menu5" />
               </li>
-              <li className="menu1__item">
+              <li className="menu__item">
                 <img src={menu4} alt="menu4" />
               </li>
-              <li className="menu1__item">
+              <li className="menu__item">
                 <img src={menu3} alt="menu3" />
               </li>
-              <li className="menu1__item">
+              <li className="menu__item">
                 <img src={menu2} alt="menu2" />
               </li>
-              <li className="menu1__item">
+              <li className="menu__item">
                 <img src={menu1} alt="menu1" />
               </li>
             </ul>
           </div>
         </div>
-        <div className="notebooks-and-menu__in-portfolio _in-portfolio">
-            <InPortfolio/>
-          </div>
+        <div className="notebooks-menu__in-portfolio _in-portfolio">
+          <InPortfolio />
+        </div>
       </div>
     </div>
   )
-
 }

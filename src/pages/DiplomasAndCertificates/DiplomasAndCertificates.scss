@@ -1,4 +1,4 @@
-.diplomas-certificate {
+.diplomas-certificates {
   &__container {}
 
   &__body {}
@@ -6,7 +6,7 @@
 
 .diplomas {
   &__title {
-    margin: 61px 0 44px;
+    margin: 61px 0px 44px;
   }
 
   &__list {
@@ -28,7 +28,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 41px 33px;
+    gap: 40px 30px;
   }
 
   &__item {}

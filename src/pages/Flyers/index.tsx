@@ -52,9 +52,9 @@ export function Flyers() {
               <img src={flyer10} alt="flyer" />
             </div>
           </div>
-          <div className="flyers__in-portfolio _in-portfolio">
-            <InPortfolio />
-          </div>
+        </div>
+        <div className="flyers__in-portfolio _in-portfolio">
+          <InPortfolio />
         </div>
       </div>
     </div>

@@ -61,7 +61,7 @@
 }
 
 .red-rectangle-header {
-  // height: 553px;
+  max-height: 200px;
   position: absolute;
   top: 0;
   right: 0px;
@@ -74,7 +74,7 @@
 
   &__icons-group {
     text-align: center;
-    padding: 240px 0 45px;
+    padding: 110px 0 30px;
   }
 
   &__icon-vk img {
@@ -83,23 +83,16 @@
   }
 
   &__icon:not(:last-child) {
-    margin-bottom: 41px;
-  }
-
-  @media screen and (max-width: 1199.98px) {
-    position: absolute;
-    top: 0;
-    right: 0px;
+    margin-bottom: 30px;
   }
 
   @media screen and (max-width: 991.98px) {
     position: absolute;
     top: 0;
     right: 10px;
-    max-height: 331px;
 
     &__icons-group {
-      padding: 230px 0 29px;
+      padding: 120px 0 30px;
     }
 
     &__icon img {
@@ -111,10 +104,6 @@
       width: 21px;
       height: 12px;
     }
-
-    &__icon:not(:last-child) {
-      margin-bottom: 30px;
-    }
   }
 
   @media screen and (max-width: 767.98px) {
@@ -122,25 +111,29 @@
     position: absolute;
     top: 0;
     right: 20px;
-    max-height: 250px;
+    max-height: 170px;
 
     &__burger-menu {
       display: block;
       padding: 37px 0 0 12px;
     }
 
+    &__icon:not(:last-child) {
+      margin-bottom: 23px;
+    }
+
     &__icons-group {
-      padding: 112px 0 17px;
+      padding: 46px 0 20px;
       position: relative;
       top: 0px;
       left: 0;
       z-index: 5;
     }
   }
+
   @media screen and (max-width: 575.98px) {
     position: absolute;
     top: 0;
     right: 5px;
-    max-height: 250px;
   }
 }

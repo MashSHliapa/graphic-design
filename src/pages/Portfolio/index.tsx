@@ -62,7 +62,7 @@ export function Portfolio() {
             <img src={notebook} alt="notebook" />
             <div className="gallery__menu">
               <div className="gallery__menu-item">
-                <NavLink to="/portfolio/notebooks_menu" target="_top" className="gallery__menu-link">блокноты <span className='gallery__and'>&</span> меню</NavLink>
+                <NavLink to="/portfolio/notebooks_and_menu" target="_top" className="gallery__menu-link">блокноты <span className='gallery__and'>&</span> меню</NavLink>
               </div>
             </div>
           </li>
@@ -81,7 +81,7 @@ export function Portfolio() {
             <img src={bord} alt="bord" />
             <div className="gallery__menu">
               <div className="gallery__menu-item">
-                <NavLink to="/portfolio/posters" className="gallery__menu-link" target="_top" >АФИШИ, ПЛАКАТЫ <span className='gallery__and'>&</span>баннеры</NavLink>
+                <NavLink to="/portfolio/posters_and_banners" className="gallery__menu-link" target="_top" >АФИШИ, ПЛАКАТЫ <span className='gallery__and'>&</span>баннеры</NavLink>
               </div>
               {/* <div className="gallery__menu-item">
                 <a className="gallery__menu-link" href="#">баннеры</a>
@@ -92,7 +92,7 @@ export function Portfolio() {
             <img src={sticker} alt="sticker" />
             <div className="gallery__menu">
               <div className="gallery__menu-item">
-                <NavLink to="/portfolio/stickers" className="gallery__menu-link" >СТИКЕРЫ <span className='gallery__and'>&</span> БИРКИ</NavLink>
+                <NavLink to="/portfolio/stickers_and_tags" className="gallery__menu-link" >СТИКЕРЫ <span className='gallery__and'>&</span> БИРКИ</NavLink>
               </div>
             </div>
           </li>
@@ -100,7 +100,7 @@ export function Portfolio() {
             <img src={post} alt="post" />
             <div className="gallery__menu">
               <div className="gallery__menu-item">
-                <NavLink to="/portfolio/stories" className="gallery__menu-link" >ПОСТ <span className='gallery__and'>&</span> СТОРИС
+                <NavLink to="/portfolio/posts_and_stories" className="gallery__menu-link" >ПОСТ <span className='gallery__and'>&</span> СТОРИС
                 </NavLink>
               </div>
             </div>
