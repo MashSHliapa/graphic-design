@@ -92,7 +92,7 @@ export function Portfolio() {
             <img src={sticker} alt="sticker" />
             <div className="gallery__menu">
               <div className="gallery__menu-item">
-                <NavLink to="/portfolio/stickers_and_tags" className="gallery__menu-link" >СТИКЕРЫ <span className='gallery__and'>&</span> БИРКИ</NavLink>
+                <NavLink to="/portfolio/stickers_and_tags" className="gallery__menu-link" target="_top">СТИКЕРЫ <span className='gallery__and'>&</span> БИРКИ</NavLink>
               </div>
             </div>
           </li>
@@ -100,7 +100,7 @@ export function Portfolio() {
             <img src={post} alt="post" />
             <div className="gallery__menu">
               <div className="gallery__menu-item">
-                <NavLink to="/portfolio/posts_and_stories" className="gallery__menu-link" >ПОСТ <span className='gallery__and'>&</span> СТОРИС
+                <NavLink to="/portfolio/posts_and_stories" className="gallery__menu-link" target="_top">ПОСТ <span className='gallery__and'>&</span> СТОРИС
                 </NavLink>
               </div>
             </div>
@@ -109,7 +109,7 @@ export function Portfolio() {
             <img src={logo} alt="logo" />
             <div className="gallery__menu">
               <div className="gallery__menu-item">
-                <NavLink to="/portfolio/logo" className="gallery__menu-link">логотипы</NavLink>
+                <NavLink to="/portfolio/logo" className="gallery__menu-link" target="_top">логотипы</NavLink>
               </div>
             </div>
           </li>

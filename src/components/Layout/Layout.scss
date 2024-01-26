@@ -77,8 +77,12 @@ body {
   margin: 51px 5px 34px;
 }
 
-._in-portfolio {
-  margin: 45px 0;
+._up {
+  margin: 50px 0 30px;
+
+  @media screen and (max-width: 991.98px) {
+    margin: 40px 0 25px;
+  }
 }
 
 ._go-to-main {

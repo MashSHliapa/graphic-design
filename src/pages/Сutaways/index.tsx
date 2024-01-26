@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useEffect } from 'react'
 import { fetchCutaways } from '../../redux/cutawaysSlice'
 import { Title } from '../../components/Title'
-import { InPortfolio } from '../../components/InPortfolio'
+import { GoTop } from '../../components/GoTop'
 import { Post } from '../../components/Post'
 import './Cutaways.scss'
 
@@ -30,13 +30,11 @@ export function Cutaways() {
           <div className="cutaway__title _title">
             <Title>визитки</Title>
           </div>
-
           <ul className="cutaway__list">
             {cutawaysPage}
           </ul>
-
-          <div className="cutaway__in-portfolio _in-portfolio">
-            <InPortfolio />
+          <div className="cutaway__up _up">
+            <GoTop />
           </div>
         </div>
       </div>

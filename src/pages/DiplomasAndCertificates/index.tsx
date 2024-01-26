@@ -1,5 +1,5 @@
 import { Title } from '../../components/Title'
-import { InPortfolio } from '../../components/InPortfolio'
+import { GoTop } from '../../components/GoTop'
 import diploma1 from '../../images/diplomas/item1.jpg'
 import diploma2 from '../../images/diplomas/item2.jpg'
 import diploma3 from '../../images/diplomas/item3.jpg'
@@ -72,8 +72,8 @@ export function DiplomasAndCertificates() {
           </div>
         </div>
 
-        <div className="diplomas__in-portfolio _in-portfolio">
-          <InPortfolio />
+        <div className="diplomas__up _up">
+          <GoTop />
         </div>
       </div>
     </div>

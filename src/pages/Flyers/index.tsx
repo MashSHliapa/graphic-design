@@ -1,5 +1,5 @@
 import { Title } from '../../components/Title'
-import { InPortfolio } from '../../components/InPortfolio'
+import { GoTop } from '../../components/GoTop'
 import flyer from '../../images/flyers/flyer.jpg'
 import flyer2 from '../../images/flyers/flyer2.jpg'
 import flyer3 from '../../images/flyers/flyer3.jpg'
@@ -53,8 +53,8 @@ export function Flyers() {
             </div>
           </div>
         </div>
-        <div className="flyers__in-portfolio _in-portfolio">
-          <InPortfolio />
+        <div className="flyers__up _up">
+          <GoTop/>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import { Title } from '../../components/Title'
-import { InPortfolio } from '../../components/InPortfolio'
+import { GoTop } from '../../components/GoTop'
 import notebook1 from '../../images/notebooks/notebook1.jpg'
 import notebook2 from '../../images/notebooks/notebook2.jpg'
 import notebook3 from '../../images/notebooks/notebook3.jpg'
@@ -145,8 +145,8 @@ export function NotebooksAndMenu() {
             </ul>
           </div>
         </div>
-        <div className="notebooks-menu__in-portfolio _in-portfolio">
-          <InPortfolio />
+        <div className="notebooks-menu__up _up">
+          <GoTop/>
         </div>
       </div>
     </div>

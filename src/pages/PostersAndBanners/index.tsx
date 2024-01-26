@@ -1,5 +1,5 @@
 import { Title } from '../../components/Title'
-import { InPortfolio } from '../../components/InPortfolio'
+import { GoTop } from '../../components/GoTop'
 import poster1 from '../../images/posters/poster1.jpg'
 import poster2 from '../../images/posters/poster2.jpg'
 import poster3 from '../../images/posters/poster3.jpg'
@@ -55,8 +55,8 @@ export function PostersAndBanners() {
             </ul>
           </div>
         </div >
-        <div className="posters__in-portfolio _in-portfolio">
-          <InPortfolio />
+        <div className="posters__up _up">
+          <GoTop />
         </div>
       </div >
     </div >

@@ -12,9 +12,8 @@ import stiker10 from '../../images/stickers/sticker10.jpg'
 import stiker11 from '../../images/stickers/sticker11.jpg'
 import stiker12 from '../../images/stickers/sticker12.jpg'
 import stiker13 from '../../images/stickers/sticker13.jpg'
-
+import { GoTop } from '../../components/GoTop'
 import './StickersAndTags.scss'
-import { InPortfolio } from '../../components/InPortfolio'
 
 export function StickersAndTags() {
   return (
@@ -79,8 +78,8 @@ export function StickersAndTags() {
           </div>
         </div>
 
-        <div className="sticker-tags__in-portfolio _in-portfolio">
-          <InPortfolio />
+        <div className="sticker-tags__up _up">
+          <GoTop />
         </div>
       </div>
     </div>

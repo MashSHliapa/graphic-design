@@ -1,5 +1,5 @@
 import { Title } from '../../components/Title'
-import { InPortfolio } from '../../components/InPortfolio'
+import { GoTop } from '../../components/GoTop'
 import './Logo.scss'
 import { useEffect } from 'react'
 import { Post } from '../../components/Post'
@@ -42,8 +42,8 @@ export function Logo() {
           <ul className="logo__list">
             {logoPage}
           </ul>
-          <div className="logo__in-portfolio _in-portfolio">
-            <InPortfolio />
+          <div className="logo__up _up">
+            <GoTop />
           </div>
         </div>
       </div>

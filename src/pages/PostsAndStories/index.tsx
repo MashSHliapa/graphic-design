@@ -9,8 +9,8 @@ import stories7 from '../../images/stories/stories7.jpg'
 import stories8 from '../../images/stories/stories8.jpg'
 import stories9 from '../../images/stories/stories9.jpg'
 import stories10 from '../../images/stories/stories10.jpg'
+import { GoTop } from '../../components/GoTop'
 import './PostsAndStories.scss'
-import { InPortfolio } from '../../components/InPortfolio'
 
 export function PostsAndStories() {
   return (
@@ -54,8 +54,8 @@ export function PostsAndStories() {
               </li>
             </ul>
           </div>
-          <div className="post-stories__in-portfolio _in-portfolio">
-            <InPortfolio />
+          <div className="post-stories__up _up">
+            <GoTop/>
           </div>
         </div>
       </div>
