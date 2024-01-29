@@ -18,19 +18,19 @@ export function Services() {
               <NavLink to="/portfolio/cutaways" target="_top" className="menu-main__link" >Визитки</NavLink>
             </li>
             <li className="menu-main__item">
-              <a className="menu-main__link" href="#"> БЛОКНОТЫ, МЕНЮ</a>
+              <NavLink to="/portfolio/notebooks_and_menu" target="_top" className="menu-main__link"> БЛОКНОТЫ, МЕНЮ</NavLink>
             </li>
             <li className="menu-main__item">
-              <a className="menu-main__link" href="#">ДИПЛОМЫ & БЛАГОДАРНОСТИ<br /> СЕРТИФИКАТЫ & Пригласительные</a>
+              <NavLink to="/portfolio/notebooks_and_menu" target="_top" className="menu-main__link">ДИПЛОМЫ & БЛАГОДАРНОСТИ<br /> СЕРТИФИКАТЫ & Пригласительные</NavLink>
             </li>
             <li className="menu-main__item">
-              <NavLink to="/portfolio/posters" className="menu-main__link" target="_top"> ПЛАКАТЫ, АФИШИ & БАННЕРЫ</NavLink>
+              <NavLink to="/portfolio/diplomas_and_certificates" className="menu-main__link" target="_top"> ПЛАКАТЫ, АФИШИ & БАННЕРЫ</NavLink>
             </li>
             <li className="menu-main__item">
-              <NavLink to="/portfolio/stickers" className="menu-main__link" target="_top">СТИКЕРЫ & БИРКИ</NavLink>
+              <NavLink to="/portfolio/stickers_and_tags" className="menu-main__link" target="_top">СТИКЕРЫ & БИРКИ</NavLink>
             </li>
             <li className="menu-main__item">
-              <NavLink to="/portfolio/stories" className="menu-main__link" target="_top"> ПОСТ & СТОРИС</NavLink>
+              <NavLink to="/portfolio/posts_and_stories" className="menu-main__link" target="_top"> ПОСТ & СТОРИС</NavLink>
             </li>
             <li className="menu-main__item">
               <NavLink to="/portfolio/logo"> ЛОГОТИПЫ</NavLink>

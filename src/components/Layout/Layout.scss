@@ -74,7 +74,15 @@ body {
 }
 
 ._title {
-  margin: 51px 5px 34px;
+  margin: 30px 5px 15px;
+
+  @media screen and (max-width: 991.98px) {
+    margin: 20px 5px 15px;
+  }
+
+  @media screen and (max-width: 767.98px) {
+    margin: 25px 5px 15px;
+  }
 }
 
 ._up {

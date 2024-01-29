@@ -1,5 +1,6 @@
 import { Title } from '../../components/Title'
 import { GoTop } from '../../components/GoTop'
+import { Breadcrumb } from '../../components/Breadcrumb'
 import flyer from '../../images/flyers/flyer.jpg'
 import flyer2 from '../../images/flyers/flyer2.jpg'
 import flyer3 from '../../images/flyers/flyer3.jpg'
@@ -17,9 +18,13 @@ export function Flyers() {
     <div className="flyers">
       <div className="flyers__container _container">
         <div className="flyers__body">
+          <div className="flyers__breadcrumb">
+            <Breadcrumb>листовки</Breadcrumb>
+          </div>
           <div className="flyers__title _title">
             <Title>Листовки</Title>
           </div>
+
           <div className="flyers__list">
             <div className="flyers__item1">
               <img src={flyer} alt="flyer" />
@@ -54,7 +59,7 @@ export function Flyers() {
           </div>
         </div>
         <div className="flyers__up _up">
-          <GoTop/>
+          <GoTop />
         </div>
       </div>
     </div>

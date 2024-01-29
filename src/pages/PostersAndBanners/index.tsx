@@ -1,5 +1,6 @@
 import { Title } from '../../components/Title'
 import { GoTop } from '../../components/GoTop'
+import { Breadcrumb } from '../../components/Breadcrumb'
 import poster1 from '../../images/posters/poster1.jpg'
 import poster2 from '../../images/posters/poster2.jpg'
 import poster3 from '../../images/posters/poster3.jpg'
@@ -15,6 +16,9 @@ export function PostersAndBanners() {
     <div className="posters-banners">
       <div className="posters-banners__container _container">
         <div className="posters-banners__body">
+          <div className="flyers__breadcrumb">
+            <Breadcrumb>афиши и плакаты</Breadcrumb>
+          </div>
           <div className="posters-banners__posters posters">
             <div className="posters__title _title">
               <Title>афиши <span className="green-and">&</span> плакаты</Title>

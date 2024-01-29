@@ -1,5 +1,6 @@
 import { Title } from '../../components/Title'
 import { GoTop } from '../../components/GoTop'
+import { Breadcrumb } from '../../components/Breadcrumb'
 import diploma1 from '../../images/diplomas/item1.jpg'
 import diploma2 from '../../images/diplomas/item2.jpg'
 import diploma3 from '../../images/diplomas/item3.jpg'
@@ -19,6 +20,9 @@ export function DiplomasAndCertificates() {
     <div className="diplomas-certificates">
       <div className="diplomas-certificates__container _container">
         <div className="diplomas-certificates__body">
+          <div className="flyers__breadcrumb">
+            <Breadcrumb>дипломы и благодарности</Breadcrumb>
+          </div>
           <div className="diplomas-certificates__diplomas diplomas">
             <div className="diplomas__title _title">
               <Title>дипломы <span className="green-and">&</span> благодарности</Title>

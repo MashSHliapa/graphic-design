@@ -1,4 +1,6 @@
 import { Title } from '../../components/Title'
+import { GoTop } from '../../components/GoTop'
+import { Breadcrumb } from '../../components/Breadcrumb'
 import stories1 from '../../images/stories/stories1.jpg'
 import stories2 from '../../images/stories/stories2.jpg'
 import stories3 from '../../images/stories/stories3.jpg'
@@ -9,7 +11,6 @@ import stories7 from '../../images/stories/stories7.jpg'
 import stories8 from '../../images/stories/stories8.jpg'
 import stories9 from '../../images/stories/stories9.jpg'
 import stories10 from '../../images/stories/stories10.jpg'
-import { GoTop } from '../../components/GoTop'
 import './PostsAndStories.scss'
 
 export function PostsAndStories() {
@@ -17,6 +18,9 @@ export function PostsAndStories() {
     <div className="post-stories">
       <div className="post-stories__container _container">
         <div className="post-stories__body">
+          <div className="flyers__breadcrumb">
+            <Breadcrumb>пост и сторис</Breadcrumb>
+          </div>
           <div className="post-post-stories__title _title">
             <Title>Пост <span className="green-and">&</span> Сторис</Title>
           </div>
@@ -55,7 +59,7 @@ export function PostsAndStories() {
             </ul>
           </div>
           <div className="post-stories__up _up">
-            <GoTop/>
+            <GoTop />
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import { Title } from '../../components/Title'
 import { GoTop } from '../../components/GoTop'
+import { Breadcrumb } from '../../components/Breadcrumb'
 import './Logo.scss'
 import { useEffect } from 'react'
 import { Post } from '../../components/Post'
@@ -36,6 +37,9 @@ export function Logo() {
     <div className="logo">
       <div className="logo__container _container">
         <div className="logo__body">
+          <div className="flyers__breadcrumb">
+            <Breadcrumb>логотипы</Breadcrumb>
+          </div>
           <div className="logo__title _title">
             <Title>логотипы</Title>
           </div>

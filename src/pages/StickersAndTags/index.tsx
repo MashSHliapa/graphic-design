@@ -1,4 +1,6 @@
 import { Title } from '../../components/Title'
+import { GoTop } from '../../components/GoTop'
+import { Breadcrumb } from '../../components/Breadcrumb'
 import stiker1 from '../../images/stickers/1.jpg'
 import stiker2 from '../../images/stickers/2.jpg'
 import stiker3 from '../../images/stickers/3.jpg'
@@ -12,7 +14,6 @@ import stiker10 from '../../images/stickers/sticker10.jpg'
 import stiker11 from '../../images/stickers/sticker11.jpg'
 import stiker12 from '../../images/stickers/sticker12.jpg'
 import stiker13 from '../../images/stickers/sticker13.jpg'
-import { GoTop } from '../../components/GoTop'
 import './StickersAndTags.scss'
 
 export function StickersAndTags() {
@@ -20,6 +21,9 @@ export function StickersAndTags() {
     <div className="stickers-tags">
       <div className="stickers-tags__container _container">
         <div className="stickers-tags__body">
+          <div className="flyers__breadcrumb">
+            <Breadcrumb>стикеры и бирки</Breadcrumb>
+          </div>
           <div className="stickers-tags__title _title">
             <Title>стикеры <span className="green-and">&</span> бирки</Title>
           </div>

@@ -4,6 +4,7 @@ import { fetchCutaways } from '../../redux/cutawaysSlice'
 import { Title } from '../../components/Title'
 import { GoTop } from '../../components/GoTop'
 import { Post } from '../../components/Post'
+import { Breadcrumb } from '../../components/Breadcrumb'
 import './Cutaways.scss'
 
 export function Cutaways() {
@@ -27,6 +28,9 @@ export function Cutaways() {
     <div className="cutaway">
       <div className="cutaway__container _container">
         <div className="cutaway__body">
+          <div className="flyers__breadcrumb">
+            <Breadcrumb>визитки</Breadcrumb>
+          </div>
           <div className="cutaway__title _title">
             <Title>визитки</Title>
           </div>

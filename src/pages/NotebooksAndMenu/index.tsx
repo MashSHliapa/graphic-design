@@ -1,5 +1,6 @@
 import { Title } from '../../components/Title'
 import { GoTop } from '../../components/GoTop'
+import { Breadcrumb } from '../../components/Breadcrumb'
 import notebook1 from '../../images/notebooks/notebook1.jpg'
 import notebook2 from '../../images/notebooks/notebook2.jpg'
 import notebook3 from '../../images/notebooks/notebook3.jpg'
@@ -39,6 +40,9 @@ export function NotebooksAndMenu() {
     <div className="notebooks-menu">
       <div className="notebooks-menu__container _container">
         <div className="notebooks-menu__body">
+          <div className="flyers__breadcrumb">
+            <Breadcrumb>блокноты и меню</Breadcrumb>
+          </div>
           <div className="notebooks-menu__notebooks notebooks">
             <div className="notebooks__title _title">
               <Title>блокноты</Title>
@@ -146,7 +150,7 @@ export function NotebooksAndMenu() {
           </div>
         </div>
         <div className="notebooks-menu__up _up">
-          <GoTop/>
+          <GoTop />
         </div>
       </div>
     </div>
