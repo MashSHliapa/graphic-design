@@ -1,12 +1,13 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
+import { requestLogos } from '../services/posts'
 
 const fetchLogo = createAsyncThunk('logo/fetchLogo', async () => {
-  const res = await fetch('http://localhost:8035/logos')
+  return await requestLogos()
+  // const res = await fetch('http://localhost:8035/logos')
   // const res = await fetch('https://jsonplaceholder.typicode.com/photos')
-  const data = await res.json()
-  console.log(data)
-  return data
+  // const data = await res.json()
+  // console.log(data)
+  // return data
 })
 
 const logoSlice = createSlice({

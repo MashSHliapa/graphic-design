@@ -23,11 +23,7 @@
   }
 
   @media screen and (max-width: 991.98px) {
-    // font-family: 'Abel', sans-serif;
     font-size: 12px;
-    // margin: 25px 5px 15px 0px;
-    // color: #727272;
-    // padding: 5px;
 
     &__item_active {
       font-size: 15px;
@@ -39,11 +35,8 @@
   }
 
   @media screen and (max-width: 767.98px) {
-    // font-family: 'Abel', sans-serif;
-    font-size: 10px;
+    font-size: 11px;
     margin: 10px 5px 0px 5px;
-    // color: #727272;
-    // padding: 5px;
 
     &__item_active {
       font-size: 12px;
@@ -55,15 +48,7 @@
   }
 
   @media screen and (max-width: 575.98px) {
-    // font-family: 'Abel', sans-serif;
-    font-size: 11px;
     margin: 10px 38px 0px 5px;
-    // color: #727272;
-    // padding: 5px;
-
-    // &__item_active {
-    //   font-size: 12px;
-    // }
 
     &__slash {
       padding: 0 3px;

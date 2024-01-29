@@ -8,7 +8,7 @@ export function GoTop() {
     let isButtonVisible = false;
     const goTopGreenButton = document.querySelector('.go-top__green-button');
 
-    if (window.scrollY > 900 && !isButtonVisible) {
+    if (window.innerWidth < 767.98 && window.scrollY > 900 && !isButtonVisible) {
       console.log(1)
       goTopGreenButton?.classList.add('_active');
       isButtonVisible = true;

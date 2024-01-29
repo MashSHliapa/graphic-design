@@ -1,10 +1,8 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
+import { requestCutaways } from '../services/posts'
 
 const fetchCutaways = createAsyncThunk('cutaways/fetchCutaways', async () => {
-  const res = await fetch ('http://localhost:8035/cutaways')
-  const data = await res.json()
-  console.log(data)
-  return data
+  return await requestCutaways()
 })
 
 const cutawaysSlice = createSlice({
