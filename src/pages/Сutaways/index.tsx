@@ -1,15 +1,21 @@
 import { useDispatch, useSelector } from 'react-redux'
 import { useEffect } from 'react'
+import { ThunkDispatch } from '@reduxjs/toolkit'
+import { AnyAction } from 'redux'
 import { fetchCutaways } from '../../redux/cutawaysSlice'
 import { Title } from '../../components/Title'
 import { GoTop } from '../../components/GoTop'
 import { Post } from '../../components/Post'
 import { Breadcrumb } from '../../components/Breadcrumb'
+import { RootState } from '../../redux/store'
+import { CutawaysResponse, PostData } from '../../types/interfaces'
 import './Cutaways.scss'
 
+
 export function Cutaways() {
-  const { data: posts, loading, error } = useSelector(state => state.cutaways)
-  const dispatch = useDispatch()
+  const { data: posts, loading, error } = useSelector((state: RootState) => state.cutaways)
+
+  const dispatch = useDispatch<ThunkDispatch<CutawaysResponse, null, AnyAction>> ()
 
   useEffect(() => {
     dispatch(fetchCutaways())
@@ -22,7 +28,7 @@ export function Cutaways() {
   if (error) {
     return <div className="text-danger">{error}</div>
   }
-  const cutawaysPage = posts.map((item) => <Post key={item.id} post={item} />)
+  const cutawaysPage = posts.map((item: PostData) => <Post key={item.id} post={item} />)
 
   return (
     <div className="cutaway">

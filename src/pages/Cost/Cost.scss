@@ -94,8 +94,7 @@
     }
 
     &__info {
-      padding: 5px 70px 5px 5px;
-      max-width: 850px;
+      padding: 5px 70px 5px 10px;
     }
 
     &__button {
@@ -112,10 +111,6 @@
 
     &__title {
       padding: 20px 5px 20px;
-    }
-
-    &__info {
-      max-width: 670px;
     }
 
     &__info p {
@@ -148,6 +143,10 @@
   }
 
   @media screen and (max-width: 575.98px) {
+
+    &__info {
+      padding: 5px 50px 5px 10px;
+    }
 
     &__button {
       display: flex;

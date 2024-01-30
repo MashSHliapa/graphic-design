@@ -18,7 +18,6 @@ export function GoTop() {
     }
   });
 
-
   return (
     <div className="go-top">
       <div className="go-top__container _container">

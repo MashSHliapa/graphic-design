@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom'
-import './Services.scss'
 import { MainTheme } from '../../components/MainTheme'
+import './Services.scss'
 
 export function Services() {
   return (

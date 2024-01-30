@@ -1,7 +1,7 @@
 import services from '../../images/services.jpg'
 import './MainTheme.scss'
 
-export function MainTheme(props) {
+export function MainTheme(props: { children: React.ReactNode }) {
   return (
     <div className="main-theme">
       <div className="main-theme__container _container">

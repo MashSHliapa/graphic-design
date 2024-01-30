@@ -17,7 +17,6 @@ export function Navbar() {
         <ul className="navbar__list" ref={pageElement}>
           <li className="navbar__item" >
             <NavLink to="/portfolio" className="navbar__link">Портфолио</NavLink>
-            {/* <a href="#" className="navbar__link">Портфолио</a> */}
           </li>
 
           <li className="navbar__item" onClick={handleClickPageWithScroll}>

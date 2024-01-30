@@ -1,5 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import { requestLogos } from '../services/posts'
+import { LogoInitialState } from '../types/interfaces'
 
 const fetchLogo = createAsyncThunk('logo/fetchLogo', async () => {
   return await requestLogos()
@@ -16,7 +17,8 @@ const logoSlice = createSlice({
     loading: false,
     error: null,
     data: [],
-  },
+  } as LogoInitialState,
+
   reducers: {},
   extraReducers: builder => {
     builder.addCase(fetchLogo.pending, state => {

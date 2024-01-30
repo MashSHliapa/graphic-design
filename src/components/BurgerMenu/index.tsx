@@ -17,8 +17,8 @@ export function BurgerMenu() {
   }
 
   useEffect(() => {
-    const handleClickCloseNavbar = (event) => {
-      if (!event.target.closest('.burger__icon')) {
+    const handleClickCloseNavbar = (event: MouseEvent | React.MouseEvent) => {
+      if (!(event.target as HTMLElement).closest('.burger__icon')) {
         setOpenNavbar(false);
         document.body.style.overflow = !openNavbar ? 'auto' : 'hidden';
         const burgerIcon = document.querySelector('.burger__icon');

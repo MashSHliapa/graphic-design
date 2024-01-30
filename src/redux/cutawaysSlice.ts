@@ -1,5 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import { requestCutaways } from '../services/posts'
+import { CutawaysInitialState } from '../types/interfaces'
 
 const fetchCutaways = createAsyncThunk('cutaways/fetchCutaways', async () => {
   return await requestCutaways()
@@ -11,7 +12,9 @@ const cutawaysSlice = createSlice({
     loading: false,
     error: null,
     data: [],
-  }, reducers: {},
+  } as CutawaysInitialState,
+
+  reducers: {},
   extraReducers: builder => {
     builder.addCase(fetchCutaways.pending, state => {
       state.loading = true

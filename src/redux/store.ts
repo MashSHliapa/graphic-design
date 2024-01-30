@@ -8,3 +8,5 @@ export const store = configureStore({
     cutaways: cutawaysReducer
   },
 })
+
+export type RootState = ReturnType<typeof store.getState>

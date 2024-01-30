@@ -1,10 +1,10 @@
-import './Main.scss'
+import { Services } from '../../pages/Services'
+import { GoToMain } from '../GoToMain'
 import name from '../../images/name.png'
 import career from '../../images/career.png'
 import photo from '../../images/main_photo.jpg'
 import myPhoto from '../../images/my_photo.jpg'
-import { Services } from '../../pages/Services'
-import { GoToMain } from '../GoToMain'
+import './Main.scss'
 
 export function Main() {
   return (
@@ -55,6 +55,5 @@ export function Main() {
         <GoToMain />
       </div>
     </main>
-
   )
 }
