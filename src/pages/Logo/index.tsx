@@ -7,8 +7,7 @@ import { Post } from '../../components/Post'
 import { Title } from '../../components/Title'
 import { GoTop } from '../../components/GoTop'
 import { Breadcrumb } from '../../components/Breadcrumb'
-import { PostData } from '../../types/interfaces'
-import { LogoResponse } from '../../types/interfaces'
+import { DataResponse, PostData } from '../../types/interfaces'
 import { RootState } from '../../redux/store'
 import './Logo.scss'
 
@@ -24,7 +23,7 @@ export function Logo() {
 
   const { data: posts, loading, error } = useSelector((state: RootState) => state.logo)
 
-  const dispatch = useDispatch<ThunkDispatch<LogoResponse, null, AnyAction>>()
+  const dispatch = useDispatch<ThunkDispatch<DataResponse, null, AnyAction>>()
 
   useEffect(() => {
     dispatch(fetchLogo())

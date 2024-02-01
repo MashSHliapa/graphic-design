@@ -3,19 +3,19 @@ import { useEffect } from 'react'
 import { ThunkDispatch } from '@reduxjs/toolkit'
 import { AnyAction } from 'redux'
 import { fetchCutaways } from '../../redux/cutawaysSlice'
+import { Post } from '../../components/Post'
 import { Title } from '../../components/Title'
 import { GoTop } from '../../components/GoTop'
-import { Post } from '../../components/Post'
 import { Breadcrumb } from '../../components/Breadcrumb'
 import { RootState } from '../../redux/store'
-import { CutawaysResponse, PostData } from '../../types/interfaces'
+import { DataResponse, PostData } from '../../types/interfaces'
 import './Cutaways.scss'
 
 
 export function Cutaways() {
   const { data: posts, loading, error } = useSelector((state: RootState) => state.cutaways)
 
-  const dispatch = useDispatch<ThunkDispatch<CutawaysResponse, null, AnyAction>> ()
+  const dispatch = useDispatch<ThunkDispatch<DataResponse, null, AnyAction>>()
 
   useEffect(() => {
     dispatch(fetchCutaways())

@@ -12,3 +12,8 @@ export const requestCutaways = async () => {
   const { data } = await client.get(cutawaysEndpoint)
   return data
 }
+
+export const requestNotebooksAndMenu = async () => {
+  const { data } = await client.get('/notebooksAndMenu')
+  return data
+}

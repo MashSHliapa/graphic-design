@@ -1,22 +1,10 @@
-export interface LogoInitialState {
+export interface DataInitialState {
   loading: boolean;
   error: null | string;
   data: never[];
 }
 
-export interface LogoResponse {
-  loading: boolean;
-  error: null | string;
-  data: PostData[];
-}
-
-export interface CutawaysInitialState {
-  loading: boolean;
-  error: null | string;
-  data: never[];
-}
-
-export interface CutawaysResponse {
+export interface DataResponse {
   loading: boolean;
   error: null | string;
   data: PostData[];

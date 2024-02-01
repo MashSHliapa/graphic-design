@@ -1,4 +1,5 @@
 const logosEndpoint: string = '/logos'
 const cutawaysEndpoint: string = '/cutaways'
+const notebooksAndMenuEndpoint: string = '/notebooksAndMenu'
 
-export { logosEndpoint, cutawaysEndpoint }
+export { logosEndpoint, cutawaysEndpoint, notebooksAndMenuEndpoint }

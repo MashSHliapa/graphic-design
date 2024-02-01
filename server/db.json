@@ -88,5 +88,171 @@
       "id": 12,
       "image": "https://ltdfoto.ru/images/2024/01/29/cutaway11.jpg"
     }
+  ],
+
+  "flyers": [
+    {
+      "id": 1,
+      "image": "https://ltdfoto.ru/images/2024/01/31/flyer.jpg"
+    },
+    {
+      "id": 2,
+      "image": "https://ltdfoto.ru/images/2024/01/31/flyer2.jpg"
+    },
+    {
+      "id": 3,
+      "image": "https://ltdfoto.ru/images/2024/01/31/flyer3.jpg"
+    },
+    {
+      "id": 4,
+      "image": "https://ltdfoto.ru/images/2024/01/31/flyer4.jpg"
+    },
+    {
+      "id": 5,
+      "image": "https://ltdfoto.ru/images/2024/01/31/flyer5.jpg"
+    },
+    {
+      "id": 6,
+      "image": "https://ltdfoto.ru/images/2024/01/31/flyer6.jpg"
+    },
+    {
+      "id": 7,
+      "image": "https://ltdfoto.ru/images/2024/01/31/flyer7.jpg"
+    },
+    {
+      "id": 8,
+      "image": "https://ltdfoto.ru/images/2024/01/31/flyer8.jpg"
+    },
+    {
+      "id": 9,
+      "image": "https://ltdfoto.ru/images/2024/01/31/flyer9.jpg"
+    },
+    {
+      "id": 10,
+      "image": "https://ltdfoto.ru/images/2024/01/31/flyer10.jpg"
+    }
+  ],
+
+  "notebooksAndMenu": [
+    {
+      "id": 1,
+      "image": "https://ltdfoto.ru/images/2024/01/31/notebook1.jpg"
+    },
+    {
+      "id": 2,
+      "image": "https://ltdfoto.ru/images/2024/01/31/notebook2.jpg"
+    },
+    {
+      "id": 3,
+      "image": "https://ltdfoto.ru/images/2024/01/31/notebook3.jpg"
+    },
+    {
+      "id": 4,
+      "image": "https://ltdfoto.ru/images/2024/02/01/notebook4.jpg"
+    },
+    {
+      "id": 5,
+      "image": "https://ltdfoto.ru/images/2024/02/01/diary1.jpg"
+    },
+    {
+      "id": 6,
+      "image": "https://ltdfoto.ru/images/2024/02/01/diary2.jpg"
+    },
+    {
+      "id": 7,
+      "image": "https://ltdfoto.ru/images/2024/02/01/diary3.jpg"
+    },
+    {
+      "id": 8,
+      "image": "https://ltdfoto.ru/images/2024/02/01/diary4.jpg"
+    },
+    {
+      "id": 9,
+      "image": "https://ltdfoto.ru/images/2024/02/01/menu22.jpg"
+    },
+    {
+      "id": 10,
+      "image": "https://ltdfoto.ru/images/2024/02/01/menu21.jpg"
+    },
+    {
+      "id": 11,
+      "image": "https://ltdfoto.ru/images/2024/02/01/menu20.jpg"
+    },
+    {
+      "id": 12,
+      "image": "https://ltdfoto.ru/images/2024/02/01/menu19.jpg"
+    },
+    {
+      "id": 13,
+      "image": "https://ltdfoto.ru/images/2024/02/01/menu18.jpg"
+    },
+    {
+      "id": 14,
+      "image": "https://ltdfoto.ru/images/2024/02/01/menu17.jpg"
+    },
+    {
+      "id": 15,
+      "image": "https://ltdfoto.ru/images/2024/02/01/menu16.jpg"
+    },
+    {
+      "id": 16,
+      "image": "https://ltdfoto.ru/images/2024/02/01/menu15.jpg"
+    },
+    {
+      "id": 17,
+      "image": "https://ltdfoto.ru/images/2024/02/01/menu14.jpg"
+    },
+    {
+      "id": 18,
+      "image": "https://ltdfoto.ru/images/2024/02/01/menu13.jpg"
+    },
+    {
+      "id": 19,
+      "image": "https://ltdfoto.ru/images/2024/02/01/menu12.jpg"
+    },
+    {
+      "id": 20,
+      "image": "https://ltdfoto.ru/images/2024/02/01/menu11.jpg"
+    },
+    {
+      "id": 21,
+      "image": "https://ltdfoto.ru/images/2024/02/01/menu10.jpg"
+    },
+    {
+      "id": 22,
+      "image": "https://ltdfoto.ru/images/2024/02/01/menu9.jpg"
+    },
+    {
+      "id": 23,
+      "image": "https://ltdfoto.ru/images/2024/02/01/menu8.jpg"
+    },
+    {
+      "id": 24,
+      "image": "https://ltdfoto.ru/images/2024/02/01/menu7.jpg"
+    },
+    {
+      "id": 25,
+      "image": "https://ltdfoto.ru/images/2024/02/01/menu6.jpg"
+    },
+    {
+      "id": 26,
+      "image": "https://ltdfoto.ru/images/2024/02/01/menu5.jpg"
+    },
+    {
+      "id": 27,
+      "image": "https://ltdfoto.ru/images/2024/02/01/menu4.jpg"
+    },
+    {
+      "id": 28,
+      "image": "https://ltdfoto.ru/images/2024/02/01/menu3.jpg"
+    },
+    {
+      "id": 29,
+      "image": "https://ltdfoto.ru/images/2024/02/01/menu2.jpg"
+    },
+    {
+      "id": 30,
+      "image": "https://ltdfoto.ru/images/2024/02/01/menu1.jpg"
+    }
   ]
 }
