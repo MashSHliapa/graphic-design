@@ -31,7 +31,7 @@ export function NotebooksAndMenu() {
   }
 
   const notebooksPage = posts.slice(0, 8).map((item: PostData) => <Post key={item.id} post={item} />)
-  const menuPage = posts.slice(8, 31).map((item: PostData) => <Post key={item.id} post={item} />)
+  const menuPage = posts.slice(8, 30).map((item: PostData) => <Post key={item.id} post={item} />)
 
   return (
     <div className="notebooks-menu">

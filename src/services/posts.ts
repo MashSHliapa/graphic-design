@@ -1,6 +1,5 @@
 import { client } from '../utils/client'
-import { logosEndpoint } from '../api'
-import { cutawaysEndpoint } from '../api'
+import { diplomasAndCertificatesEndpoint, flyersAndpoint, logosEndpoint, cutawaysEndpoint } from '../api'
 
 export const requestLogos = async () => {
   const { data } = await client.get(logosEndpoint)
@@ -15,5 +14,15 @@ export const requestCutaways = async () => {
 
 export const requestNotebooksAndMenu = async () => {
   const { data } = await client.get('/notebooksAndMenu')
+  return data
+}
+
+export const requestFlyers = async () => {
+  const { data } = await client.get(flyersAndpoint)
+  return data
+}
+
+export const requestDiplomasAndCertificates = async () => {
+  const { data } = await client.get(diplomasAndCertificatesEndpoint)
   return data
 }

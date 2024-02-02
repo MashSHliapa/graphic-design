@@ -62,11 +62,11 @@
     },
     {
       "id": 6,
-      "image": "https://ltdfoto.ru/images/2024/01/29/cutaway11.jpg"
+      "image": "https://ltdfoto.ru/images/2024/02/01/cutaway6.jpg"
     },
     {
       "id": 7,
-      "image": "https://ltdfoto.ru/images/2024/01/29/cutaway11.jpg"
+      "image": "https://ltdfoto.ru/images/2024/02/01/cutaway7.jpg"
     },
     {
       "id": 8,
@@ -74,19 +74,19 @@
     },
     {
       "id": 9,
-      "image": "https://ltdfoto.ru/images/2024/01/29/cutaway8.jpg"
+      "image": "https://ltdfoto.ru/images/2024/01/29/cutaway9.jpg"
     },
     {
       "id": 10,
-      "image": "https://ltdfoto.ru/images/2024/01/29/cutaway9.jpg"
+      "image": "https://ltdfoto.ru/images/2024/02/02/cutaway10.jpg"
     },
     {
       "id": 11,
-      "image": "https://ltdfoto.ru/images/2024/01/29/cutaway9.jpg"
+      "image": "https://ltdfoto.ru/images/2024/01/29/cutaway11.jpg"
     },
     {
       "id": 12,
-      "image": "https://ltdfoto.ru/images/2024/01/29/cutaway11.jpg"
+      "image": "https://ltdfoto.ru/images/2024/02/02/cutaway12.jpg"
     }
   ],
 
@@ -253,6 +253,57 @@
     {
       "id": 30,
       "image": "https://ltdfoto.ru/images/2024/02/01/menu1.jpg"
+    }
+  ],
+
+  "diplomasAndCertificates": [
+    {
+      "id": 1,
+      "image": "https://ltdfoto.ru/images/2024/02/02/diploma1.png"
+    },
+    {
+      "id": 2,
+      "image": "https://ltdfoto.ru/images/2024/02/02/diploma2.png"
+    },
+    {
+      "id": 3,
+      "image": "https://ltdfoto.ru/images/2024/02/02/diploma3.png"
+    },
+    {
+      "id": 4,
+      "image": "https://ltdfoto.ru/images/2024/02/02/diploma4.png"
+    },
+    {
+      "id": 5,
+      "image": "https://ltdfoto.ru/images/2024/02/02/diploma5.png"
+    },
+    {
+      "id": 6,
+      "image": "https://ltdfoto.ru/images/2024/02/02/diploma6.png"
+    },
+    {
+      "id": 7,
+      "image": "https://ltdfoto.ru/images/2024/02/02/certificate1.png"
+    },
+    {
+      "id": 8,
+      "image": "https://ltdfoto.ru/images/2024/02/02/certificate2.png"
+    },
+    {
+      "id": 9,
+      "image": "https://ltdfoto.ru/images/2024/02/02/certificate3.png"
+    },
+    {
+      "id": 10,
+      "image": "https://ltdfoto.ru/images/2024/02/02/certificate4.png"
+    },
+    {
+      "id": 11,
+      "image": "https://ltdfoto.ru/images/2024/02/02/certificate5.png"
+    },
+    {
+      "id": 12,
+      "image": "https://ltdfoto.ru/images/2024/02/02/certificate6.png"
     }
   ]
 }
