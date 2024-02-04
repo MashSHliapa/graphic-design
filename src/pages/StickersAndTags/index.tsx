@@ -8,10 +8,7 @@ import stiker4 from '../../images/stickers/4.jpg'
 import stiker5 from '../../images/stickers/5.jpg'
 import stiker6 from '../../images/stickers/6.jpg'
 import stiker7 from '../../images/stickers/sticker7.jpg'
-import stiker8 from '../../images/stickers/sticker8.jpg'
 import stiker9 from '../../images/stickers/sticker9.jpg'
-import stiker10 from '../../images/stickers/sticker10.jpg'
-import stiker11 from '../../images/stickers/sticker11.jpg'
 import stiker12 from '../../images/stickers/sticker12.jpg'
 import stiker13 from '../../images/stickers/sticker13.jpg'
 import './StickersAndTags.scss'
@@ -54,28 +51,19 @@ export function StickersAndTags() {
               <div className="sticker__tags tags">
                 <ul className="tags__list">
                   <li className="tags__item1">
-                    <img src={stiker7} alt="tag2" />
+                    <img src={stiker7} alt="tag1" />
                   </li>
-                  <li className="tags__item2">
-                    <img src={stiker8} alt="tag3" />
-                  </li>
+                  <ul className="tags__item2">
+                    <li className="tags__item">
+                      <img src={stiker12} alt="tag2" />
+                    </li>
+                    <li className="tags__item">
+                      <img src={stiker13} alt="tag3" />
+                    </li>
+                  </ul>
                   <li className="tags__item3">
                     <img src={stiker9} alt="tag4" />
                   </li>
-                  <li className="tags__item4">
-                    <img src={stiker10} alt="tag5" />
-                  </li>
-                  <li className="tags__item5">
-                    <img src={stiker11} alt="tag6" />
-                  </li>
-                  <ul className="tags__item6">
-                    <li className="tags__item7">
-                      <img src={stiker12} alt="tag7" />
-                    </li>
-                    <li className="tags__item8">
-                      <img src={stiker13} alt="tag8" />
-                    </li>
-                  </ul>
                 </ul>
               </div>
             </div>
