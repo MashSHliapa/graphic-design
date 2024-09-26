@@ -10,7 +10,6 @@ export function Navbar() {
     setTimeout(() => createServicesScroll(pageElement), 100)
   }
 
-
   return (
     <div className="navbar">
       <nav className="navbar__body">
@@ -18,11 +17,9 @@ export function Navbar() {
           <li className="navbar__item" >
             <NavLink to="/portfolio" className="navbar__link">Портфолио</NavLink>
           </li>
-
           <li className="navbar__item" onClick={handleClickPageWithScroll}>
             <NavLink to="/" className="navbar__link">Услуги</NavLink>
           </li>
-
           <li className="navbar__item">
             <NavLink to="/cost" className="navbar__link" >Цены</NavLink>
           </li>

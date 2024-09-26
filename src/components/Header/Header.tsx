@@ -1,5 +1,5 @@
-import { Navbar } from '../Navbar'
-import { BurgerMenu } from '../BurgerMenu'
+import { Navbar } from '../Navbar/Navbar'
+import { BurgerMenu } from '../BurgerMenu/BurgerMenu'
 import logo from '../../images/logo_header.png'
 import instagram from '../../images/instagram_s.png'
 import vk from '../../images/vk.png'
@@ -17,12 +17,10 @@ export function Header() {
             <Navbar />
           </div>
         </div>
-
         <div className="header__red-rectangle-header red-rectangle-header _red-rectangle">
           <div className="red-rectangle-header__burger-menu">
             <BurgerMenu />
           </div>
-
           <div className="red-rectangle-header__icons-group">
             <div className="red-rectangle-header__icon _icon">
               <a href="https://instagram.com/artdesign_81?igshid=MmVlMjlkMTBhMg==" target="_blank">

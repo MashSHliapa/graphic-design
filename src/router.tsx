@@ -1,5 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom'
-import { Layout } from './components/Layout'
+import { Layout } from './components/Layout/Layout'
 import { Flyers } from './pages/Flyers'
 import { Cutaways } from './pages/Сutaways'
 import { DiplomasAndCertificates } from './pages/DiplomasAndCertificates'
