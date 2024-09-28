@@ -10,7 +10,7 @@ import { StickersAndTags } from './pages/StickersAndTags'
 import { PostsAndStories } from './pages/PostsAndStories'
 import { PostersAndBanners } from './pages/PostersAndBanners'
 import { NotebooksAndMenu } from './pages/NotebooksAndMenu'
-import { Main } from './components/Main'
+import { Main } from './components/Main/Main'
 import { Cost } from './pages/Cost'
 
 
