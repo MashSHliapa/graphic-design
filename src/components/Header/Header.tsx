@@ -2,7 +2,7 @@ import { Navbar } from '../Navbar/Navbar'
 import { BurgerMenu } from '../BurgerMenu/BurgerMenu'
 import logo from '../../images/logo_header.png'
 import instagram from '../../images/instagram_s.png'
-import vk from '../../images/vk.png'
+import vk from '../../images/vk_header.png'
 import './Header.scss'
 
 export function Header() {

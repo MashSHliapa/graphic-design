@@ -1,91 +1,45 @@
 .contacts {
-  &__container {}
-
   &__body {
-    color: #FFFFFF;
-    font-family: 'ABeeZee', sans-serif;
-    max-width: 318px;
+    text-align: center;
   }
-
-  &__data {}
 
   &__title {
-    line-height: 127%;
+    max-width: 250px;
+    margin: 0 auto 15px;
+    font-size: 18px;
+    line-height: 1.27;
     color: #808080;
-    padding: 10px 0px;
+
+    @media screen and (max-width: 767.98px) {
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: 575.98px) {
+      margin-bottom: 12px;
+    }
   }
 
-  &__phone {
-    font-size: 30px;
-    padding: 2px 0;
+  &__data {
+    font-size: 25px;
+    line-height: 1.18;
+
+    @media screen and (max-width: 767.98px) {
+      font-size: 20px;
+    }
   }
 
   &__email {
-    font-size: 23px;
-    padding: 12px 0 15px;
-  }
+    margin: 10px 0 25px;
 
-  &__extra-data {}
+    @media screen and (max-width: 575.98px) {
+      margin: 10px 0 20px;
+      font-size: 19px;
+    }
+  }
 
   &__icons-group {
-    gap: 29px;
-  }
-
-  &__unp {
-    margin-top: 34px;
-  }
-
-  @media screen and (max-width: 991.98px) {
-
-    &__body {
-      max-width: 265px;
-    }
-
-    &__title {
-      font-size: 12px;
-      padding: 10px 0px;
-    }
-
-    &__phone {
-      font-size: 15px;
-      padding: 1px 0;
-    }
-
-    &__email {
-      font-size: 15px;
-      padding: 5px 0 7px;
-    }
-
-    &__unp {
-      font-size: 10px;
-      margin-top: 32px; // меньше
-      margin-top: 20px;
-    }
-  }
-
-  @media screen and (max-width: 767.98px) {
-
-    &__body {
-      max-width: 138px;
-    }
-
-    &__title {
-      font-size: 8px;
-      padding: 10px 0px 10px 0;
-    }
-
-    &__phone {
-      font-size: 10px;
-    }
-
-    &__email {
-      font-size: 10px;
-      padding: 5px 0 5px;
-    }
-
-    &__unp {
-      font-size: 8px;
-      margin-top: 15px;
-    }
+    display: flex;
+    justify-content: center;
+    gap: 15px;
   }
 }

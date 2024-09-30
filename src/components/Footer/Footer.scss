@@ -1,236 +1,85 @@
 .footer {
   background-color: #000000;
 
-  &__container {}
-
   &__body {
-    color: #FFFFFF;
-    font-family: 'ABeeZee', sans-serif;
-  }
-
-  &__row {
     display: flex;
     justify-content: space-between;
-    padding: 32px 5px 0px;
     flex-wrap: wrap;
+    gap: 50px;
+    max-width: 930px;
+    margin: 0 auto;
+    padding-top: 66px;
+    font-family: 'ABeeZee', sans-serif;
+    color: #FFFFFF;
+
+    @media screen and (max-width: 767.98px) {
+      gap: 40px;
+      padding-top: 55px;
+    }
+
+    @media screen and (max-width: 575.98px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      padding-top: 35px;
+    }
   }
 
-  &__col {}
+  &__contacts {
+    @media screen and (max-width: 575.98px) {
+      order: 2;
+    }
+  }
 
   &__social {
-    text-align: center;
-    margin-right: 130px;
-  }
+    flex: 0 1 100%;
+    order: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+    border-top: #EDEDED solid 1px;
 
-  &__title {
-    font-family: 'Abel', sans-serif;
-    line-height: 127%;
-    color: #808080;
-    padding: 10px 0px;
+    @media screen and (max-width: 575.98px) {
+      flex-direction: column;
+      gap: 20px;
+      padding: 17px 20px 25px;
+    }
   }
 
   &__icon-group {
-    margin-top: 50px;
-    display: inline-block;
+    order: 2;
+    display: flex;
+    gap: 15px;
   }
 
-  &__icon:not(:last-child) {
-    margin-bottom: 59px;
-  }
-
-  &__icon {}
-
-
-  &__icon-title {
-    font-size: 25px;
-    padding: 3px 0;
-    line-height: 118%;
-  }
-
-  &__data {
-    margin-top: 10px;
-    text-align: end;
-  }
-
-  &__logo {}
-
-  &__info {
-    padding-top: 28px;
-  }
-
-  &__name {
-    padding: 0 0 6px 0;
+  &__logo {
+    @media screen and (max-width: 767.98px) {
+      max-width: 130px;
+    }
   }
 
   &__copyright {
     font-size: 12px;
-    line-height: 150%;
-    padding: 30px 5px 20px;
-  }
+    line-height: 1.2;
 
-  @media screen and (max-width: 1199.98px) {
-    &__copyright {
-      font-size: 10px;
-      padding: 40px 5px 25px;
-      max-width: 270px;
-    }
-  }
-
-  @media screen and (max-width: 991.98px) {
-    &__row {
-      padding: 22px 25px 0px;
-    }
-
-    &__col {
-      flex: 0 1 33.33%;
-    }
-
-    &__social {
-      margin-right: 0;
-    }
-
-    &__title {
-      font-size: 12px;
-    }
-
-    &__icon-group {
-      margin-top: 12px;
-    }
-
-    &__icon:not(:last-child) {
-      margin-bottom: 11px;
-    }
-
-    &__icon img {
-      width: 21px;
-      height: 24px;
-    }
-
-    &__icon_vk img {
-      width: 21px;
-      height: 14px;
-    }
-
-    &__icon-title {
-      font-size: 15px;
-    }
-
-    &__logo img {
-      width: 93px;
-      height: 120px;
-    }
-
-    &__info {
-      padding-top: 30px;
-      font-size: 12px;
-    }
-
-    &__copyright {
-      margin: 0 auto;
-      font-size: 8px;
-      padding: 15px 5px 25px; // предложить другие размеры
-      padding: 30px 5px 25px;
+    @media screen and (max-width: 575.98px) {
+      order: 2;
+      max-width: 240px;
       text-align: center;
-      max-width: 220px;
     }
   }
 
-  @media screen and (max-width: 767.98px) {
-    &__row {
-      padding: 5px 5px 0px;
-    }
 
-    &__col {
-      padding: 5px 15px;
-    }
+  &__unp {
+    font-size: 14px;
+    margin-top: 30px;
 
-    &__social {}
+    text-align: center;
 
-    &__title {
-      font-size: 8px;
-    }
+    @media screen and (max-width: 575.98px) {
 
-    &__icon img {
-      width: 23px;
-      height: 25px;
-      margin-bottom: 4px;
-    }
-
-    &__icon_vk img {
-      width: 23px;
-      height: 14px;
-      margin-bottom: 0px;
-    }
-
-    &__icon-title {
-      font-size: 9px;
-      padding: 0px;
-    }
-
-    &__data {}
-
-    &__logo {}
-
-    &__logo img {
-      width: 80px;
-      height: 100px;
-    }
-
-    &__info {
-      font-size: 6px; // предложить больше
-      font-size: 10px;
-    }
-
-    &__name {}
-
-    &__copyright {
-      font-size: 6px;
-      padding: 30px 0px 10px 0px;
-      max-width: 155px;
-    }
-  }
-
-  @media screen and (max-width: 575.98px) {
-    &__row {
-      justify-content: space-around;
-    }
-
-    &__col {
-      padding: 3px 5px;
-    }
-
-    &__social {
-      text-align: end;
-    }
-
-    &__icon-group {
-      margin-top: 2px;
-    }
-
-    &__data {
-      display: flex;
-      min-width: 180px;
-      justify-content: space-around;
-      margin: 20px 0;
-    }
-
-    &__logo img {
-      width: 60px;
-      height: 70px;
-    }
-
-    &__info {
-      text-align: start;
-      padding: 20px 0 0 20px;
-    }
-
-    &__copyright {
-      font-size: 5px;
-      padding: 15px 0px 0px 0px;
-      margin-right: 0;
-      text-align: end;
-      max-width: 130px;
-      min-width: 90px;
+      margin-top: 20px;
     }
   }
 }

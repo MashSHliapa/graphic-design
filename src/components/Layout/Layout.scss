@@ -330,22 +330,22 @@ body {
   }
 }
 
-.icons-group-contacts {
-  display: flex;
+// .icons-group-contacts {
+//   display: flex;
 
-  @media screen and (max-width: 991.98px) {
-    gap: 16px;
+//   @media screen and (max-width: 991.98px) {
+//     gap: 16px;
 
-    &__icon img {
-      width: 40px;
-      height: 40px;
-    }
-  }
+//     &__icon img {
+//       width: 40px;
+//       height: 40px;
+//     }
+//   }
 
-  @media screen and (max-width: 767.98px) {
-    &__icon img {
-      width: 31px;
-      height: 31px;
-    }
-  }
-}
+//   @media screen and (max-width: 767.98px) {
+//     &__icon img {
+//       width: 31px;
+//       height: 31px;
+//     }
+//   }
+// }
