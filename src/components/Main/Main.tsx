@@ -1,5 +1,5 @@
-import { Services } from '../../pages/Services'
-import { GoToMain } from '../GoToMain'
+import { Services } from '../../pages/Services/Services'
+import { GoTop } from '../GoTop'
 import name from '../../images/name.png'
 import career from '../../images/career.png'
 import photo from '../../images/main_photo.jpg'
@@ -46,8 +46,8 @@ export function Main() {
         </div>
       </div>
       <Services />
-      <div className="main___go-to-main _go-to-main">
-        <GoToMain />
+      <div className="post-stories__up _up">
+        <GoTop />
       </div>
     </main>
   )

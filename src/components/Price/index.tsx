@@ -1,10 +1,9 @@
-import { MainTheme } from '../MainTheme'
 import './Price.scss'
 
 export function Price() {
 
   return (
-    <MainTheme>
+    // <MainTheme>
       <div className="price">
         <div className="price__title _title-main">Прайс</div>
         <div className="price__menu menu-main">
@@ -68,6 +67,6 @@ export function Price() {
           </ul>
         </div>
       </div>
-    </MainTheme>
+    // </MainTheme>
   )
 }

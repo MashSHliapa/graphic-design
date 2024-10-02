@@ -7,7 +7,7 @@
 
   &__container {
     position: relative;
-    margin-bottom: 90px;
+    // margin-bottom: 95px;
   }
 
   &__body {
@@ -112,6 +112,10 @@
     @media screen and (max-width: 991.98px) {
       max-width: 517px;
     }
+  }
+
+  &__go-to-main {
+    display: none;
   }
 }
 
