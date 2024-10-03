@@ -28,7 +28,7 @@ export function Contacts() {
               </a>
             </div>
             <div className="icons-group-contacts__icon _icon">
-              <a href="tel:+375291216051" target="_blank">
+              <a href="viber://chat?number=%2B375298597118" target="_blank">
                 <img src={viber} alt="viber" />
               </a>
             </div>

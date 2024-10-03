@@ -18,11 +18,11 @@ export function Main() {
           <div className="main__image-mobile">
             <img src={photoMobile} alt="" />
           </div>
-          <div className="main__data">
-            <div className="main__name">
+          <div className="main__data data">
+            <div className="data__name">
               <img src={name} alt="name" />
             </div>
-            <div className="main__career">
+            <div className="data__career">
               <img src={career} alt="career" />
             </div>
           </div>

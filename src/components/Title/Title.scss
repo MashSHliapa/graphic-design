@@ -1,13 +1,10 @@
 .title {
-  &__container {}
-
   &__title {
+    font-family: 'Bona Nova', serif;
     text-transform: uppercase;
     text-align: center;
     font-size: 40px;
-    line-height: 120%;
-    font-family: 'Bona Nova', serif;
-    padding: 5px;
+    line-height: 1.2;
   }
 
   @media screen and (max-width: 991.98px) {
@@ -18,9 +15,7 @@
 
   @media screen and (max-width: 767.98px) {
     &__title {
-      font-size: 20px;
-      margin-right: 30px;
+      font-size: 28px;
     }
   }
 }
-

@@ -45,8 +45,8 @@ export function Services() {
                   </ul>
                 </div>
               </div>
-              <div className="services__buttons">
-                <NavLink to="/portfolio" target="_top" className="services__button">портфолио</NavLink>
+              <div className="services__button-wrapper">
+                <NavLink to="/portfolio" target="_top" className="services__button _button">портфолио</NavLink>
               </div>
             </div>
           </div>

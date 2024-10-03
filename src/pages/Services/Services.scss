@@ -203,7 +203,7 @@
     transition: all .2s ease-out;
   }
 
-  &__buttons {
+  &__button-wrapper {
     display: flex;
 
     @media screen and (max-width: 767.98px) {
@@ -212,31 +212,16 @@
   }
 
   &__button {
-    color: #000000;
-    text-transform: none;
     font-size: 25px;
-    line-height: 1.18;
-    border: #000000 solid 2px;
-    min-width: 250px;
-    text-align: center;
-    transition: all .2s ease;
-    padding: 18px 0px;
+    padding: 18px 58px;
 
     @media screen and (max-width: 1199.98px) {
       font-size: 20px;
-      min-width: 200px;
-      padding: 16px 0px;
+      padding: 16px 46px;
     }
 
     @media screen and (max-width: 991.98px) {
-      min-width: 160px;
-      padding: 10px 0px;
+      padding: 10px 26px;
     }
-  }
-
-  &__button:hover {
-    color: #FFFFFF;
-    background-color: #000000;
-    transition: all .2s ease;
   }
 }

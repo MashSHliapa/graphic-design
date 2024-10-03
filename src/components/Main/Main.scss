@@ -7,7 +7,6 @@
 
   &__container {
     position: relative;
-    // margin-bottom: 95px;
   }
 
   &__body {
@@ -54,40 +53,40 @@
       order: 2;
     }
   }
+}
 
-  &__data {
-    position: absolute;
-    top: 30px;
-    right: 120px;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    margin-left: 380px;
+.data {
+  position: absolute;
+  top: 30px;
+  right: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-left: 380px;
 
-    @media screen and (max-width: 1199.98px) {
-      margin-left: 350px;
-    }
+  @media screen and (max-width: 1199.98px) {
+    margin-left: 350px;
+  }
 
-    @media screen and (max-width: 991.98px) {
-      top: 12px;
-      right: 100px;
-      margin-left: 250px;
-    }
+  @media screen and (max-width: 991.98px) {
+    top: 12px;
+    right: 100px;
+    margin-left: 250px;
+  }
 
-    @media screen and (max-width: 767.98px) {
-      position: static;
-      top: auto;
-      right: auto;
-      bottom: auto;
-      left: auto;
-      align-self: flex-end;
-      margin-right: 90px;
-      margin-left: 0;
-    }
+  @media screen and (max-width: 767.98px) {
+    position: static;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    align-self: flex-end;
+    margin-right: 90px;
+    margin-left: 0;
+  }
 
-    @media screen and (max-width: 575.98px) {
-      margin-right: 65px;
-    }
+  @media screen and (max-width: 575.98px) {
+    margin-right: 65px;
   }
 
   &__name {
@@ -112,10 +111,6 @@
     @media screen and (max-width: 991.98px) {
       max-width: 517px;
     }
-  }
-
-  &__go-to-main {
-    display: none;
   }
 }
 
@@ -176,7 +171,6 @@
   &__text {
     max-width: 335px;
     font-family: 'ABeeZee', sans-serif;
-    color: #000000;
 
     @media screen and (max-width: 1199.98px) {
       font-size: 16px;

@@ -11,8 +11,7 @@ import { PostsAndStories } from './pages/PostsAndStories'
 import { PostersAndBanners } from './pages/PostersAndBanners'
 import { NotebooksAndMenu } from './pages/NotebooksAndMenu'
 import { Main } from './components/Main/Main'
-import { Cost } from './pages/Cost'
-
+import { Prices } from './pages/Prices/Prices'
 
 export const router = createBrowserRouter([
   {
@@ -31,8 +30,8 @@ export const router = createBrowserRouter([
         element: <Portfolio />
       },
       {
-        path: '/cost',
-        element: <Cost />
+        path: '/prices',
+        element: <Prices />
       },
       {
         path: '/portfolio/flyers',

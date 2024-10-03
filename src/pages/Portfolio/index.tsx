@@ -29,7 +29,7 @@ export function Portfolio() {
         <div className="portfolio__container _container ">
           <div className="portfolio__body">
             <div className="portfolio__info">
-              <div className="portfolio__title" id="portfolio">Портфолио</div>
+              <h2 className="portfolio__title" id="portfolio">Портфолио</h2>
               <div className="portfolio__text">Все макеты сделанные с душой.<br />
                 К каждому проекту применён индивидуальный подход.<br />
                 Учтены пожелания заказчика. По итогу все макеты реализованны и

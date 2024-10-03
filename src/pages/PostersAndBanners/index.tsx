@@ -1,4 +1,4 @@
-import { Title } from '../../components/Title'
+import { Title } from '../../components/Title/Title'
 import { GoTop } from '../../components/GoTop'
 import { Breadcrumb } from '../../components/Breadcrumb'
 import poster1 from '../../images/posters/poster1.jpg'

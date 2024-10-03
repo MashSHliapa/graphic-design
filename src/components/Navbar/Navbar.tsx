@@ -21,7 +21,7 @@ export function Navbar() {
             <NavLink to="/" className="navbar__link">Услуги</NavLink>
           </li>
           <li className="navbar__item">
-            <NavLink to="/cost" className="navbar__link" >Цены</NavLink>
+            <NavLink to="/prices" className="navbar__link" >Цены</NavLink>
           </li>
           <li className="navbar__item">
             <a className="navbar__link" href="#contacts">Контакты</a>
