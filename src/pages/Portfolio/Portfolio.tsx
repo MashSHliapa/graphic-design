@@ -1,3 +1,8 @@
+import { NavLink } from 'react-router-dom'
+import { useRef } from 'react'
+import { createPortfolioMenuScroll } from '../../helpers/createPortfolioMenuScroll.tsx'
+import { GoToMain } from '../../components/GoToMain/index.tsx'
+import { Title } from '../../components/Title/Title.tsx'
 import vector from '../../images/portfolio/vector_here.png'
 import flyer from '../../images/portfolio/flyer1.jpg'
 import cutaway from '../../images/portfolio/cutaway2.jpg'
@@ -7,16 +12,9 @@ import bord from '../../images/portfolio/bord5.jpg'
 import sticker from '../../images/portfolio/sticker6.jpg'
 import post from '../../images/portfolio/post7.jpg'
 import logo from '../../images/portfolio/logo8.jpg'
-// import to_main from '../../images/portfolio/to_main.svg'
-// import to_main from '../../components/images/to_main.png'
 import './Portfolio.scss'
-import { NavLink } from 'react-router-dom'
-import { useRef } from 'react'
-import { createPortfolioMenuScroll } from '../../helpers/createPortfolioMenuScroll.tsx'
-import { GoToMain } from '../../components/GoToMain'
 
 export function Portfolio() {
-
   const pageElement = useRef(null)
 
   function handleClickPageWithScroll() {
@@ -29,12 +27,14 @@ export function Portfolio() {
         <div className="portfolio__container _container ">
           <div className="portfolio__body">
             <div className="portfolio__info">
-              <h2 className="portfolio__title" id="portfolio">Портфолио</h2>
-              <div className="portfolio__text">Все макеты сделанные с душой.<br />
-                К каждому проекту применён индивидуальный подход.<br />
-                Учтены пожелания заказчика. По итогу все макеты реализованны и
-                радуют своих заказчиков.</div>
-              <div className="portfolio__subtitle">Вы можете ознакомиться с моими работами здеcь</div>
+              <div className="portfolio__title" id="portfolio">
+                <Title>Портфолио</Title>
+              </div>
+              <h5 className="portfolio__text">
+                Все макеты сделанные по индивидуальным заказам. <br />
+                К каждому проекту применён профессиональный подход.<br />
+                Учтены пожелания заказчика. По итогу все макеты успешно реализованы.</h5>
+              <h3 className="portfolio__subtitle">Вы можете ознакомиться с моими работами здеcь</h3>
               <div className="portfolio__vector-here">
                 <img src={vector} alt="vector" />
               </div>
@@ -62,7 +62,7 @@ export function Portfolio() {
             <img src={notebook} alt="notebook" />
             <div className="gallery__menu">
               <div className="gallery__menu-item">
-                <NavLink to="/portfolio/notebooks_and_menu" target="_top" className="gallery__menu-link">блокноты <span className='gallery__and'>&</span> меню</NavLink>
+                <NavLink to="/portfolio/notebooks_and_menu" target="_top" className="gallery__menu-link">ПРАЙС БЛОКНОТЫ МЕНЮ</NavLink>
               </div>
             </div>
           </li>
@@ -70,22 +70,16 @@ export function Portfolio() {
             <img src={diploma} alt="diploma" />
             <div className="gallery__menu">
               <div className="gallery__menu-item gallery__menu-item_reduce">
-                <NavLink to="/portfolio/diplomas_and_certificates" className="gallery__menu-link" target="_top" >ДИПЛОМЫ, БЛАГОДАРНОСТИ <span className='gallery__and'>&</span> СЕРТИФИКАТЫ, пригласительные</NavLink>
+                <NavLink to="/portfolio/diplomas_and_certificates" className="gallery__menu-link" target="_top" >ДИПЛОМЫ БЛАГОДАРНОСТИ <span className='gallery__and'>&</span> СЕРТИФИКАТЫ пригласительные</NavLink>
               </div>
-              {/* <div className="gallery__menu-item gallery__menu-item_reduce">
-                <a className="gallery__menu-link" href="#">СЕРТИФИКАТЫ & пригласительные</a>
-              </div> */}
             </div>
           </li>
           <li className="gallery__item">
             <img src={bord} alt="bord" />
             <div className="gallery__menu">
               <div className="gallery__menu-item">
-                <NavLink to="/portfolio/posters_and_banners" className="gallery__menu-link" target="_top" >АФИШИ, ПЛАКАТЫ <span className='gallery__and'>&</span>баннеры</NavLink>
+                <NavLink to="/portfolio/posters_and_banners" className="gallery__menu-link" target="_top" >АФИШИ <span className='gallery__and'>&</span> ПЛАКАТЫ баннеры</NavLink>
               </div>
-              {/* <div className="gallery__menu-item">
-                <a className="gallery__menu-link" href="#">баннеры</a>
-              </div> */}
             </div>
           </li>
           <li className="gallery__item" onClick={handleClickPageWithScroll}>
@@ -100,7 +94,7 @@ export function Portfolio() {
             <img src={post} alt="post" />
             <div className="gallery__menu">
               <div className="gallery__menu-item">
-                <NavLink to="/portfolio/posts_and_stories" className="gallery__menu-link" target="_top">ПОСТ <span className='gallery__and'>&</span> СТОРИС
+                <NavLink to="/portfolio/posts_and_stories" className="gallery__menu-link" target="_top"> инфографика ПОСТ <span className='gallery__and'>&</span> СТОРИС
                 </NavLink>
               </div>
             </div>
@@ -114,7 +108,7 @@ export function Portfolio() {
             </div>
           </li>
         </ul>
-        <div className="portfolio__go-to-main _go-to-main">
+        <div className="portfolio__go-to-main">
           <GoToMain />
         </div>
         <div className="portfolio__red-rectangle-portfolio _red-rectangle"></div>
