@@ -4,6 +4,7 @@ import { cutawaysReducer } from './cutawaysSlice'
 import { notebooksAndMenuReducer } from './notebooksAndMenuSlice'
 import { flyersReducer } from './flyersSlice'
 import { diplomasAndCertificatesReducer } from './diplomasAndCertificatesSlice'
+import { infographicsPostsStoriesReducer } from './infographicsPostsStoriesSlice'
 
 export const store = configureStore({
   reducer: {
@@ -11,7 +12,8 @@ export const store = configureStore({
     cutaways: cutawaysReducer,
     notebooksAndMenu: notebooksAndMenuReducer,
     flyers: flyersReducer,
-    diplomasAndCertificates: diplomasAndCertificatesReducer
+    diplomasAndCertificates: diplomasAndCertificatesReducer,
+    infographicsPostsStories: infographicsPostsStoriesReducer,
   },
 })
 

@@ -7,7 +7,7 @@ import { Portfolio } from './pages/Portfolio/Portfolio'
 import { Logo } from './pages/Logo'
 // import { Services } from './pages/Services'
 import { StickersAndTags } from './pages/StickersAndTags'
-import { PostsAndStories } from './pages/PostsAndStories'
+import { InfographicsPostsStories } from './pages/InfographicsPostsStories/InfographicsPostsStories'
 import { PostersAndBanners } from './pages/PostersAndBanners'
 import { NotebooksAndMenu } from './pages/NotebooksAndMenu'
 import { Main } from './components/Main/Main'
@@ -55,7 +55,7 @@ export const router = createBrowserRouter([
       },
       {
         path: '/portfolio/posts_and_stories',
-        element: <PostsAndStories />
+        element: <InfographicsPostsStories />
       },
       {
         path: '/portfolio/posters_and_banners',

@@ -1,5 +1,4 @@
 .breadcrumb {
-
   font-family: 'Abel', sans-serif;
   font-size: 14px;
   line-height: 137%;
@@ -16,6 +15,7 @@
   &__item_active {
     color: #000000;
     font-size: 20px;
+    text-transform: lowercase;
   }
 
   &__slash {

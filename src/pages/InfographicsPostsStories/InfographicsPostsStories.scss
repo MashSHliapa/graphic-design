@@ -1,10 +1,4 @@
 .post-stories {
-  &__container {}
-
-  &__body {}
-
-  &__title {}
-
   &__list {
     display: grid;
     justify-content: center;
@@ -77,5 +71,17 @@
       justify-content: center;
       align-items: center;
     }
+  }
+}
+
+.infographics {
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 945px;
+    margin: 0 auto;
   }
 }
