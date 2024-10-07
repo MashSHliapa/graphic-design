@@ -9,7 +9,6 @@ import './InfographicsPostsStories.scss'
 
 export function InfographicsPostsStories() {
   const { data: posts } = useSelector((state: RootState) => state.infographicsPostsStories)
-  console.log(posts)
 
   const postsStories = posts.slice(0, 10).map((item: PostData) => <Post key={item.id} post={item} />)
 
@@ -28,7 +27,9 @@ export function InfographicsPostsStories() {
             </div>
             <div className="infographics__box">
               <ul className="infographics__list">
-                {infographics}
+                {infographics.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
               </ul>
             </div>
           </div>
