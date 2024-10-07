@@ -54,7 +54,7 @@ export function Services() {
             <div className="services__image">
               <img src={services} alt="services" />
             </div>
-            <div className="services__red-rectangle _red-rectangle"></div>
+            <div className="services__decor _decor"></div>
           </div>
         </div>
       </div>

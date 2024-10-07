@@ -111,7 +111,7 @@ export function Portfolio() {
         <div className="portfolio__go-to-main">
           <GoToMain />
         </div>
-        <div className="portfolio__red-rectangle-portfolio _red-rectangle"></div>
+        <div className="portfolio__decor _decor"></div>
       </div>
     </div>
   )
