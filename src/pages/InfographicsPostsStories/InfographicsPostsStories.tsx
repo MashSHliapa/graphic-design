@@ -1,9 +1,9 @@
 import { useSelector } from 'react-redux'
 import { RootState } from '../../redux/store'
 import { Post } from '../../components/Post'
+import { Breadcrumb } from '../../components/Breadcrumb'
 import { Title } from '../../components/Title/Title'
 import { GoTop } from '../../components/GoTop'
-import { Breadcrumb } from '../../components/Breadcrumb'
 import { PostData } from '../../types/interfaces'
 import './InfographicsPostsStories.scss'
 
@@ -25,27 +25,25 @@ export function InfographicsPostsStories() {
             <div className="infographics__title _title">
               <Title>ИНФОГРАФИКА</Title>
             </div>
-            <div className="infographics__box">
-              <ul className="infographics__list">
-                {infographics.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
-              </ul>
-            </div>
+            <ul className="infographics__list">
+              {infographics.map((item, index) => (
+                <li key={index}>
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
           <div className="infographics-post-stories__post-stories post-stories">
             <div className="post-stories__title _title">
               <Title>Пост <span className="green-and">&</span> Сторис</Title>
             </div>
-            <div className="post-stories__box">
-              <ul className="post-stories__list">
-                {postsStories.map((post, index) => (
-                  <li key={index} className={`post-stories__item${index + 1}`}>
-                    {post}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <ul className="post-stories__list">
+              {postsStories.map((item, index) => (
+                <li key={index} className={`post-stories__item${index + 1}`}>
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
           <div className="infographics-post-stories__up _up">
             <GoTop />
