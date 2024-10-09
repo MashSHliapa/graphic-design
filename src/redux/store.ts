@@ -6,6 +6,7 @@ import { flyersReducer } from './flyersSlice'
 import { diplomasAndCertificatesReducer } from './diplomasAndCertificatesSlice'
 import { infographicsPostsStoriesReducer } from './infographicsPostsStoriesSlice'
 import { setStickersAndTagsReducer } from './stickersAndTagsSlice'
+import { postersAndBannersReducer } from './postersAndBannersSlice'
 
 export const store = configureStore({
   reducer: {
@@ -16,6 +17,7 @@ export const store = configureStore({
     diplomasAndCertificates: diplomasAndCertificatesReducer,
     infographicsPostsStories: infographicsPostsStoriesReducer,
     stickersAndTags: setStickersAndTagsReducer,
+    postersAndBanners: postersAndBannersReducer,
   },
 })
 
