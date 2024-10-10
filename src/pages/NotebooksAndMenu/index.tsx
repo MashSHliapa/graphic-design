@@ -5,8 +5,8 @@ import { AnyAction } from 'redux'
 import { fetchNotebooksAndMenu } from '../../redux/notebooksAndMenuSlice'
 import { Post } from '../../components/Post'
 import { Title } from '../../components/Title/Title'
-import { GoTop } from '../../components/GoTop'
-import { Breadcrumb } from '../../components/Breadcrumb'
+import { GoToTop } from '../../components/GoToTop/GoToTop'
+import { BreadCrumbs } from '../../components/BreadCrumbs/BreadCrumbs'
 import { RootState } from '../../redux/store'
 import { DataResponse, PostData } from '../../types/interfaces'
 import './NotebooksAndMenu.scss'
@@ -37,8 +37,8 @@ export function NotebooksAndMenu() {
     <div className="notebooks-menu">
       <div className="notebooks-menu__container _container">
         <div className="notebooks-menu__body">
-          <div className="flyers__breadcrumb">
-            <Breadcrumb>блокноты и меню</Breadcrumb>
+          <div className="notebooks-menu__breadcrumb">
+            <BreadCrumbs>блокноты и меню</BreadCrumbs>
           </div>
           <div className="notebooks-menu__notebooks notebooks">
             <div className="notebooks__title _title">
@@ -58,8 +58,8 @@ export function NotebooksAndMenu() {
             </ul>
           </div>
         </div>
-        <div className="notebooks-menu__up _up">
-          <GoTop />
+        <div className="notebooks-menu__go-to-top _go-to-top">
+          <GoToTop />
         </div>
       </div>
     </div>

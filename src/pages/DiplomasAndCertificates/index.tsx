@@ -5,8 +5,8 @@ import { ThunkDispatch } from '@reduxjs/toolkit'
 import { fetchDiplomasAndCertificates } from '../../redux/diplomasAndCertificatesSlice'
 import { Post } from '../../components/Post'
 import { Title } from '../../components/Title/Title'
-import { GoTop } from '../../components/GoTop'
-import { Breadcrumb } from '../../components/Breadcrumb'
+import { GoToTop } from '../../components/GoToTop/GoToTop'
+import { BreadCrumbs } from '../../components/BreadCrumbs/BreadCrumbs'
 import { RootState } from '../../redux/store'
 import { DataResponse, PostData } from '../../types/interfaces'
 import './DiplomasAndCertificates.scss'
@@ -38,8 +38,8 @@ export function DiplomasAndCertificates() {
     <div className="diplomas-certificates">
       <div className="diplomas-certificates__container _container">
         <div className="diplomas-certificates__body">
-          <div className="flyers__breadcrumb">
-            <Breadcrumb>дипломы и благодарности</Breadcrumb>
+          <div className="diplomas-certificates__breadcrumb">
+            <BreadCrumbs>дипломы и благодарности</BreadCrumbs>
           </div>
           <div className="diplomas-certificates__diplomas diplomas">
             <div className="diplomas__title _title">
@@ -59,7 +59,7 @@ export function DiplomasAndCertificates() {
           </div>
         </div>
         <div className="diplomas__up _up">
-          <GoTop />
+          <GoToTop />
         </div>
       </div>
     </div>

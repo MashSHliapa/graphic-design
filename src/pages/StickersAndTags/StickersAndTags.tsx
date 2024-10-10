@@ -1,9 +1,9 @@
 import { useSelector } from 'react-redux'
 import { RootState } from '../../redux/store'
 import { Post } from '../../components/Post'
-import { Breadcrumb } from '../../components/Breadcrumb'
+import { BreadCrumbs } from '../../components/BreadCrumbs/BreadCrumbs'
 import { Title } from '../../components/Title/Title'
-import { GoTop } from '../../components/GoTop'
+import { GoToTop } from '../../components/GoToTop/GoToTop'
 import { PostData } from '../../types/interfaces'
 import './StickersAndTags.scss'
 
@@ -18,8 +18,8 @@ export function StickersAndTags() {
     <div className="stickers-tags">
       <div className="stickers-tags__container _container">
         <div className="stickers-tags__body">
-          <div className="flyers__breadcrumb">
-            <Breadcrumb>стикеры и бирки</Breadcrumb>
+          <div className="stickers-tags__breadcrumb">
+            <BreadCrumbs>стикеры и бирки</BreadCrumbs>
           </div>
           <div className="stickers-tags__title _title">
             <Title>стикеры <span className="green-and">&</span> бирки</Title>
@@ -43,8 +43,8 @@ export function StickersAndTags() {
             </div>
           </div>
         </div>
-        <div className="sticker-tags__up _up">
-          <GoTop />
+        <div className="sticker-tags__go-to-top _go-to-top">
+          <GoToTop />
         </div>
       </div>
     </div>

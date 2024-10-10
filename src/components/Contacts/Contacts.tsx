@@ -1,6 +1,6 @@
-import telegram from '../../images/telegram.png'
-import whatsapp from '../../images/watsapp.png'
-import viber from '../../images/viber.png'
+import telegram from '../../icons/telegram.svg'
+import whatsapp from '../../icons/whatsApp.svg'
+import viber from '../../icons/viber.svg'
 import './Contacts.scss'
 
 export function Contacts() {

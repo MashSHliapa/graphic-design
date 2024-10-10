@@ -1,10 +1,10 @@
 import { Title } from '../../components/Title/Title'
-import { GoToMain } from '../../components/GoToMain'
-import { GoTop } from '../../components/GoTop'
-import phone from '../../images/phone.svg'
-import name from '../../images/name.png'
-import career from '../../images/career.png'
-import photo from '../../images/photo-price.jpg'
+import { GoToMain } from '../../components/GoToMain/GoToMain'
+import { GoToTop } from '../../components/GoToTop/GoToTop'
+import phone from '../../icons/phone.svg'
+import name from '../../images/name.svg'
+import career from '../../images/career.svg'
+import photo from '../../images/photo_price.jpg'
 import './Prices.scss'
 
 export function Prices() {
@@ -61,7 +61,6 @@ export function Prices() {
                 <div className="button__text">
                   связаться со мной
                 </div>
-
                 <div className="button__icon">
                   <img src={phone} alt="phone" />
                 </div>
@@ -72,8 +71,8 @@ export function Prices() {
         <div className="prices__go-to-main">
           <GoToMain />
         </div>
-        <div className="prices__up _up">
-          <GoTop />
+        <div className="prices__go-to-top">
+          <GoToTop />
         </div>
       </div>
     </div>

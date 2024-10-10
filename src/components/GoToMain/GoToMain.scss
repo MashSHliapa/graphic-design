@@ -3,12 +3,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
+    max-width: 110px;
+    margin: 0 auto;
   }
 
   &__body img {
-    text-align: center;
-    align-self: center;
-
     @media screen and (max-width: 767.98px) {
       width: 15px;
     }
@@ -16,22 +16,19 @@
 
   &__text {
     font-size: 18px;
-    line-height: 138%;
-    text-align: center;
-    padding-top: 10px
-  }
+    line-height: 1.37;
+    padding-top: 10px;
+    letter-spacing: 1.5px;
 
-  @media screen and (max-width: 991.98px) {
-    &__text {
+    @media screen and (max-width: 991.98px) {
       font-size: 17px;
-      padding-top: 7px
+      padding-top: 7px;
     }
-  }
 
-  @media screen and (max-width: 767.98px) {
-    &__text {
+    @media screen and (max-width: 767.98px) {
       font-size: 15px;
-      padding-top: 5px
+      padding-top: 5px;
+      letter-spacing: 1.1px;
     }
   }
 }

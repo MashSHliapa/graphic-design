@@ -1,9 +1,9 @@
-import { useLocation } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import { Navbar } from '../Navbar/Navbar'
 import { BurgerMenu } from '../BurgerMenu/BurgerMenu'
-import logo from '../../images/logo_header.png'
-import instagram from '../../images/instagram_s.png'
-import vk from '../../images/vk_header.png'
+import logo from '../../images/logo_header.svg'
+import instagram from '../../icons/instagram_header.svg'
+import vk from '../../icons/vk_header.svg'
 import './Header.scss'
 
 export function Header() {
@@ -17,9 +17,9 @@ export function Header() {
     <header className="header">
       <div className="header__container _container">
         <div className="header__body">
-          <div className="header__logo">
+          <NavLink to="/" className="header__logo">
             <img src={logo} alt="logo" />
-          </div>
+          </NavLink>
           <div className="header__navbar">
             <Navbar />
           </div>

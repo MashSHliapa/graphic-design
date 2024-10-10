@@ -5,8 +5,8 @@ import { AnyAction } from 'redux'
 import { fetchCutaways } from '../../redux/cutawaysSlice'
 import { Post } from '../../components/Post'
 import { Title } from '../../components/Title/Title'
-import { GoTop } from '../../components/GoTop'
-import { Breadcrumb } from '../../components/Breadcrumb'
+import { GoToTop } from '../../components/GoToTop/GoToTop'
+import { BreadCrumbs } from '../../components/BreadCrumbs/BreadCrumbs'
 import { RootState } from '../../redux/store'
 import { DataResponse, PostData } from '../../types/interfaces'
 import './Cutaways.scss'
@@ -34,8 +34,8 @@ export function Cutaways() {
     <div className="cutaway">
       <div className="cutaway__container _container">
         <div className="cutaway__body">
-          <div className="flyers__breadcrumb">
-            <Breadcrumb>визитки</Breadcrumb>
+          <div className="cutaway__breadcrumb">
+            <BreadCrumbs>визитки</BreadCrumbs>
           </div>
           <div className="cutaway__title _title">
             <Title>визитки</Title>
@@ -44,7 +44,7 @@ export function Cutaways() {
             {cutawaysPage}
           </ul>
           <div className="cutaway__up _up">
-            <GoTop />
+            <GoToTop />
           </div>
         </div>
       </div>

@@ -1,9 +1,9 @@
 import { useSelector } from 'react-redux'
 import { RootState } from '../../redux/store'
 import { Post } from '../../components/Post'
-import { Breadcrumb } from '../../components/Breadcrumb'
+import { BreadCrumbs } from '../../components/BreadCrumbs/BreadCrumbs'
 import { Title } from '../../components/Title/Title'
-import { GoTop } from '../../components/GoTop'
+import { GoToTop } from '../../components/GoToTop/GoToTop'
 import { PostData } from '../../types/interfaces'
 import './InfographicsPostsStories.scss'
 
@@ -19,7 +19,7 @@ export function InfographicsPostsStories() {
       <div className="infographics-post-stories__container _container">
         <div className="infographics-post-stories__body">
           <div className="infographics-post-stories__breadcrumb">
-            <Breadcrumb>ИНФОГРАФИКА, пост и сторис</Breadcrumb>
+            <BreadCrumbs>ИНФОГРАФИКА, пост и сторис</BreadCrumbs>
           </div>
           <div className="infographics-post-stories__infographics infographics">
             <div className="infographics__title _title">
@@ -45,8 +45,8 @@ export function InfographicsPostsStories() {
               ))}
             </ul>
           </div>
-          <div className="infographics-post-stories__up _up">
-            <GoTop />
+          <div className="infographics-post-stories__go-to-top _go-to-top">
+            <GoToTop />
           </div>
         </div>
       </div>

@@ -4,8 +4,8 @@ import { AnyAction, ThunkDispatch } from '@reduxjs/toolkit'
 import { fetchFlyers } from '../../redux/flyersSlice'
 import { Post } from '../../components/Post'
 import { Title } from '../../components/Title/Title'
-import { GoTop } from '../../components/GoTop'
-import { Breadcrumb } from '../../components/Breadcrumb'
+import { GoToTop } from '../../components/GoToTop/GoToTop'
+import { BreadCrumbs } from '../../components/BreadCrumbs/BreadCrumbs'
 import { RootState } from '../../redux/store'
 import { DataResponse, PostData } from '../../types/interfaces'
 import './Flyers.scss'
@@ -46,7 +46,7 @@ export function Flyers() {
       <div className="flyers__container _container">
         <div className="flyers__body">
           <div className="flyers__breadcrumb">
-            <Breadcrumb>листовки</Breadcrumb>
+            <BreadCrumbs>листовки</BreadCrumbs>
           </div>
           <div className="flyers__title _title">
             <Title>Листовки</Title>
@@ -65,7 +65,7 @@ export function Flyers() {
           </div>
         </div>
         <div className="flyers__up _up">
-          <GoTop />
+          <GoToTop />
         </div>
       </div>
     </div>

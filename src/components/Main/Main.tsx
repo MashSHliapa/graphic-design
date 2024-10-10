@@ -1,10 +1,10 @@
 import { Services } from '../../pages/Services/Services'
-import { GoTop } from '../GoTop'
-import name from '../../images/name.png'
-import career from '../../images/career.png'
+import { GoToTop } from '../GoToTop/GoToTop'
+import name from '../../images/name.svg'
+import career from '../../images/career.svg'
 import photo from '../../images/main_photo.jpg'
 import myPhoto from '../../images/my_photo.jpg'
-import photoMobile from '../../images/photo_mobile.jpg'
+import photoMobile from '../../images/main_photo_mobile.jpg'
 import './Main.scss'
 
 export function Main() {
@@ -46,8 +46,8 @@ export function Main() {
         </div>
       </div>
       <Services />
-      <div className="post-stories__up _up">
-        <GoTop />
+      <div className="main__go-to-top _go-to-top">
+        <GoToTop />
       </div>
     </main>
   )

@@ -1,0 +1,53 @@
+.breadCrumbs {
+  font-family: 'Abel', sans-serif;
+  font-size: 14px;
+  line-height: 1.37;
+  color: #727272;
+  padding: 5px;
+  margin: 25px 5px 0px 0px;
+
+  @media screen and (max-width: 991.98px) {
+    font-size: 13px;
+  }
+
+  @media screen and (max-width: 767.98px) {
+    font-size: 11px;
+    margin: 5px 10px 0px 5px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  &__item_active {
+    color: #000000;
+    font-size: 15px;
+    text-transform: lowercase;
+
+    @media screen and (max-width: 991.98px) {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 767.98px) {
+      font-size: 12px;
+    }
+  }
+
+  &__slash {
+    padding: 0 7px;
+
+    @media screen and (max-width: 991.98px) {
+      padding: 0 5px;
+    }
+
+    @media screen and (max-width: 767.98px) {
+      padding: 0 4px;
+    }
+
+    @media screen and (max-width: 575.98px) {
+      padding: 0 3px;
+    }
+  }
+}

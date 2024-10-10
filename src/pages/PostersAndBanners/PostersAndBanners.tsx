@@ -1,9 +1,9 @@
 import { useSelector } from 'react-redux'
 import { RootState } from '../../redux/store'
 import { Post } from '../../components/Post'
-import { Breadcrumb } from '../../components/Breadcrumb'
+import { BreadCrumbs } from '../../components/BreadCrumbs/BreadCrumbs'
 import { Title } from '../../components/Title/Title'
-import { GoTop } from '../../components/GoTop'
+import { GoToTop } from '../../components/GoToTop/GoToTop'
 import { PostData } from '../../types/interfaces'
 import './PostersAndBanners.scss'
 
@@ -18,8 +18,8 @@ export function PostersAndBanners() {
     <div className="posters-banners">
       <div className="posters-banners__container _container">
         <div className="posters-banners__body">
-          <div className="flyers__breadcrumb">
-            <Breadcrumb>афиши и плакаты</Breadcrumb>
+          <div className="posters-banners__breadcrumb">
+            <BreadCrumbs>афиши и плакаты</BreadCrumbs>
           </div>
           <div className="posters-banners__posters posters">
             <div className="posters__title _title">
@@ -46,8 +46,8 @@ export function PostersAndBanners() {
             </ul>
           </div>
         </div >
-        <div className="posters__up _up">
-          <GoTop />
+        <div className="posters__go-to-top _go-to-top">
+          <GoToTop />
         </div>
       </div >
     </div >

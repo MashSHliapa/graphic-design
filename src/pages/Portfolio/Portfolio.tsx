@@ -1,9 +1,10 @@
 import { NavLink } from 'react-router-dom'
 import { useRef } from 'react'
 import { createPortfolioMenuScroll } from '../../helpers/createPortfolioMenuScroll.tsx'
-import { GoToMain } from '../../components/GoToMain/index.tsx'
+import { GoToMain } from '../../components/GoToMain/GoToMain.tsx'
 import { Title } from '../../components/Title/Title.tsx'
-import vector from '../../images/portfolio/vector_here.png'
+import { GoToTop } from '../../components/GoToTop/GoToTop.tsx'
+import vector from '../../icons/vector_here.svg'
 import flyer from '../../images/portfolio/flyer1.jpg'
 import cutaway from '../../images/portfolio/cutaway2.jpg'
 import notebook from '../../images/portfolio/notebook3.jpg'
@@ -110,6 +111,9 @@ export function Portfolio() {
         </ul>
         <div className="portfolio__go-to-main">
           <GoToMain />
+        </div>
+        <div className="portfolio__go-to-top _go-to-top">
+          <GoToTop />
         </div>
         <div className="portfolio__decor _decor"></div>
       </div>
