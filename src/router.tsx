@@ -1,7 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom'
 import { Layout } from './components/Layout/Layout'
 import { Flyers } from './pages/Flyers'
-import { Cutaways } from './pages/Сutaways'
+import { Cutaways } from './pages/Сutaways/Cutaways'
 import { DiplomasAndCertificates } from './pages/DiplomasAndCertificates'
 import { Portfolio } from './pages/Portfolio/Portfolio'
 import { Logo } from './pages/Logo'
@@ -9,7 +9,7 @@ import { Logo } from './pages/Logo'
 import { StickersAndTags } from './pages/StickersAndTags/StickersAndTags'
 import { InfographicsPostsStories } from './pages/InfographicsPostsStories/InfographicsPostsStories'
 import { PostersAndBanners } from './pages/PostersAndBanners/PostersAndBanners'
-import { NotebooksAndMenu } from './pages/NotebooksAndMenu'
+import { PriceMenuNotebooks } from './pages/PriceMenuNotebooks/PriceMenuNotebooks'
 import { Main } from './components/Main/Main'
 import { Prices } from './pages/Prices/Prices'
 
@@ -63,7 +63,7 @@ export const router = createBrowserRouter([
       },
       {
         path: '/portfolio/notebooks_and_menu',
-        element: <NotebooksAndMenu />
+        element: <PriceMenuNotebooks />
       },
     ]
   }

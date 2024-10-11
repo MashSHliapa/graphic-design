@@ -57,6 +57,32 @@ body {
   color: #000000;
 }
 
+@mixin breakpoint($size) {
+  @if $size == lg {
+    @media screen and (max-width: 1199.98px) {
+      @content;
+    }
+  }
+
+  @else if $size == md {
+    @media screen and (max-width: 991.98px) {
+      @content;
+    }
+  }
+
+  @else if $size == sm {
+    @media screen and (max-width: 767.98px) {
+      @content;
+    }
+  }
+
+  @else if $size == xs {
+    @media screen and (max-width: 575.98px) {
+      @content;
+    }
+  }
+}
+
 /////////////////////////////////////////////////////////////////////
 ._container {
   max-width: 1200px;

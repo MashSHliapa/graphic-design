@@ -1,18 +1,28 @@
-.cutaway {
-  &__container {}
+@import '../../components/Layout/Layout.scss';
 
-  &__body {}
-
-  &__title {
-    // margin: 40px 0; // посмотреть после
-  }
-
+.cutaways {
   &__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 58px;
+    gap: 20px;
+
+    @include breakpoint(xs) {
+      gap: 7px;
+    }
   }
 
-  &__item {}
+  &__list li {
+    @include breakpoint(lg) {
+      max-width: 300px;
+    }
+
+    @include breakpoint(sm) {
+      max-width: 230px;
+    }
+
+    @include breakpoint(xs) {
+      max-width: 130px;
+    }
+  }
 }

@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { logoReducer } from './logoSlice'
 import { cutawaysReducer } from './cutawaysSlice'
-import { notebooksAndMenuReducer } from './notebooksAndMenuSlice'
+import { priceMenuNotebooksReducer } from './priceMenuNotebooksSlice'
 import { flyersReducer } from './flyersSlice'
 import { diplomasAndCertificatesReducer } from './diplomasAndCertificatesSlice'
 import { infographicsPostsStoriesReducer } from './infographicsPostsStoriesSlice'
@@ -12,7 +12,7 @@ export const store = configureStore({
   reducer: {
     logo: logoReducer,
     cutaways: cutawaysReducer,
-    notebooksAndMenu: notebooksAndMenuReducer,
+    priceMenuNotebooks: priceMenuNotebooksReducer,
     flyers: flyersReducer,
     diplomasAndCertificates: diplomasAndCertificatesReducer,
     infographicsPostsStories: infographicsPostsStoriesReducer,
