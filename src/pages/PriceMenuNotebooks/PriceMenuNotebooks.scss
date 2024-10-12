@@ -22,11 +22,11 @@ $mw130: 130px;
     }
 
     @include breakpoint(sm) {
-      gap: 15px;
+      gap: 10px;
     }
 
     @include breakpoint(xs) {
-      gap: 10px;
+      gap: 5px;
     }
   }
 }

@@ -1,37 +1,101 @@
-.diplomas-certificates {
-  &__container {}
+@import '../../components/Layout/Layout.scss';
+$mw270: 270px;
+$mw225: 225px;
+$mw130: 130px;
 
-  &__body {}
+.diplomas,
+.certificates {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+    @include breakpoint(md) {
+      gap: 15px;
+    }
+
+    @include breakpoint(sm) {
+      gap: 10px;
+    }
+
+    @include breakpoint(xs) {
+      gap: 5px;
+    }
+  }
 }
 
 .diplomas {
+  &__list li {
+    @include breakpoint(lg) {
+      max-width: $mw270;
+    }
 
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px 30px;
+    @include breakpoint(md) {
+      max-width: $mw225;
+    }
+
+    @include breakpoint(sm) {
+      max-width: 180px;
+    }
+
+    @include breakpoint(xs) {
+      max-width: $mw130;
+    }
   }
-
-  &__item {}
 }
 
 .certificates {
-  &__title {
-    // margin: 40px 0;
-  }
-
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px 30px;
+    @include breakpoint(sm) {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    @include breakpoint(xs) {
+      max-width: 390px;
+    }
   }
 
-  &__item {}
-}
+  &__list li:nth-child(-n+3) {
+    @include breakpoint(lg) {
+      max-width: $mw270;
+    }
 
-.green-and {
-  color: #05921C;
-  font-family: 'Great Vibes', cursive;
+    @include breakpoint(md) {
+      max-width: $mw225;
+    }
+
+    @include breakpoint(sm) {
+      max-width: 200px;
+    }
+
+    @include breakpoint(xs) {
+      max-width: $mw130;
+    }
+  }
+
+  &__list li:nth-last-child(-n+4) {
+    @include breakpoint(lg) {
+      max-width: 420px;
+    }
+
+    @include breakpoint(md) {
+      max-width: 335px;
+    }
+
+    @include breakpoint(sm) {
+      max-width: 250px;
+    }
+
+    @include breakpoint(xs) {
+      max-width: $mw130;
+    }
+  }
+
+  &__list li:nth-child(2) {
+    @include breakpoint(sm) {
+      display: none;
+    }
+  }
 }

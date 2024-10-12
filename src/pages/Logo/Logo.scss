@@ -1,17 +1,37 @@
+@import '../../components/Layout/Layout.scss';
+
 .logo {
-  &__container {}
-
-  &__body {
-    text-align: center;
-  }
-
-  &__title {}
-
   &__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 26px;
+    gap: 20px;
+
+    @include breakpoint(md) {
+      gap: 14px;
+    }
+
+    @include breakpoint(sm) {
+      gap: 10px;
+    }
+
+    @include breakpoint(xs) {
+      gap: 5px;
+    }
+  }
+
+  &__list li {
+    @include breakpoint(md) {
+      max-width: 230px;
+    }
+
+    @include breakpoint(sm) {
+      max-width: 180px;
+    }
+
+    @include breakpoint(xs) {
+      max-width: 130px;
+    }
   }
 }
