@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom'
 import { Layout } from './components/Layout/Layout'
-import { Flyers } from './pages/Flyers'
+import { Flyers } from './pages/Flyers/Flyers'
 import { Cutaways } from './pages/Сutaways/Cutaways'
 import { DiplomasAndCertificates } from './pages/DiplomasAndCertificates/DiplomasAndCertificates'
 import { Portfolio } from './pages/Portfolio/Portfolio'

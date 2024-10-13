@@ -1,111 +1,96 @@
+@import '../../components/Layout/Layout.scss';
+
 .flyers {
-  &__container {}
-
-  &__body {}
-
-  &__title {}
-
   &__list {
     display: grid;
     justify-content: center;
-    grid-template-columns: 430px 430px;
-    grid-column-gap: 40px;
-    grid-row-gap: 20px;
-    grid-template-areas: "a1 a2"
-      "a3 b"
-      "a4 b"
-      "a4 s"
-      "a4 a6"
-      "a5 a6"
-      "a7 a6"
-      "a7 a8";
-  }
-
-  &__item1 {
-    grid-area: a1;
-  }
-
-  &__item2 {
-    grid-area: a2;
+    grid-template-rows: 408px 12px 363px 0px 27px 347px 16px 155px;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 15px;
   }
 
   &__item3 {
-    grid-area: a3;
+    grid-area: 1/3/3/4;
   }
 
   &__item4 {
-    grid-area: a4;
-  }
-
-  &__item5 {
-    grid-area: a5;
-  }
-
-  &__item5 img {
-    min-height: 510px;
-    max-width: 430px;
+    grid-area: 2/1/5/2;
   }
 
   &__item6 {
-    grid-area: a6;
+    grid-area: 3/3/6/4;
   }
 
   &__item7 {
-    grid-area: a7;
+    grid-area: 5/1/8/2;
   }
 
   &__item8 {
-    grid-area: a8;
+    grid-area: 4/2/8/3;
   }
 
-  &__item-big {
-    grid-area: b;
+  &__item9 {
+    grid-area: 6/3/7/4;
+
   }
 
-  &__item-small {
-    grid-area: s;
+  &__item10 {
+    grid-area: 7/3/10/4;
   }
 
-  @media screen and (max-width: 1199.98px) {
+  @include breakpoint(md) {
     &__list {
-      grid-template-columns: 380px 380px;
-      grid-column-gap: 30px;
+      grid-template-rows: 272px 2px 243px 0px 8px 231px 8px 100px;
+      grid-template-columns: 200px 200px 200px;
     }
 
-    &__item5 img {
-      min-height: 100%;
-      max-width: 100%;
-    }
-  }
-
-  @media screen and (max-width: 991.98px) {
-    &__list {
-      grid-template-columns: 280px 280px;
-      grid-column-gap: 20px;
+    &__item7 {
+      margin-top: -6px;
     }
   }
 
-  @media screen and (max-width: 767.98px) {
+  @include breakpoint(sm) {
     &__list {
-      grid-template-columns: 320px 0px;
-      grid-column-gap: 0px;
-      grid-template-areas: "a1"
-                           "a2"
-                           "a3"
-                           "a4"
-                           "a5"
-                           "a6"
-                           "a7"
-                           "a8"
-                           "s"
-                           "b";
+      grid-template-rows: 273px 260px 294px 91px 166px 48px 232px;
+      grid-template-columns: 200px 200px;
+    }
+
+    &__item3 {
+      grid-area: 6/1/8/2;
+    }
+
+    &__item6 {
+      grid-area: 3/1/4/2;
+      margin-top: 8px;
+    }
+
+    &__item7 {
+      grid-area: 4/1/6/2;
+    }
+
+    &__item8 {
+      grid-area: 3/2/5/3;
+    }
+
+    &__item9 {
+      grid-area: 5/2/7/3;
+    }
+
+    &__item10 {
+      grid-area: 7/2/8/3;
     }
   }
 
-  @media screen and (max-width: 575.98px) {
+  @include breakpoint(xs) {
     &__list {
-      grid-template-columns: 260px 0px;
-      grid-row-gap: 25px;
+      grid-template-rows: 179px 171px 196px 61px 110px 36px 147px;
+      grid-template-columns: 130px 130px;
+      grid-column-gap: 7px;
+      grid-row-gap: 5px;
+    }
+
+    &__item6 {
+      margin-top: 5px;
     }
   }
 }
