@@ -1,3 +1,5 @@
+@import '../../components/Layout/Layout.scss';
+
 .portfolio {
   &__section {
     max-width: 1200px;
@@ -10,17 +12,17 @@
     margin: 33px 0 30px;
     padding: 0px 110px;
 
-    @media screen and (max-width: 991.98px) {
+    @include breakpoint(md) {
       margin: 30px 0 15px;
       padding: 0px 70px;
     }
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       font-size: 25px;
       margin: 5px 0 8px;
     }
 
-    @media screen and (max-width: 575.98px) {
+    @include breakpoint(xs) {
       padding: 0;
     }
   }
@@ -29,12 +31,12 @@
     font-size: 60px;
     margin-bottom: 5px;
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       font-size: 35px;
       margin-bottom: 5px;
     }
 
-    @media screen and (max-width: 575.98px) {
+    @include breakpoint(xs) {
       font-size: 20px;
       padding: 0 50px 0 5px;
     }
@@ -44,19 +46,19 @@
     letter-spacing: 1.5px;
     position: relative;
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       font-size: 14px;
       line-height: 1.12;
     }
 
-    @media screen and (max-width: 575.98px) {
+    @include breakpoint(xs) {
       font-size: 12px;
       text-align: end;
       padding: 15px 55px 15px 5px;
     }
   }
 
-  @media screen and (max-width: 575.98px) {
+  @include breakpoint(xs) {
 
     &__text::before,
     &__text::after {
@@ -65,18 +67,12 @@
       top: 0;
       left: 0;
       z-index: -1;
-      width: 100vw;
+      width: calc(100vw - 32px);
       height: 100%;
       background: #ECECEC;
     }
 
     &__text::before {
-      margin-left: -100vw;
-      transform: translate(100%, 0);
-    }
-
-    &__text::after {
-      margin-right: -100vw;
       transform: translate(-100%, 0);
     }
   }
@@ -86,7 +82,7 @@
     font-size: 35px;
     margin: 37px 0 25px;
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       font-size: 17px;
       margin: 15px 0;
     }
@@ -97,21 +93,22 @@
     bottom: 170px;
     right: 1230px;
     z-index: -1;
-    width: 200vh;
+    width: 100%;
     height: 100px;
+    background-color: #FF3D00;
 
-    @media screen and (max-width: 1199.98px) {
+    @include breakpoint(lg) {
       bottom: 150px;
       right: 910px;
       height: 60px;
     }
 
-    @media screen and (max-width: 991.98px) {
+    @include breakpoint(md) {
       right: 800px;
     }
   }
 
-  @media screen and (max-width: 767.98px) {
+  @include breakpoint(sm) {
     &__vector-here img {
       max-width: 18px;
     }
@@ -120,11 +117,11 @@
   &__go-to-main {
     margin: 25px 0;
 
-    @media screen and (max-width: 991.98px) {
-      margin: 26px 0 29px;
+    @include breakpoint(md) {
+      margin: 27px 0;
     }
 
-    @media screen and (max-width: 575.98px) {
+    @include breakpoint(xs) {
       margin: 15px 0;
     }
   }
@@ -132,7 +129,7 @@
   &__go-to-top {
     display: none;
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       display: block;
     }
   }
@@ -144,11 +141,11 @@
   justify-content: center;
   margin: 0 auto;
 
-  @media screen and (max-width: 991.98px) {
+  @include breakpoint(md) {
     gap: 5px;
   }
 
-  @media screen and (max-width: 575.98px) {
+  @include breakpoint(xs) {
     gap: 3px;
   }
 
@@ -160,10 +157,21 @@
         display: block;
       }
     }
+
+    @include breakpoint(md) {
+      max-width: 300px;
+    }
+
+    @include breakpoint(sm) {
+      max-width: 265px;
+    }
+
+    @include breakpoint(xs) {
+      max-width: 145px;
+    }
   }
 
   &__menu {
-    display: none;
     max-width: 100%;
     padding: 12px 17px 10px;
     text-align: center;
@@ -173,44 +181,44 @@
     z-index: 1;
     transform: translate(-50%, -50%);
 
-    @media screen and (max-width: 575.98px) {
+    @include breakpoint(xs) {
       padding: 12px 5px 10px;
     }
   }
 
-  &__menu-item {
+  &__title {
     font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 600;
 
-    @media screen and (max-width: 991.98px) {
+    @include breakpoint(md) {
       color: white;
     }
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       font-size: 25px;
     }
 
-    @media screen and (max-width: 575.98px) {
+    @include breakpoint(xs) {
       font-size: 15px;
       letter-spacing: 0px;
     }
   }
 
-  &__menu-item_reduce {
+  &__title_reduce {
     font-size: 24px;
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       font-size: 17px;
     }
 
-    @media screen and (max-width: 575.98px) {
+    @include breakpoint(xs) {
       font-size: 13px;
     }
   }
 
-  &__menu-item:hover {
+  &__title:hover {
     color: white;
   }
 
@@ -225,7 +233,7 @@
     opacity: 0.8;
     transition: all .8s ease;
 
-    @media screen and (max-width: 991.98px) {
+    @include breakpoint(md) {
       height: 100%;
       background-color: #040404;
     }
@@ -239,19 +247,5 @@
   &__and {
     display: block;
     padding: 3px;
-  }
-
-  &__item {
-    @media screen and (max-width: 991.98px) {
-      max-width: 300px;
-    }
-
-    @media screen and (max-width: 767.98px) {
-      max-width: 265px;
-    }
-
-    @media screen and (max-width: 575.98px) {
-      max-width: 145px;
-    }
   }
 }

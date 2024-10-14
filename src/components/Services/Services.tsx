@@ -25,19 +25,19 @@ export function Services() {
                       <NavLink to="/portfolio/cutaways" target="_top" className="services__link" >Визитки</NavLink>
                     </li>
                     <li className="services__item">
-                      <NavLink to="/portfolio/notebooks_and_menu" target="_top" className="services__link"> Прайс, МЕНЮ, БЛОКНОТЫ</NavLink>
+                      <NavLink to="/portfolio/price_menu_notebooks" target="_top" className="services__link"> Прайс, МЕНЮ, БЛОКНОТЫ</NavLink>
                     </li>
                     <li className="services__item">
-                      <NavLink to="/portfolio/notebooks_and_menu" target="_top" className="services__link">ДИПЛОМЫ & БЛАГОДАРНОСТИ<br /> СЕРТИФИКАТЫ & Пригласительные</NavLink>
+                      <NavLink to="/portfolio/diplomas_certificates" target="_top" className="services__link">ДИПЛОМЫ & БЛАГОДАРНОСТИ<br /> СЕРТИФИКАТЫ & Пригласительные</NavLink>
                     </li>
                     <li className="services__item">
-                      <NavLink to="/portfolio/diplomas_and_certificates" className="services__link" target="_top"> ПЛАКАТЫ & АФИШИ, БАННЕРЫ</NavLink>
+                      <NavLink to="/portfolio/posters_banners" className="services__link" target="_top"> ПЛАКАТЫ & АФИШИ, БАННЕРЫ</NavLink>
                     </li>
                     <li className="services__item">
-                      <NavLink to="/portfolio/stickers_and_tags" className="services__link" target="_top">СТИКЕРЫ & БИРКИ</NavLink>
+                      <NavLink to="/portfolio/stickers_tags" className="services__link" target="_top">СТИКЕРЫ & БИРКИ</NavLink>
                     </li>
                     <li className="services__item">
-                      <NavLink to="/portfolio/posts_and_stories" className="services__link" target="_top"> ИНФОРГАФИКА, ПОСТ & СТОРИС</NavLink>
+                      <NavLink to="/portfolio/infographics_posts_stories" className="services__link" target="_top"> ИНФОРГАФИКА, ПОСТ & СТОРИС</NavLink>
                     </li>
                     <li className="services__item">
                       <NavLink to="/portfolio/logo" className="services__link" target="_top"> ЛОГОТИПЫ</NavLink>

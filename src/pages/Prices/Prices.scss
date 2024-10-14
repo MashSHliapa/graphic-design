@@ -1,9 +1,11 @@
+@import '../../components/Layout/Layout.scss';
+
 .prices {
   &__body {
     position: relative;
     margin-top: 15px;
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       margin-top: 0px;
     }
   }
@@ -11,7 +13,7 @@
   &__profile {
     display: flex;
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       flex-direction: column;
     }
   }
@@ -19,7 +21,7 @@
   &__image {
     flex: 0 1 44%;
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       flex: 0 1 100%;
       order: 2;
     }
@@ -32,11 +34,11 @@
   &__data {
     padding-top: 20px;
 
-    @media screen and (max-width: 991.98px) {
+    @include breakpoint(md) {
       padding-top: 35px;
     }
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       padding: 25px 0 16px;
     }
   }
@@ -45,11 +47,11 @@
     font-weight: 700;
     margin: 66px 0 35px;
 
-    @media screen and (max-width: 991.98px) {
+    @include breakpoint(md) {
       margin: 40px 0 30px;
     }
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       margin: 25px 0 20px;
     }
   }
@@ -61,11 +63,11 @@
     margin: 0 auto;
     padding: 0 5px;
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       font-size: 19px;
     }
 
-    @media screen and (max-width: 575.98px) {
+    @include breakpoint(xs) {
       font-size: 17px;
     }
   }
@@ -75,20 +77,20 @@
     text-indent: 40px;
     padding: 0 100px;
 
-    @media screen and (max-width: 1199.98px) {
+    @include breakpoint(lg) {
       text-indent: 0px;
       padding: 0 60px;
     }
 
-    @media screen and (max-width: 991.98px) {
+    @include breakpoint(md) {
       padding: 0 30px;
     }
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       padding: 0 20px;
     }
 
-    @media screen and (max-width: 575.98px) {
+    @include breakpoint(xs) {
       padding: 0 0px;
     }
   }
@@ -98,22 +100,22 @@
     margin: 45px 0 55px;
     padding: 0 20px 0 190px;
 
-    @media screen and (max-width: 1199.98px) {
+    @include breakpoint(lg) {
       padding: 0 50px 0 100px;
     }
 
-    @media screen and (max-width: 991.98px) {
+    @include breakpoint(md) {
       margin: 45px 0 50px;
       padding: 0 50px 0 70px;
     }
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       text-align: center;
       margin: 30px 0 30px;
       padding: 0 30px 0 30px;
     }
 
-    @media screen and (max-width: 575.98px) {
+    @include breakpoint(xs) {
       padding: 0;
     }
   }
@@ -131,19 +133,19 @@
   &__text-attention {
     padding: 0 80px;
 
-    @media screen and (max-width: 1199.98px) {
+    @include breakpoint(lg) {
       padding: 0 50px;
     }
 
-    @media screen and (max-width: 991.98px) {
+    @include breakpoint(md) {
       padding: 0 30px;
     }
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       padding: 0 20px;
     }
 
-    @media screen and (max-width: 575.98px) {
+    @include breakpoint(xs) {
       line-height: 1.6;
       padding: 0;
     }
@@ -174,11 +176,11 @@
     justify-content: center;
     margin-top: 25px;
 
-    @media screen and (max-width: 991.98px) {
+    @include breakpoint(md) {
       margin-top: 50px;
     }
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       margin-top: 25px;
     }
   }
@@ -186,11 +188,11 @@
   &__go-to-main {
     margin: 45px 0 45px;
 
-    @media screen and (max-width: 991.98px) {
+    @include breakpoint(md) {
       margin: 30px 0 30px;
     }
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       margin: 30px 0 20px;
     }
   }
@@ -198,7 +200,7 @@
   &__go-to-top {
     display: none;
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       display: block;
     }
   }
@@ -211,7 +213,7 @@
     font-size: 20px;
     padding: 28px 18px;
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       gap: 8px;
       font-size: 16px;
       padding: 15px 17px;

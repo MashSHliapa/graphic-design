@@ -1,4 +1,4 @@
-import { Services } from '../../pages/Services/Services'
+import { Services } from '../Services/Services'
 import { GoToTop } from '../GoToTop/GoToTop'
 import name from '../../images/name.svg'
 import career from '../../images/career.svg'
@@ -36,7 +36,7 @@ export function Main() {
                 Обучалась дизайну в СГУ<br />
                 Работала в редакции газеты и в рекламном агентстве 8 лет.<br />
                 В дизайне с 2012 года<br />
-                Владею программами:  CorelDraw, Photoshop, InDesign, Figma, Illustrator.
+                Владею программами: Photoshop, InDesign, Figma, Illustrator, CorelDraw.
               </p>
             </div>
             <div className="about__my-photo">

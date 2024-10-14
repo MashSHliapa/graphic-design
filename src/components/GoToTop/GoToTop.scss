@@ -1,3 +1,5 @@
+@import '../Layout/Layout.scss';
+
 .go-to-top {
   &__box {
     display: flex;
@@ -7,13 +9,13 @@
     max-width: 80px;
     margin: 0 auto;
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       display: none;
     }
   }
 
   &__image {
-    @media screen and (max-width: 991.98px) {
+    @include breakpoint(md) {
       max-width: 18px;
     }
   }
@@ -24,7 +26,7 @@
     letter-spacing: 2px;
     line-height: 2;
 
-    @media screen and (max-width: 991.98px) {
+    @include breakpoint(md) {
       font-size: 16px;
     }
   }
@@ -34,11 +36,11 @@
   }
 
   &__green-button._active {
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       display: block;
       position: fixed;
       top: 50%;
-      left: 15px;
+      right: 15px;
       z-index: 50;
       transform: translate(0, -50%);
       cursor: pointer;

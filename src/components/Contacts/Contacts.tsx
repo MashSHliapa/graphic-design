@@ -10,7 +10,7 @@ export function Contacts() {
         <h5 className="contacts__title">Контактная информация</h5>
         <div className="contacts__data">
           <div className="contacts__phone">+375 29 859 71 18 </div>
-          <div className="contacts__email">levkova.alena81@gmail.com </div>
+          <div className="contacts__email">kb3399281@gmail.com </div>
         </div>
         <div className="contacts__extra-data">
           <h5 className="contacts__title">Дополнительные способы для
