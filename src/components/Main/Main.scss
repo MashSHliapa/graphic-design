@@ -1,7 +1,9 @@
+@import '../Layout/Layout.scss';
+
 .main {
   padding-top: 25px;
 
-  @media screen and (max-width: 991.98px) {
+  @include breakpoint(md) {
     padding-top: 20px;
   }
 
@@ -13,14 +15,14 @@
     display: flex;
     gap: 45px;
 
-    @media screen and (max-width: 991.98px) {
+    @include breakpoint(md) {
       justify-content: space-between;
       gap: 0px;
       max-width: 750px;
       margin-right: 75px;
     }
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       flex-direction: column;
       justify-content: center;
       margin-right: 0;
@@ -31,16 +33,16 @@
   &__image {
     opacity: 0.9;
 
-    @media screen and (max-width: 1199.98px) {
+    @include breakpoint(lg) {
       flex: 0 1 46%;
       max-width: 483px;
     }
 
-    @media screen and (max-width: 991.98px) {
+    @include breakpoint(md) {
       flex: 0 1 44%;
     }
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       display: none;
     }
   }
@@ -48,7 +50,7 @@
   &__image-mobile {
     display: none;
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       display: block;
       order: 2;
     }
@@ -64,17 +66,17 @@
   align-items: end;
   margin-left: 380px;
 
-  @media screen and (max-width: 1199.98px) {
+  @include breakpoint(lg) {
     margin-left: 350px;
   }
 
-  @media screen and (max-width: 991.98px) {
+  @include breakpoint(md) {
     top: 12px;
     right: 100px;
     margin-left: 250px;
   }
 
-  @media screen and (max-width: 767.98px) {
+  @include breakpoint(sm) {
     position: static;
     top: auto;
     right: auto;
@@ -85,30 +87,30 @@
     margin-left: 0;
   }
 
-  @media screen and (max-width: 575.98px) {
+  @include breakpoint(xs) {
     margin-right: 65px;
   }
 
   &__name {
     padding-bottom: 25px;
 
-    @media screen and (max-width: 1199.98px) {
+    @include breakpoint(lg) {
       max-width: 350px;
     }
 
-    @media screen and (max-width: 991.98px) {
+    @include breakpoint(md) {
       max-width: 250px;
       padding-bottom: 15px;
     }
 
-    @media screen and (max-width: 575.98px) {
+    @include breakpoint(xs) {
       max-width: 220px;
       margin-left: 65px;
     }
   }
 
   &__career {
-    @media screen and (max-width: 991.98px) {
+    @include breakpoint(md) {
       max-width: 517px;
     }
   }
@@ -119,7 +121,7 @@
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 767.98px) {
+  @include breakpoint(sm) {
     order: 2;
     align-self: flex-start;
   }
@@ -130,20 +132,20 @@
     align-items: center;
     padding-left: 20px;
 
-    @media screen and (max-width: 1199.98px) {
+    @include breakpoint(lg) {
       max-width: 250px;
     }
 
-    @media screen and (max-width: 991.98px) {
+    @include breakpoint(md) {
       max-width: 230px;
       padding-left: 15px;
     }
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       max-width: 350px;
     }
 
-    @media screen and (max-width: 575.98px) {
+    @include breakpoint(xs) {
       max-width: 240px;
       padding-left: 8px;
     }
@@ -154,16 +156,16 @@
     width: 5px;
     margin-right: 15px;
 
-    @media screen and (max-width: 1199.98px) {
+    @include breakpoint(lg) {
       height: 198px;
     }
 
-    @media screen and (max-width: 991.98px) {
+    @include breakpoint(md) {
       height: 155px;
       margin-right: 10px;
     }
 
-    @media screen and (max-width: 575.98px) {
+    @include breakpoint(xs) {
       height: 138px;
     }
   }
@@ -171,20 +173,20 @@
   &__text {
     max-width: 335px;
 
-    @media screen and (max-width: 1199.98px) {
+    @include breakpoint(lg) {
       font-size: 16px;
       line-height: 1.1;
     }
 
-    @media screen and (max-width: 991.98px) {
+    @include breakpoint(md) {
       font-size: 14px;
     }
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       line-height: 1.25;
     }
 
-    @media screen and (max-width: 575.98px) {
+    @include breakpoint(xs) {
       font-size: 12px;
       line-height: 1.05;
     }
@@ -194,25 +196,25 @@
     color: #05921C;
     line-height: 1.18;
 
-    @media screen and (max-width: 1199.98px) {
+    @include breakpoint(lg) {
       font-size: 18px;
     }
 
-    @media screen and (max-width: 991.98px) {
+    @include breakpoint(md) {
       font-size: 15px;
     }
 
-    @media screen and (max-width: 575.98px) {
+    @include breakpoint(xs) {
       font-size: 14px;
     }
   }
 
   &__my-photo {
-    @media screen and (max-width: 991.98px) {
+    @include breakpoint(md) {
       width: 100px;
     }
 
-    @media screen and (max-width: 575.98px) {
+    @include breakpoint(xs) {
       min-width: 90px;
       max-width: 90px;
     }

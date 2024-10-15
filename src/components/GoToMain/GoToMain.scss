@@ -1,3 +1,5 @@
+@import '../Layout/Layout.scss';
+
 .go-to-main {
   &__body {
     display: flex;
@@ -9,7 +11,7 @@
   }
 
   &__body img {
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       width: 15px;
     }
   }
@@ -20,12 +22,12 @@
     padding-top: 10px;
     letter-spacing: 1.5px;
 
-    @media screen and (max-width: 991.98px) {
+    @include breakpoint(md) {
       font-size: 17px;
       padding-top: 7px;
     }
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       font-size: 15px;
       padding-top: 5px;
       letter-spacing: 1.1px;

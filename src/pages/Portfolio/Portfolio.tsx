@@ -48,14 +48,14 @@ export function Portfolio() {
           <NavLink to="/portfolio/price_menu_notebooks" target="_top" className="gallery__item">
             <img src={notebook} alt="notebook" />
             <div className="gallery__menu">
-              <div className="gallery__title">ПРАЙС БЛОКНОТЫ МЕНЮ</div>
+              <div className="gallery__title">ПРАЙС<br /> БЛОКНОТЫ<br /> МЕНЮ</div>
             </div>
           </NavLink>
           <NavLink to="/portfolio/diplomas_certificates" target="_top" className="gallery__item" >
             <img src={diploma} alt="diploma" />
             <div className="gallery__menu">
               <div className="gallery__title gallery__title_reduce">
-                ДИПЛОМЫ БЛАГОДАРНОСТИ <span className='gallery__and'>&</span> СЕРТИФИКАТЫ пригласительные
+                ДИПЛОМЫ<br /> БЛАГОДАРНОСТИ <span className='gallery__and'>&</span> СЕРТИФИКАТЫ<br /> пригласительные
               </div>
             </div>
           </NavLink>
@@ -63,7 +63,7 @@ export function Portfolio() {
             <img src={bord} alt="bord" />
             <div className="gallery__menu">
               <div className="gallery__title">
-                АФИШИ <span className='gallery__and'>&</span> ПЛАКАТЫ баннеры
+                АФИШИ <span className='gallery__and'>&</span> ПЛАКАТЫ<br /> баннеры
               </div>
             </div>
           </NavLink>
@@ -79,7 +79,7 @@ export function Portfolio() {
             <img src={post} alt="post" />
             <div className="gallery__menu">
               <div className="gallery__title">
-                инфографика ПОСТ <span className='gallery__and'>&</span> СТОРИС
+                инфографика<br /> ПОСТ <span className='gallery__and'>&</span> СТОРИС
               </div>
             </div>
           </NavLink>

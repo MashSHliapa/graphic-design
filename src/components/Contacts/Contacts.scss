@@ -1,3 +1,5 @@
+@import '../Layout/Layout.scss';
+
 .contacts {
   &__body {
     text-align: center;
@@ -10,11 +12,11 @@
     line-height: 1.27;
     color: #808080;
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       font-size: 16px;
     }
 
-    @media screen and (max-width: 575.98px) {
+    @include breakpoint(xs) {
       margin-bottom: 12px;
     }
   }
@@ -23,7 +25,7 @@
     font-size: 25px;
     line-height: 1.18;
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       font-size: 20px;
     }
   }
@@ -31,7 +33,7 @@
   &__email {
     margin: 10px 0 25px;
 
-    @media screen and (max-width: 575.98px) {
+    @include breakpoint(xs) {
       margin: 10px 0 20px;
       font-size: 19px;
     }

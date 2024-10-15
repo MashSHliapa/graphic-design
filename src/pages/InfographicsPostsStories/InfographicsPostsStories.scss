@@ -1,3 +1,5 @@
+@import '../../components/Layout/Layout.scss';
+
 .infographics {
   &__list {
     display: flex;
@@ -8,22 +10,22 @@
     max-width: 945px;
     margin: 0 auto;
 
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       gap: 15px;
       max-width: 600px;
     }
 
-    @media screen and (max-width: 575.98px) {
+    @include breakpoint(xs) {
       gap: 5px;
     }
   }
 
   &__list li {
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       max-width: 150px;
     }
 
-    @media screen and (max-width: 575.98px) {
+    @include breakpoint(xs) {
       max-width: 130px;
     }
   }
@@ -79,7 +81,7 @@
     grid-area: 7/3/12/4;
   }
 
-  @media screen and (max-width: 1199.98px) {
+  @include breakpoint(lg) {
     &__list {
       grid-template-rows: 270px 210px 45px 220px 200px 32px 60px 80px;
       grid-template-columns: repeat(3, 270px);
@@ -87,7 +89,7 @@
     }
   }
 
-  @media screen and (max-width: 991.98px) {
+  @include breakpoint(md) {
     &__list {
       grid-template-rows: 230px 170px 45px 175px 167px 37px;
       grid-template-columns: repeat(3, 230px);
@@ -95,7 +97,7 @@
     }
   }
 
-  @media screen and (max-width: 767.98px) {
+  @include breakpoint(sm) {
     &__list li {
       max-width: 200px;
     }
@@ -146,7 +148,7 @@
     }
   }
 
-  @media screen and (max-width: 575.98px) {
+  @include breakpoint(xs) {
     &__list li {
       max-width: 140px;
     }
