@@ -32,19 +32,19 @@ export function Prices() {
             <h4 className="prices__text">Заказы просчитываются индивидуально в соответствии с Вашими пожеланиями. Для этого пришлите мне ТЗ (техническое задание) в произвольной форме.</h4>
             <ul className="prices__list">
               <li className="prices__item">
-                Где Вам необходимо обозначить вид и размер макета.
+                Где вам необходимо обозначить вид <span className="prices__reduced">(например листовки, визитки, баннеры...)</span>, размер макета и его ориентацию <span className="prices__reduced">(горизонтальный или вертикальный)</span>.
               </li>
               <li className="prices__item">
                 Предоставить текстовую информацию в Word.</li>
               <li className="prices__item">
                 Предоставить графические элементы, если необходимо их использовать в макете (при их наличии).</li>
               <li className="prices__item">
-                Указать дополнительные пожелания по оформлению или предоставить примеры (референсы) того, что Вам нравиться.
+                Указать дополнительные пожелания по оформлению или предоставить примеры <span className="prices__reduced">(референсы)</span> того, что Вам нравиться.
               </li>
             </ul>
             <h4 className="prices__text-attention">
-              <span className="prices__attention">Важно!</span> Принимаю текст с четким, согласованным текстом! <br />
-              <span className="prices__attention">Важно!</span> Все изменения текста <span className="prices__note">и/или </span>добавления информации, которой не было в ТЗ, оплачиваются отдельно.<br />
+              <span className="prices__attention">Важно!</span> Принимаю информацию с четким, согласованным текстом! <br />
+              <span className="prices__attention">Важно!</span> Все изменения текста <span className="note">и/или </span>добавления информации, которой не было в ТЗ, оплачиваются отдельно.<br />
               Подготовленное ТЗ нужно выслать мне на
               <span className="prices__viber">
                 <a href="viber://chat?number=%2B375298597118" target="_blank"> Viber</a>
@@ -54,7 +54,8 @@ export function Prices() {
               </span> или в
               <span className="prices__whatsapp">
                 <a href="https://api.whatsapp.com/send?phone=375298597118" target="_blank"> Whatsapp</a>
-              </span>.
+              </span>. <br />
+              *Если остались вопросы, Вы можете связаться со мной.
             </h4>
             <div className="prices__button-wrapper button">
               <a href="tel:+375298597118" className="button__button _button" target="_blank">

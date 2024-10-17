@@ -151,12 +151,20 @@
     }
   }
 
-  &__attention {
-    text-decoration: underline;
+  &__reduced {
+    font-size: 25px;
+
+    @include breakpoint(sm) {
+      font-size: 16px;
+    }
+
+    @include breakpoint(xs) {
+      font-size: 14px;
+    }
   }
 
-  &__note {
-    white-space: nowrap;
+  &__attention {
+    text-decoration: underline;
   }
 
   &__viber {
@@ -175,7 +183,6 @@
     display: flex;
     justify-content: center;
     margin-top: 25px;
-    // border: #360592 2px solid;
 
     @include breakpoint(md) {
       margin-top: 50px;

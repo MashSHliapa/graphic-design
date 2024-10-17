@@ -133,7 +133,7 @@
     padding-left: 20px;
 
     @include breakpoint(lg) {
-      max-width: 250px;
+      max-width: 255px;
     }
 
     @include breakpoint(md) {
@@ -192,7 +192,7 @@
     }
   }
 
-  &__text span {
+  &__text-green {
     color: #05921C;
     line-height: 1.18;
 
