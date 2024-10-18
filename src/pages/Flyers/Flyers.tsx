@@ -1,30 +1,33 @@
-import { useSelector } from 'react-redux'
-// import { useEffect } from 'react'
-// import { AnyAction, ThunkDispatch } from '@reduxjs/toolkit'
-// import { fetchFlyers } from '../../redux/flyersSlice'
-import { Post } from '../../components/Post'
-import { Title } from '../../components/Title/Title'
-import { GoToTop } from '../../components/GoToTop/GoToTop'
-import { BreadCrumbs } from '../../components/BreadCrumbs/BreadCrumbs'
-import { RootState } from '../../redux/store'
-import { PostData } from '../../types/interfaces'
-import './Flyers.scss'
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { AnyAction, ThunkDispatch } from '@reduxjs/toolkit';
+import { fetchFlyers } from '../../redux/flyersSlice';
+import { RootState } from '../../redux/store';
+import { Post } from '../../components/Post';
+import { BreadCrumbs } from '../../components/BreadCrumbs/BreadCrumbs';
+import { Title } from '../../components/Title/Title';
+import { GoToTop } from '../../components/GoToTop/GoToTop';
+import { DataResponse, PostData } from '../../types/interfaces';
+import './Flyers.scss';
 
 export function Flyers() {
-  const { data: posts } = useSelector((state: RootState) => state.flyers)
+  const { data: posts, loading, error } = useSelector((state: RootState) => state.flyers);
+  const dispatch = useDispatch<ThunkDispatch<DataResponse, null, AnyAction>>();
 
-  // const dispatch = useDispatch<ThunkDispatch<DataResponse, null, AnyAction>>()
-  // useEffect(() => {
-  //   dispatch(fetchFlyers())
-  // }, [dispatch])
-  // if (loading) {
-  //   return <div>Loading...</div>
-  // }
-  // if (error) {
-  //   return <div className="text-danger">{error}</div>
-  // }
+  useEffect(() => {
+    dispatch(fetchFlyers());
+  }, [dispatch]);
+  0;
 
-  const flyers = posts.map((item: PostData) => <Post key={item.id} post={item} />)
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div className="text-danger">{error}</div>;
+  }
+
+  const flyers = posts.map((item: PostData) => <Post key={item.id} post={item} />);
 
   return (
     <div className="flyers">
@@ -47,5 +50,5 @@ export function Flyers() {
         </div>
       </div>
     </div>
-  )
+  );
 }
