@@ -17,7 +17,6 @@ export function Flyers() {
   useEffect(() => {
     dispatch(fetchFlyers());
   }, [dispatch]);
-  0;
 
   if (loading) {
     return <div>Loading...</div>;
