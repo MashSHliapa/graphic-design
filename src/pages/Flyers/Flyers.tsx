@@ -2,11 +2,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { AnyAction, ThunkDispatch } from '@reduxjs/toolkit';
 import { fetchFlyers } from '../../redux/flyersSlice';
-import { RootState } from '../../redux/store';
 import { Post } from '../../components/Post';
 import { BreadCrumbs } from '../../components/BreadCrumbs/BreadCrumbs';
 import { Title } from '../../components/Title/Title';
 import { GoToTop } from '../../components/GoToTop/GoToTop';
+import { RootState } from '../../redux/store';
 import { DataResponse, PostData } from '../../types/interfaces';
 import './Flyers.scss';
 

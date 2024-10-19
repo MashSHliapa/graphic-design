@@ -1,31 +1,32 @@
-// import { useEffect } from 'react'
-import { useSelector } from 'react-redux'
-// import { ThunkDispatch } from 'redux-thunk'
-// import { AnyAction } from 'redux'
-// import { fetchLogo } from '../../redux/logoSlice'
-import { Post } from '../../components/Post'
-import { Title } from '../../components/Title/Title'
-import { GoToTop } from '../../components/GoToTop/GoToTop'
-import { BreadCrumbs } from '../../components/BreadCrumbs/BreadCrumbs'
-import { PostData } from '../../types/interfaces'
-import { RootState } from '../../redux/store'
-import './Logo.scss'
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { AnyAction, ThunkDispatch } from '@reduxjs/toolkit';
+import { fetchLogo } from '../../redux/logoSlice';
+import { Post } from '../../components/Post';
+import { BreadCrumbs } from '../../components/BreadCrumbs/BreadCrumbs';
+import { Title } from '../../components/Title/Title';
+import { GoToTop } from '../../components/GoToTop/GoToTop';
+import { RootState } from '../../redux/store';
+import { DataResponse, PostData } from '../../types/interfaces';
+import './Logo.scss';
 
 export function Logo() {
-  const { data: posts } = useSelector((state: RootState) => state.logo)
+  const { data: posts, loading, error } = useSelector((state: RootState) => state.logo);
+  const dispatch = useDispatch<ThunkDispatch<DataResponse, null, AnyAction>>();
 
-  // const dispatch = useDispatch<ThunkDispatch<DataResponse, null, AnyAction>>()
-  // useEffect(() => {
-  //   dispatch(fetchLogo())
-  // }, [dispatch])
-  // if (loading) {
-  //   return <div>Loading...</div>
-  // }
-  // if (error) {
-  //   return <div className="text-danger">{error}</div>
-  // }
+  useEffect(() => {
+    dispatch(fetchLogo());
+  }, [dispatch]);
 
-  const logo = posts.map((item: PostData) => <Post key={item.id} post={item} />)
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div className="text-danger">{error}</div>;
+  }
+
+  const logo = posts.map((item: PostData) => <Post key={item.id} post={item} />);
 
   return (
     <div className="logo">
@@ -48,5 +49,5 @@ export function Logo() {
         </div>
       </div>
     </div>
-  )
+  );
 }

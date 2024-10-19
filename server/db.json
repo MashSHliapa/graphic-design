@@ -2,39 +2,39 @@
   "logos": [
     {
       "id": 1,
-      "image": "https://ltdfoto.ru/images/2024/01/29/logo1.jpg"
+      "image": "https://i.ibb.co/MBvMd87/logo1.jpg"
     },
     {
       "id": 2,
-      "image": "https://ltdfoto.ru/images/2024/01/29/logo2.jpg"
+      "image": "https://i.ibb.co/PmJr1CC/logo2.jpg"
     },
     {
       "id": 3,
-      "image": "https://ltdfoto.ru/images/2024/01/29/logo3.jpg"
+      "image": "https://i.ibb.co/0DQhhxn/logo3.jpg"
     },
     {
       "id": 4,
-      "image": "https://ltdfoto.ru/images/2024/01/29/logo4.jpg"
+      "image": "https://i.ibb.co/mt5DFRG/logo4.jpg"
     },
     {
       "id": 5,
-      "image": "https://ltdfoto.ru/images/2024/01/29/logo5.jpg"
+      "image": "https://i.ibb.co/K5HFBfv/logo5.jpg"
     },
     {
       "id": 6,
-      "image": "https://ltdfoto.ru/images/2024/01/29/logo6.jpg"
+      "image": "https://i.ibb.co/hMD8ZWz/logo6.jpg"
     },
     {
       "id": 7,
-      "image": "https://ltdfoto.ru/images/2024/01/29/logo7.jpg"
+      "image": "https://i.ibb.co/YZmxfvf/logo7.jpg"
     },
     {
       "id": 8,
-      "image": "https://ltdfoto.ru/images/2024/01/29/logo8.jpg"
+      "image": "https://i.ibb.co/48PKD3q/logo8.jpg"
     },
     {
       "id": 9,
-      "image": "https://ltdfoto.ru/images/2024/01/29/logo9.jpg"
+      "image": "https://i.ibb.co/Jvr5GJW/logo9.jpg"
     }
   ],
 
@@ -258,51 +258,55 @@
   "diplomasAndCertificates": [
     {
       "id": 1,
-      "image": "https://ltdfoto.ru/images/2024/02/02/diploma1.png"
+      "image": "https://i.ibb.co/cJjygPT/diploma1.jpg"
     },
     {
       "id": 2,
-      "image": "https://ltdfoto.ru/images/2024/02/02/diploma2.png"
+      "image": "https://i.ibb.co/x1M0L6g/diploma2.jpg"
     },
     {
       "id": 3,
-      "image": "https://ltdfoto.ru/images/2024/02/02/diploma3.png"
+      "image": "https://i.ibb.co/TYnpwkb/diploma3.jpg"
     },
     {
       "id": 4,
-      "image": "https://ltdfoto.ru/images/2024/02/02/diploma4.png"
+      "image": "https://i.ibb.co/2hP7XvP/diploma4.jpg"
     },
     {
       "id": 5,
-      "image": "https://ltdfoto.ru/images/2024/02/02/diploma5.png"
+      "image": "https://i.ibb.co/fr2n0kK/diploma5.jpg"
     },
     {
       "id": 6,
-      "image": "https://ltdfoto.ru/images/2024/02/02/diploma6.png"
+      "image": "https://i.ibb.co/QCwhwNY/diploma6.jpg"
     },
     {
       "id": 7,
-      "image": "https://ltdfoto.ru/images/2024/02/02/certificate1.png"
+      "image": "https://i.ibb.co/XDd7G2q/certificate1.jpg"
     },
     {
       "id": 8,
-      "image": "https://ltdfoto.ru/images/2024/02/02/certificate2.png"
+      "image": "https://i.ibb.co/pvKQJWg/certificate2.jpg"
     },
     {
       "id": 9,
-      "image": "https://ltdfoto.ru/images/2024/02/02/certificate3.png"
+      "image": "https://i.ibb.co/Msst2tN/certificate3.jpg"
     },
     {
       "id": 10,
-      "image": "https://ltdfoto.ru/images/2024/02/02/certificate4.png"
+      "image": "https://i.ibb.co/R6ZCNMB/certificate4.jpg"
     },
     {
       "id": 11,
-      "image": "https://ltdfoto.ru/images/2024/02/02/certificate5.png"
+      "image": "https://i.ibb.co/D8yg9Sk/certificate5.jpg"
     },
     {
       "id": 12,
-      "image": "https://ltdfoto.ru/images/2024/02/02/certificate6.png"
+      "image": "https://i.ibb.co/kKzYQpm/certificate6.jpg"
+    },
+    {
+      "id": 13,
+      "image": "https://i.ibb.co/HT3gnPT/certificate7.jpg"
     }
   ]
 }

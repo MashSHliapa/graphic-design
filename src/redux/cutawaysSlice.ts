@@ -13,12 +13,7 @@ export const cutawaysSlice = createSlice({
     error: null,
     data: [],
   } as DataInitialState,
-
-  reducers: {
-    setCutaway: (state, action) => {
-      state.data = action.payload;
-    },
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder.addCase(fetchCutaways.pending, (state) => {
       state.loading = true;
@@ -35,5 +30,4 @@ export const cutawaysSlice = createSlice({
 });
 
 export { fetchCutaways };
-export const { setCutaway } = cutawaysSlice.actions;
 export const cutawaysReducer = cutawaysSlice.reducer;

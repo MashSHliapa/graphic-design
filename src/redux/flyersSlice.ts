@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { DataInitialState } from '../types/interfaces';
 import { requestFlyers } from '../services/posts';
+import { DataInitialState } from '../types/interfaces';
 
 const fetchFlyers = createAsyncThunk('flyers/fetchFluers', async () => {
   return await requestFlyers();
@@ -14,20 +14,18 @@ const flyersSlice = createSlice({
     data: [],
   } as DataInitialState,
   reducers: {},
-
   extraReducers: (builder) => {
-    builder
-      .addCase(fetchFlyers.pending, (state) => {
-        state.loading = true;
-      })
-      .addCase(fetchFlyers.fulfilled, (state, action) => {
-        state.loading = false;
-        state.data = action.payload;
-      })
-      .addCase(fetchFlyers.rejected, (state) => {
-        state.loading = false;
-        state.error = 'что-то не так';
-      });
+    builder.addCase(fetchFlyers.pending, (state) => {
+      state.loading = true;
+    });
+    builder.addCase(fetchFlyers.fulfilled, (state, action) => {
+      state.loading = false;
+      state.data = action.payload;
+    });
+    builder.addCase(fetchFlyers.rejected, (state) => {
+      state.loading = false;
+      state.error = 'что-то не так';
+    });
   },
 });
 
