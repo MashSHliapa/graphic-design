@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { AnyAction, ThunkDispatch } from '@reduxjs/toolkit';
 import { fetchFlyers } from '../../redux/flyersSlice';
-import { Post } from '../../components/Post';
+import { Post } from '../../components/Post/Post';
 import { BreadCrumbs } from '../../components/BreadCrumbs/BreadCrumbs';
 import { Title } from '../../components/Title/Title';
 import { GoToTop } from '../../components/GoToTop/GoToTop';

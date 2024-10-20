@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux'
 import { RootState } from '../../redux/store'
-import { Post } from '../../components/Post'
+import { Post } from '../../components/Post/Post'
 import { BreadCrumbs } from '../../components/BreadCrumbs/BreadCrumbs'
 import { Title } from '../../components/Title/Title'
 import { GoToTop } from '../../components/GoToTop/GoToTop'

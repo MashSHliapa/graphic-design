@@ -1,35 +1,36 @@
-import { useSelector } from 'react-redux'
-// import { useEffect } from 'react'
-// import { ThunkDispatch } from '@reduxjs/toolkit'
-// import { AnyAction } from 'redux'
-// import { fetchNotebooksAndMenu } from '../../redux/notebooksAndMenuSlice'
-import { Post } from '../../components/Post'
-import { Title } from '../../components/Title/Title'
-import { GoToTop } from '../../components/GoToTop/GoToTop'
-import { BreadCrumbs } from '../../components/BreadCrumbs/BreadCrumbs'
-import { RootState } from '../../redux/store'
-import { PostData } from '../../types/interfaces'
-import './PriceMenuNotebooks.scss'
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { AnyAction, ThunkDispatch } from '@reduxjs/toolkit';
+import { fetchPriceMenuNotebooks } from '../../redux/priceMenuNotebooksSlice';
+import { Post } from '../../components/Post/Post';
+import { BreadCrumbs } from '../../components/BreadCrumbs/BreadCrumbs';
+import { Title } from '../../components/Title/Title';
+import { GoToTop } from '../../components/GoToTop/GoToTop';
+import { RootState } from '../../redux/store';
+import { DataResponse, PostData } from '../../types/interfaces';
+import './PriceMenuNotebooks.scss';
 
 export function PriceMenuNotebooks() {
-  const { data: posts } = useSelector((state: RootState) => state.priceMenuNotebooks)
+  const { data: posts, loading, error } = useSelector((state: RootState) => state.priceMenuNotebooks);
+  const dispatch = useDispatch<ThunkDispatch<DataResponse, null, AnyAction>>();
 
-  // const dispatch = useDispatch<ThunkDispatch<DataResponse, null, AnyAction>>()
-  // useEffect(() => {
-  //   dispatch(fetchNotebooksAndMenu())
-  // }, [dispatch])
-  // if (loading) {
-  //   return <div>Loading...</div>
-  // }
-  // if (error) {
-  //   return <div className="text-danger">{error}</div>
-  // }
+  useEffect(() => {
+    dispatch(fetchPriceMenuNotebooks());
+  }, [dispatch]);
 
-  const prices = posts.slice(0, 3).map((item: PostData) => <Post key={item.id} post={item} />)
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
-  const menu = posts.slice(3, 15).map((item: PostData) => <Post key={item.id} post={item} />)
+  if (error) {
+    return <div className="text-danger">{error}</div>;
+  }
 
-  const notebooks = posts.slice(15, 21).map((item: PostData) => <Post key={item.id} post={item} />)
+  const prices = posts.slice(0, 3).map((item: PostData) => <Post key={item.id} post={item} />);
+
+  const menu = posts.slice(3, 15).map((item: PostData) => <Post key={item.id} post={item} />);
+
+  const notebooks = posts.slice(15, 21).map((item: PostData) => <Post key={item.id} post={item} />);
 
   return (
     <div className="price-menu-notebooks">
@@ -42,11 +43,11 @@ export function PriceMenuNotebooks() {
             <Title>Прайс</Title>
           </div>
           <ul className="price__list">
-            {prices.map((item, index) =>
+            {prices.map((item, index) => (
               <li key={index} className="price__item">
                 {item}
               </li>
-            )}
+            ))}
           </ul>
         </div>
         <div className="price-menu-notebooks__menu menu">
@@ -54,11 +55,11 @@ export function PriceMenuNotebooks() {
             <Title>меню</Title>
           </div>
           <ul className="menu__list">
-            {menu.map((item, index) =>
+            {menu.map((item, index) => (
               <li key={index} className="menu__item">
                 {item}
               </li>
-            )}
+            ))}
           </ul>
         </div>
         <div className="price-menu-notebooks__notebooks notebooks">
@@ -66,11 +67,11 @@ export function PriceMenuNotebooks() {
             <Title>блокноты</Title>
           </div>
           <ul className="notebooks__list">
-            {notebooks.map((item, index) =>
+            {notebooks.map((item, index) => (
               <li key={index} className="notebooks__item">
                 {item}
               </li>
-            )}
+            ))}
           </ul>
         </div>
         <div className="price-menu-notebooks__go-to-top _go-to-top">
@@ -78,5 +79,5 @@ export function PriceMenuNotebooks() {
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -1,5 +1,12 @@
 import { client } from '../utils/client';
-import { diplomasAndCertificatesEndpoint, flyersAndpoint, logosEndpoint, cutawaysEndpoint } from '../api';
+import {
+  diplomasAndCertificatesEndpoint,
+  flyersAndpoint,
+  logosEndpoint,
+  cutawaysEndpoint,
+  priceMenuNotebooksEndpoint,
+  infographicsPostsStoriesEndpoint,
+} from '../api';
 
 export const requestLogos = async () => {
   const { data } = await client.get(logosEndpoint);
@@ -11,8 +18,8 @@ export const requestCutaways = async () => {
   return data;
 };
 
-export const requestNotebooksAndMenu = async () => {
-  const { data } = await client.get('/notebooksAndMenu');
+export const requestPriceMenuNotebooks = async () => {
+  const { data } = await client.get(priceMenuNotebooksEndpoint);
   return data;
 };
 
@@ -23,5 +30,10 @@ export const requestFlyers = async () => {
 
 export const requestDiplomasAndCertificates = async () => {
   const { data } = await client.get(diplomasAndCertificatesEndpoint);
+  return data;
+};
+
+export const requestInfographicsPostsStories = async () => {
+  const { data } = await client.get(infographicsPostsStoriesEndpoint);
   return data;
 };

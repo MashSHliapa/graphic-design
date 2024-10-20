@@ -132,126 +132,90 @@
     }
   ],
 
-  "notebooksAndMenu": [
+  "priceMenuNotebooks": [
     {
       "id": 1,
-      "image": "https://ltdfoto.ru/images/2024/01/31/notebook1.jpg"
+      "image": "https://i.ibb.co/t48CXs5/price1.jpg"
     },
     {
       "id": 2,
-      "image": "https://ltdfoto.ru/images/2024/01/31/notebook2.jpg"
+      "image": "https://i.ibb.co/HC8rmSP/price2.jpg"
     },
     {
       "id": 3,
-      "image": "https://ltdfoto.ru/images/2024/01/31/notebook3.jpg"
+      "image": "https://i.ibb.co/HhvD7gm/price3.jpg"
     },
     {
       "id": 4,
-      "image": "https://ltdfoto.ru/images/2024/02/01/notebook4.jpg"
+      "image": "https://i.ibb.co/W5ZFJCp/menu1.jpg"
     },
     {
       "id": 5,
-      "image": "https://ltdfoto.ru/images/2024/02/01/diary1.jpg"
+      "image": "https://i.ibb.co/wsFVdqL/menu2.jpg"
     },
     {
       "id": 6,
-      "image": "https://ltdfoto.ru/images/2024/02/01/diary2.jpg"
+      "image": "https://i.ibb.co/MSZ4bG0/menu3.jpg"
     },
     {
       "id": 7,
-      "image": "https://ltdfoto.ru/images/2024/02/01/diary3.jpg"
+      "image": "https://i.ibb.co/ckf9TrS/menu4.jpg"
     },
     {
       "id": 8,
-      "image": "https://ltdfoto.ru/images/2024/02/01/diary4.jpg"
+      "image": "https://i.ibb.co/YtXXykg/menu5.jpg"
     },
     {
       "id": 9,
-      "image": "https://ltdfoto.ru/images/2024/02/01/menu22.jpg"
+      "image": "https://i.ibb.co/T8NDTG8/menu6.jpg"
     },
     {
       "id": 10,
-      "image": "https://ltdfoto.ru/images/2024/02/01/menu21.jpg"
+      "image": "https://i.ibb.co/26BqsvQ/menu7.jpg"
     },
     {
       "id": 11,
-      "image": "https://ltdfoto.ru/images/2024/02/01/menu20.jpg"
+      "image": "https://i.ibb.co/g7XLwxT/menu8.jpg"
     },
     {
       "id": 12,
-      "image": "https://ltdfoto.ru/images/2024/02/01/menu19.jpg"
+      "image": "https://i.ibb.co/9hXRLKH/menu9.jpg"
     },
     {
       "id": 13,
-      "image": "https://ltdfoto.ru/images/2024/02/01/menu18.jpg"
+      "image": "https://i.ibb.co/VpPsGg2/menu10.jpg"
     },
     {
       "id": 14,
-      "image": "https://ltdfoto.ru/images/2024/02/01/menu17.jpg"
+      "image": "https://i.ibb.co/XLHbW1T/menu11.jpg"
     },
     {
       "id": 15,
-      "image": "https://ltdfoto.ru/images/2024/02/01/menu16.jpg"
+      "image": "https://i.ibb.co/MDtWGfh/menu12.jpg"
     },
     {
       "id": 16,
-      "image": "https://ltdfoto.ru/images/2024/02/01/menu15.jpg"
+      "image": "https://i.ibb.co/d7k7zNL/notebook1.jpg"
     },
     {
       "id": 17,
-      "image": "https://ltdfoto.ru/images/2024/02/01/menu14.jpg"
+      "image": "https://i.ibb.co/P4sZ4xQ/notebook2.jpg"
     },
     {
       "id": 18,
-      "image": "https://ltdfoto.ru/images/2024/02/01/menu13.jpg"
+      "image": "https://i.ibb.co/VHG0VmY/notebook3.jpg"
     },
     {
       "id": 19,
-      "image": "https://ltdfoto.ru/images/2024/02/01/menu12.jpg"
+      "image": "https://i.ibb.co/Jjh934G/notebook4.jpg"
     },
     {
       "id": 20,
-      "image": "https://ltdfoto.ru/images/2024/02/01/menu11.jpg"
+      "image": "https://i.ibb.co/Z2KCvc1/notebook5.jpg"
     },
     {
       "id": 21,
-      "image": "https://ltdfoto.ru/images/2024/02/01/menu10.jpg"
-    },
-    {
-      "id": 22,
-      "image": "https://ltdfoto.ru/images/2024/02/01/menu9.jpg"
-    },
-    {
-      "id": 23,
-      "image": "https://ltdfoto.ru/images/2024/02/01/menu8.jpg"
-    },
-    {
-      "id": 24,
-      "image": "https://ltdfoto.ru/images/2024/02/01/menu7.jpg"
-    },
-    {
-      "id": 25,
-      "image": "https://ltdfoto.ru/images/2024/02/01/menu6.jpg"
-    },
-    {
-      "id": 26,
-      "image": "https://ltdfoto.ru/images/2024/02/01/menu5.jpg"
-    },
-    {
-      "id": 27,
-      "image": "https://ltdfoto.ru/images/2024/02/01/menu4.jpg"
-    },
-    {
-      "id": 28,
-      "image": "https://ltdfoto.ru/images/2024/02/01/menu3.jpg"
-    },
-    {
-      "id": 29,
-      "image": "https://ltdfoto.ru/images/2024/02/01/menu2.jpg"
-    },
-    {
-      "id": 30,
-      "image": "https://ltdfoto.ru/images/2024/02/01/menu1.jpg"
+      "image": "https://i.ibb.co/59ycfTk/notebook6.jpg"
     }
   ],
 
@@ -307,6 +271,98 @@
     {
       "id": 13,
       "image": "https://i.ibb.co/HT3gnPT/certificate7.jpg"
+    }
+  ],
+
+  "infographicsPostsStories": [
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/TBtRTYr/stories1.jpg"
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/TPQjFsv/stories2.jpg"
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/WWcVPQS/stories3.jpg"
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/q0B2K4d/stories4.jpg"
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/sFKr4v1/stories5.jpg"
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co/rGpT7bF/stories6.jpg"
+    },
+    {
+      "id": 7,
+      "image": "https://i.ibb.co/TH2zFWm/stories7.jpg"
+    },
+    {
+      "id": 8,
+      "image": "https://i.ibb.co/jMgwn9K/stories8.jpg"
+    },
+    {
+      "id": 9,
+      "image": "https://i.ibb.co/qJWc7kt/stories9.jpg"
+    },
+    {
+      "id": 10,
+      "image": "https://i.ibb.co/YZk7GvX/stories10.jpg"
+    },
+    {
+      "id": 11,
+      "image": "https://i.ibb.co/wLvDPxy/infographics1.jpg"
+    },
+    {
+      "id": 12,
+      "image": "https://i.ibb.co/X3zH7fN/infographics2.jpg"
+    },
+    {
+      "id": 13,
+      "image": "https://i.ibb.co/X2CV4Nr/infographics3.jpg"
+    },
+    {
+      "id": 14,
+      "image": "https://i.ibb.co/x5XDg7y/infographics4.jpg"
+    },
+    {
+      "id": 15,
+      "image": "https://i.ibb.co/qCvCtPB/infographics5.jpg"
+    },
+    {
+      "id": 16,
+      "image": "https://i.ibb.co/wLYJp40/infographics6.jpg"
+    },
+    {
+      "id": 17,
+      "image": "https://i.ibb.co/N321v5W/infographics7.jpg"
+    },
+
+    {
+      "id": 18,
+      "image": "https://i.ibb.co/SrHBTng/infographics8.jpg"
+    },
+    {
+      "id": 19,
+      "image": "https://i.ibb.co/2sV6z69/infographics9.jpg"
+    },
+    {
+      "id": 20,
+      "image": "https://i.ibb.co/XtTwxHq/infographics10.jpg"
+    },
+    {
+      "id": 21,
+      "image": "https://i.ibb.co/g77pGNc/infographics11.jpg"
+    },
+    {
+      "id": 22,
+      "image": "https://i.ibb.co/d6Ts91x/infographics12.jpg"
     }
   ]
 }
