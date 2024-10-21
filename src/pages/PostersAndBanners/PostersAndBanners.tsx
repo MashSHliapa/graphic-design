@@ -1,18 +1,34 @@
-import { useSelector } from 'react-redux'
-import { RootState } from '../../redux/store'
-import { Post } from '../../components/Post/Post'
-import { BreadCrumbs } from '../../components/BreadCrumbs/BreadCrumbs'
-import { Title } from '../../components/Title/Title'
-import { GoToTop } from '../../components/GoToTop/GoToTop'
-import { PostData } from '../../types/interfaces'
-import './PostersAndBanners.scss'
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { AnyAction, ThunkDispatch } from '@reduxjs/toolkit';
+import { fetchPostersAndBanners } from '../../redux/postersAndBannersSlice';
+import { Post } from '../../components/Post/Post';
+import { BreadCrumbs } from '../../components/BreadCrumbs/BreadCrumbs';
+import { Title } from '../../components/Title/Title';
+import { GoToTop } from '../../components/GoToTop/GoToTop';
+import { RootState } from '../../redux/store';
+import { DataResponse, PostData } from '../../types/interfaces';
+import './PostersAndBanners.scss';
 
 export function PostersAndBanners() {
-  const { data: posts } = useSelector((state: RootState) => state.postersAndBanners)
+  const { data: posts, loading, error } = useSelector((state: RootState) => state.postersAndBanners);
+  const dispatch = useDispatch<ThunkDispatch<DataResponse, null, AnyAction>>();
 
-  const posters = posts.slice(0, 5).map((item: PostData) => <Post key={item.id} post={item} />)
+  useEffect(() => {
+    dispatch(fetchPostersAndBanners());
+  }, [dispatch]);
 
-  const banners = posts.slice(5, 8).map((item: PostData) => <Post key={item.id} post={item} />)
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div className="text-danger">{error}</div>;
+  }
+
+  const posters = posts.slice(0, 5).map((item: PostData) => <Post key={item.id} post={item} />);
+
+  const banners = posts.slice(5, 8).map((item: PostData) => <Post key={item.id} post={item} />);
 
   return (
     <div className="posters-banners">
@@ -23,7 +39,9 @@ export function PostersAndBanners() {
           </div>
           <div className="posters-banners__posters posters">
             <div className="posters__title _title">
-              <Title>афиши <span className="green-and">&</span> плакаты</Title>
+              <Title>
+                афиши <span className="green-and">&</span> плакаты
+              </Title>
             </div>
             <ul className="posters__list">
               {posters.map((item, index) => (
@@ -32,7 +50,7 @@ export function PostersAndBanners() {
                 </li>
               ))}
             </ul>
-          </div >
+          </div>
           <div className="posters-banners__banners banners">
             <div className="banners__title _title">
               <Title>баннеры</Title>
@@ -45,11 +63,11 @@ export function PostersAndBanners() {
               ))}
             </ul>
           </div>
-        </div >
+        </div>
         <div className="posters__go-to-top _go-to-top">
           <GoToTop />
         </div>
-      </div >
-    </div >
-  )
+      </div>
+    </div>
+  );
 }

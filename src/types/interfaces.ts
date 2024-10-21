@@ -1,7 +1,7 @@
 export interface DataInitialState {
   loading: boolean;
   error: null | string;
-  data: never[];
+  data: { id: number; image: string }[];
 }
 
 export interface DataResponse {
@@ -14,4 +14,3 @@ export interface PostData {
   id: number;
   image: string;
 }
-

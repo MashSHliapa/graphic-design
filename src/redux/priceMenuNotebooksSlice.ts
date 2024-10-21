@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { DataInitialState } from '../types/interfaces';
 import { requestPriceMenuNotebooks } from '../services/posts';
+import { DataInitialState } from '../types/interfaces';
 
 const fetchPriceMenuNotebooks = createAsyncThunk('priceMenuNotebooks/fetchPriceMenuNotebooks', async () => {
   return await requestPriceMenuNotebooks();

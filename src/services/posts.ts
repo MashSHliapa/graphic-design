@@ -2,14 +2,16 @@ import { client } from '../utils/client';
 import {
   diplomasAndCertificatesEndpoint,
   flyersAndpoint,
-  logosEndpoint,
+  logoEndpoint,
   cutawaysEndpoint,
   priceMenuNotebooksEndpoint,
   infographicsPostsStoriesEndpoint,
+  stickersAndTagsEndpoint,
+  postersAndBannersEndpoint,
 } from '../api';
 
 export const requestLogos = async () => {
-  const { data } = await client.get(logosEndpoint);
+  const { data } = await client.get(logoEndpoint);
   return data;
 };
 
@@ -35,5 +37,15 @@ export const requestDiplomasAndCertificates = async () => {
 
 export const requestInfographicsPostsStories = async () => {
   const { data } = await client.get(infographicsPostsStoriesEndpoint);
+  return data;
+};
+
+export const requestStickersAndTags = async () => {
+  const { data } = await client.get(stickersAndTagsEndpoint);
+  return data;
+};
+
+export const requestPostersAndBanners = async () => {
+  const { data } = await client.get(postersAndBannersEndpoint);
   return data;
 };

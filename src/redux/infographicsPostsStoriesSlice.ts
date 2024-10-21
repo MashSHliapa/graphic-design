@@ -1,5 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { requestInfographicsPostsStories } from '../services/posts';
+import { DataInitialState } from '../types/interfaces';
 
 const fetchInfographicsPostsStories = createAsyncThunk(
   'infographicsPostsStories/fetchInfographicsPostsStories',
@@ -12,9 +13,9 @@ export const infographicsPostsStoriesSlice = createSlice({
   name: 'infographicsPostsStories',
   initialState: {
     loading: false,
-    error: null as null | string,
+    error: null,
     data: [],
-  },
+  } as DataInitialState,
   reducers: {},
   extraReducers: (builder) => {
     builder.addCase(fetchInfographicsPostsStories.pending, (state) => {
