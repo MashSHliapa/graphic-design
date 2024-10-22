@@ -1,17 +1,17 @@
-import { NavLink } from 'react-router-dom'
-import { GoToMain } from '../../components/GoToMain/GoToMain.tsx'
-import { Title } from '../../components/Title/Title.tsx'
-import { GoToTop } from '../../components/GoToTop/GoToTop.tsx'
-import vector from '../../icons/vector_here.svg'
-import flyer from '../../images/portfolio/flyer1.jpg'
-import cutaway from '../../images/portfolio/cutaway2.jpg'
-import notebook from '../../images/portfolio/notebook3.jpg'
-import diploma from '../../images/portfolio/diploma4.jpg'
-import bord from '../../images/portfolio/bord5.jpg'
-import sticker from '../../images/portfolio/sticker6.jpg'
-import post from '../../images/portfolio/post7.jpg'
-import logo from '../../images/portfolio/logo8.jpg'
-import './Portfolio.scss'
+import { NavLink } from 'react-router-dom';
+import { GoToMain } from '../../components/GoToMain/GoToMain.tsx';
+import { Title } from '../../components/Title/Title.tsx';
+import { GoToTop } from '../../components/GoToTop/GoToTop.tsx';
+import vector from '../../icons/vector_here.svg';
+import flyer from '../../images/portfolio/flyer1.jpg';
+import cutaway from '../../images/portfolio/cutaway2.jpg';
+import notebook from '../../images/portfolio/notebook3.jpg';
+import diploma from '../../images/portfolio/diploma4.jpg';
+import bord from '../../images/portfolio/bord5.jpg';
+import sticker from '../../images/portfolio/sticker6.jpg';
+import post from '../../images/portfolio/post7.jpg';
+import logo from '../../images/portfolio/logo8.jpg';
+import './Portfolio.scss';
 
 export function Portfolio() {
   return (
@@ -24,8 +24,10 @@ export function Portfolio() {
             </div>
             <h5 className="portfolio__text">
               Все макеты сделаны по индивидуальным заказам. <br />
-              К каждому проекту применён профессиональный подход.<br />
-              Учтены пожелания заказчика. По итогу все макеты успешно реализованы.</h5>
+              К каждому проекту применён профессиональный подход.
+              <br />
+              Учтены пожелания заказчика. По итогу все макеты успешно реализованы.
+            </h5>
             <h3 className="portfolio__subtitle">Вы можете ознакомиться с моими работами здеcь</h3>
             <div className="portfolio__vector-here">
               <img src={vector} alt="vector" />
@@ -48,14 +50,20 @@ export function Portfolio() {
           <NavLink to="/portfolio/price_menu_notebooks" target="_top" className="gallery__item">
             <img src={notebook} alt="notebook" />
             <div className="gallery__menu">
-              <div className="gallery__title">ПРАЙС<br /> БЛОКНОТЫ<br /> МЕНЮ</div>
+              <div className="gallery__title">
+                ПРАЙС
+                <br /> БЛОКНОТЫ
+                <br /> МЕНЮ
+              </div>
             </div>
           </NavLink>
-          <NavLink to="/portfolio/diplomas_certificates" target="_top" className="gallery__item" >
+          <NavLink to="/portfolio/diplomas_certificates" target="_top" className="gallery__item">
             <img src={diploma} alt="diploma" />
             <div className="gallery__menu">
               <div className="gallery__title gallery__title_reduce">
-                ДИПЛОМЫ<br /> БЛАГОДАРНОСТИ <span className='gallery__and'>&</span> СЕРТИФИКАТЫ<br /> пригласительные
+                ДИПЛОМЫ
+                <br /> БЛАГОДАРНОСТИ <span className="gallery__and">&</span> СЕРТИФИКАТЫ
+                <br /> пригласительные
               </div>
             </div>
           </NavLink>
@@ -63,7 +71,8 @@ export function Portfolio() {
             <img src={bord} alt="bord" />
             <div className="gallery__menu">
               <div className="gallery__title">
-                АФИШИ <span className='gallery__and'>&</span> ПЛАКАТЫ<br /> баннеры
+                АФИШИ <span className="gallery__and">&</span> ПЛАКАТЫ
+                <br /> баннеры
               </div>
             </div>
           </NavLink>
@@ -71,7 +80,7 @@ export function Portfolio() {
             <img src={sticker} alt="sticker" />
             <div className="gallery__menu">
               <div className="gallery__title">
-                СТИКЕРЫ <span className='gallery__and'>&</span> БИРКИ
+                СТИКЕРЫ <span className="gallery__and">&</span> БИРКИ
               </div>
             </div>
           </NavLink>
@@ -79,7 +88,8 @@ export function Portfolio() {
             <img src={post} alt="post" />
             <div className="gallery__menu">
               <div className="gallery__title">
-                инфографика<br /> ПОСТ <span className='gallery__and'>&</span> СТОРИС
+                инфографика
+                <br /> ПОСТ <span className="gallery__and">&</span> СТОРИС
               </div>
             </div>
           </NavLink>
@@ -99,5 +109,5 @@ export function Portfolio() {
         <div className="portfolio__decor"></div>
       </div>
     </div>
-  )
+  );
 }

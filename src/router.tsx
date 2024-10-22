@@ -1,16 +1,16 @@
-import { createBrowserRouter } from 'react-router-dom'
-import { Layout } from './components/Layout/Layout'
-import { Flyers } from './pages/Flyers/Flyers'
-import { Cutaways } from './pages/Cutaways/Cutaways'
-import { DiplomasAndCertificates } from './pages/DiplomasAndCertificates/DiplomasAndCertificates'
-import { Portfolio } from './pages/Portfolio/Portfolio'
-import { Logo } from './pages/Logo/Logo'
-import { StickersAndTags } from './pages/StickersAndTags/StickersAndTags'
-import { InfographicsPostsStories } from './pages/InfographicsPostsStories/InfographicsPostsStories'
-import { PostersAndBanners } from './pages/PostersAndBanners/PostersAndBanners'
-import { PriceMenuNotebooks } from './pages/PriceMenuNotebooks/PriceMenuNotebooks'
-import { Prices } from './pages/Prices/Prices'
-import { Main } from './components/Main/Main'
+import { createBrowserRouter } from 'react-router-dom';
+import { Layout } from './components/Layout/Layout';
+import { Flyers } from './pages/Flyers/Flyers';
+import { Cutaways } from './pages/Cutaways/Cutaways';
+import { DiplomasAndCertificates } from './pages/DiplomasAndCertificates/DiplomasAndCertificates';
+import { Portfolio } from './pages/Portfolio/Portfolio';
+import { Logo } from './pages/Logo/Logo';
+import { StickersAndTags } from './pages/StickersAndTags/StickersAndTags';
+import { InfographicsPostsStories } from './pages/InfographicsPostsStories/InfographicsPostsStories';
+import { PostersAndBanners } from './pages/PostersAndBanners/PostersAndBanners';
+import { PriceMenuNotebooks } from './pages/PriceMenuNotebooks/PriceMenuNotebooks';
+import { Prices } from './pages/Prices/Prices';
+import { Main } from './components/Main/Main';
 
 export const router = createBrowserRouter([
   {
@@ -18,48 +18,48 @@ export const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Main />
+        element: <Main />,
       },
       {
         path: '/portfolio',
-        element: <Portfolio />
+        element: <Portfolio />,
       },
       {
         path: '/prices',
-        element: <Prices />
+        element: <Prices />,
       },
       {
         path: '/portfolio/flyers',
-        element: <Flyers />
+        element: <Flyers />,
       },
       {
         path: '/portfolio/cutaways',
-        element: <Cutaways />
+        element: <Cutaways />,
       },
       {
         path: '/portfolio/diplomas_certificates',
-        element: <DiplomasAndCertificates />
+        element: <DiplomasAndCertificates />,
       },
       {
         path: '/portfolio/logo',
-        element: <Logo />
+        element: <Logo />,
       },
       {
         path: '/portfolio/stickers_tags',
-        element: <StickersAndTags />
+        element: <StickersAndTags />,
       },
       {
         path: '/portfolio/infographics_posts_stories',
-        element: <InfographicsPostsStories />
+        element: <InfographicsPostsStories />,
       },
       {
         path: '/portfolio/posters_banners',
-        element: <PostersAndBanners />
+        element: <PostersAndBanners />,
       },
       {
         path: '/portfolio/price_menu_notebooks',
-        element: <PriceMenuNotebooks />
+        element: <PriceMenuNotebooks />,
       },
-    ]
-  }
-])
+    ],
+  },
+]);

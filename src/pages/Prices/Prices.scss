@@ -125,7 +125,7 @@
   }
 
   &__item::before {
-    content: counter(list-item) ". ";
+    content: counter(list-item) '. ';
     display: inline-block;
     margin-right: 10px;
   }
@@ -168,15 +168,15 @@
   }
 
   &__viber {
-    color: #682FC3;
+    color: #682fc3;
   }
 
   &__telegram {
-    color: #2B7BF4;
+    color: #2b7bf4;
   }
 
   &__whatsapp {
-    color: #05921C;
+    color: #05921c;
   }
 
   &__button-wrapper {

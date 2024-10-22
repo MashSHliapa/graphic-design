@@ -1,7 +1,7 @@
 @import '../Layout/Layout.scss';
 
 .services {
-  background-color: #ECECEC;
+  background-color: #ececec;
 
   &__body {
     position: relative;
@@ -196,12 +196,12 @@
   }
 
   &__link {
-    transition: all .1s ease-out;
+    transition: all 0.1s ease-out;
   }
 
   &__link:hover {
-    background: #A0C860;
-    transition: all .2s ease-out;
+    background: #a0c860;
+    transition: all 0.2s ease-out;
   }
 
   &__button-wrapper {

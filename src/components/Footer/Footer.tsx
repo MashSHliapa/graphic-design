@@ -1,8 +1,8 @@
-import { Contacts } from '../Contacts/Contacts'
-import instagram from '../../icons/instagram_footer.svg'
-import vk from '../../icons/vk_footer.svg'
-import logo from '../../images/logo_footer.svg'
-import './Footer.scss'
+import { Contacts } from '../Contacts/Contacts';
+import instagram from '../../icons/instagram_footer.svg';
+import vk from '../../icons/vk_footer.svg';
+import logo from '../../images/logo_footer.svg';
+import './Footer.scss';
 
 export function Footer() {
   return (
@@ -14,7 +14,6 @@ export function Footer() {
           </div>
           <div className="footer__social">
             <div className="footer__icon-group">
-
               <div className="footer__icon _icon">
                 <a href="https://instagram.com/artdesign_81?igshid=MmVlMjlkMTBhMg==" target="_blank">
                   <img src={instagram} alt="instagram" />
@@ -26,7 +25,9 @@ export function Footer() {
                 </a>
               </div>
             </div>
-            <h6 className="footer__copyright">Портфолио графического дизайнера Алёны Левковой 2024 ©</h6>
+            <h6 className="footer__copyright">
+              Портфолио графического дизайнера Алёны Левковой {new Date().getFullYear()} ©
+            </h6>
           </div>
           <div className="footer__data">
             <div className="footer__logo">
@@ -37,5 +38,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

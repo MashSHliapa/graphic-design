@@ -9,7 +9,7 @@
     flex-wrap: wrap;
     gap: 50px;
     max-width: 930px;
-    color: #FFFFFF;
+    color: #ffffff;
     margin: 0 auto;
     padding-top: 66px;
 
@@ -39,7 +39,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 0px;
-    border-top: #EDEDED solid 1px;
+    border-top: #ededed solid 1px;
 
     @include breakpoint(xs) {
       flex-direction: column;
@@ -70,7 +70,6 @@
       text-align: center;
     }
   }
-
 
   &__unp {
     font-size: 14px;

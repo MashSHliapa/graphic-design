@@ -1,12 +1,12 @@
-import { configureStore } from '@reduxjs/toolkit'
-import { logoReducer } from './logoSlice'
-import { cutawaysReducer } from './cutawaysSlice'
-import { priceMenuNotebooksReducer } from './priceMenuNotebooksSlice'
-import { flyersReducer } from './flyersSlice'
-import { diplomasAndCertificatesReducer } from './diplomasAndCertificatesSlice'
-import { infographicsPostsStoriesReducer } from './infographicsPostsStoriesSlice'
-import { setStickersAndTagsReducer } from './stickersAndTagsSlice'
-import { postersAndBannersReducer } from './postersAndBannersSlice'
+import { configureStore } from '@reduxjs/toolkit';
+import { logoReducer } from './logoSlice';
+import { cutawaysReducer } from './cutawaysSlice';
+import { priceMenuNotebooksReducer } from './priceMenuNotebooksSlice';
+import { flyersReducer } from './flyersSlice';
+import { diplomasAndCertificatesReducer } from './diplomasAndCertificatesSlice';
+import { infographicsPostsStoriesReducer } from './infographicsPostsStoriesSlice';
+import { setStickersAndTagsReducer } from './stickersAndTagsSlice';
+import { postersAndBannersReducer } from './postersAndBannersSlice';
 
 export const store = configureStore({
   reducer: {
@@ -19,6 +19,6 @@ export const store = configureStore({
     stickersAndTags: setStickersAndTagsReducer,
     postersAndBanners: postersAndBannersReducer,
   },
-})
+});
 
-export type RootState = ReturnType<typeof store.getState>
+export type RootState = ReturnType<typeof store.getState>;

@@ -1,17 +1,17 @@
-import { NavLink, useLocation } from 'react-router-dom'
-import { Navbar } from '../Navbar/Navbar'
-import { BurgerMenu } from '../BurgerMenu/BurgerMenu'
-import logo from '../../images/logo_header.svg'
-import instagram from '../../icons/instagram_header.svg'
-import vk from '../../icons/vk_header.svg'
-import './Header.scss'
+import { NavLink, useLocation } from 'react-router-dom';
+import { Navbar } from '../Navbar/Navbar';
+import { BurgerMenu } from '../BurgerMenu/BurgerMenu';
+import logo from '../../images/logo_header.svg';
+import instagram from '../../icons/instagram_header.svg';
+import vk from '../../icons/vk_header.svg';
+import './Header.scss';
 
 export function Header() {
   const location = useLocation();
 
   const portfolioPaths = ['/portfolio/'];
 
-  const isPortfolioPath = portfolioPaths.some(path => location.pathname.startsWith(path));
+  const isPortfolioPath = portfolioPaths.some((path) => location.pathname.startsWith(path));
 
   return (
     <header className="header">
@@ -24,7 +24,13 @@ export function Header() {
             <Navbar />
           </div>
         </div>
-        <div className={`${isPortfolioPath ? 'header__decor_reduced header__decor decor_reduced decor _decor' : 'header__decor decor _decor'}`}>
+        <div
+          className={`${
+            isPortfolioPath
+              ? 'header__decor_reduced header__decor decor_reduced decor _decor'
+              : 'header__decor decor _decor'
+          }`}
+        >
           <div className="decor__burger-menu">
             <BurgerMenu />
           </div>
@@ -43,5 +49,5 @@ export function Header() {
         </div>
       </div>
     </header>
-  )
+  );
 }
