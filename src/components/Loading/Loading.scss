@@ -1,0 +1,52 @@
+@import '../Layout/Layout.scss';
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+
+  @include breakpoint(sm) {
+    height: 300px;
+  }
+
+  &__spinner {
+    width: 65px;
+    height: 65px;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-top-color: #000000;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+
+    @include breakpoint(sm) {
+      width: 32px;
+      height: 32px;
+      border-width: 3px;
+    }
+  }
+
+  &__spinner::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 45px;
+    left: 28px;
+    border: 12px solid transparent;
+    border-right-color: red;
+    transform: rotate(-50deg);
+
+    @include breakpoint(sm) {
+      top: 18px;
+      left: 16px;
+      border: 7px solid transparent;
+      border-right-color: red;
+    }
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

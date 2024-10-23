@@ -6,6 +6,7 @@ import { Post } from '../../components/Post/Post';
 import { BreadCrumbs } from '../../components/BreadCrumbs/BreadCrumbs';
 import { Title } from '../../components/Title/Title';
 import { GoToTop } from '../../components/GoToTop/GoToTop';
+import { Loading } from '../../components/Loading/Loading';
 import { RootState } from '../../redux/store';
 import { DataResponse, PostData } from '../../types/interfaces';
 import './Flyers.scss';
@@ -19,7 +20,11 @@ export function Flyers() {
   }, [dispatch]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div>
+        <Loading />
+      </div>
+    );
   }
 
   if (error) {
