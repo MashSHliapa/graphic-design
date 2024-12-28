@@ -9,7 +9,6 @@ export function GoToTop() {
     const scrollThreshold = window.innerWidth < 575.98 ? 300 : 700;
 
     if (window.innerWidth < 767.98 && window.scrollY > scrollThreshold && !isButtonVisible) {
-      console.log(1);
       goToTopGreenButton?.classList.add('_active');
       isButtonVisible = true;
     } else if (window.scrollY < 900) {

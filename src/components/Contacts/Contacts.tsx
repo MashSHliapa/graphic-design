@@ -27,7 +27,7 @@ export function Contacts() {
           <h5 className="contacts__title">Дополнительные способы для связи со мной</h5>
           <div className="contacts__icons-group">
             <div className="contacts__icon _icon">
-              <a href="https://t.me/@LevkovaAlena" target="_blank">
+              <a href="https://t.me/LevkovaAlena" target="_blank">
                 <img src={telegram} alt="telegram" />
               </a>
             </div>

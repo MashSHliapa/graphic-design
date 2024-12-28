@@ -63,7 +63,7 @@ export function Prices() {
               </span>
               , в
               <span className="prices__telegram">
-                <a href="https://t.me/@LevkovaAlena" target="_blank">
+                <a href="https://t.me/LevkovaAlena" target="_blank">
                   {' '}
                   Telegram
                 </a>

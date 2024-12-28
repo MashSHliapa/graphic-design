@@ -20,7 +20,7 @@ export const postersAndBanners = createSlice({
     });
     builder.addCase(fetchPostersAndBanners.fulfilled, (state, action) => {
       state.loading = false;
-      state.data = action.payload;
+      state.data = action.payload.postersAndBanners;
     });
     builder.addCase(fetchPostersAndBanners.rejected, (state) => {
       state.loading = false;

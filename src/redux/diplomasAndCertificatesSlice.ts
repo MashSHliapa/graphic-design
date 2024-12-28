@@ -23,7 +23,7 @@ const diplomasAndCertificatesSlice = createSlice({
     });
     builder.addCase(fetchDiplomasAndCertificates.fulfilled, (state, action) => {
       state.loading = false;
-      state.data = action.payload;
+      state.data = action.payload.diplomasAndCertificates;
     });
     builder.addCase(fetchDiplomasAndCertificates.rejected, (state) => {
       state.loading = false;

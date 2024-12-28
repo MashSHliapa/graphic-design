@@ -20,7 +20,7 @@ const priceMenuNotebooksSlice = createSlice({
     });
     builder.addCase(fetchPriceMenuNotebooks.fulfilled, (state, action) => {
       state.loading = false;
-      state.data = action.payload;
+      state.data = action.payload.priceMenuNotebooks;
     });
     builder.addCase(fetchPriceMenuNotebooks.rejected, (state) => {
       state.loading = false;

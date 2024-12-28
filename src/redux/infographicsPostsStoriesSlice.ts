@@ -23,7 +23,7 @@ export const infographicsPostsStoriesSlice = createSlice({
     });
     builder.addCase(fetchInfographicsPostsStories.fulfilled, (state, action) => {
       state.loading = false;
-      state.data = action.payload;
+      state.data = action.payload.infographicsPostsStories;
     });
     builder.addCase(fetchInfographicsPostsStories.rejected, (state) => {
       state.loading = false;

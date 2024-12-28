@@ -2,7 +2,7 @@
 
 .navbar {
   &__body {
-    @media screen and (max-width: 767.98px) {
+    @include breakpoint(sm) {
       position: fixed;
       top: 0;
       left: 0;

@@ -20,7 +20,7 @@ export const stickersAndTagsSlice = createSlice({
     });
     builder.addCase(fetchStickersAndTags.fulfilled, (state, action) => {
       state.loading = false;
-      state.data = action.payload;
+      state.data = action.payload.stickersAndTags;
     });
     builder.addCase(fetchStickersAndTags.rejected, (state) => {
       state.loading = false;

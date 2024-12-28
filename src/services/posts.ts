@@ -1,7 +1,7 @@
 import { client } from '../utils/client';
 import {
   diplomasAndCertificatesEndpoint,
-  flyersAndpoint,
+  flyersEndpoint,
   logoEndpoint,
   cutawaysEndpoint,
   priceMenuNotebooksEndpoint,
@@ -26,7 +26,7 @@ export const requestPriceMenuNotebooks = async () => {
 };
 
 export const requestFlyers = async () => {
-  const { data } = await client.get(flyersAndpoint);
+  const { data } = await client.get(flyersEndpoint);
   return data;
 };
 

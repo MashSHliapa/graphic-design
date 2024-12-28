@@ -20,7 +20,7 @@ const logoSlice = createSlice({
     });
     builder.addCase(fetchLogo.fulfilled, (state, action) => {
       state.loading = false;
-      state.data = action.payload;
+      state.data = action.payload.logo;
     });
     builder.addCase(fetchLogo.rejected, (state) => {
       state.loading = false;

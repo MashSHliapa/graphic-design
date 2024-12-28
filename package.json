@@ -40,5 +40,6 @@
     "sass": "^1.69.5",
     "typescript": "^5.2.2",
     "vite": "^5.0.0"
-  }
+  },
+  "proxy": "http://localhost:8011"
 }

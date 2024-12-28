@@ -20,7 +20,7 @@ export const cutawaysSlice = createSlice({
     });
     builder.addCase(fetchCutaways.fulfilled, (state, action) => {
       state.loading = false;
-      state.data = action.payload;
+      state.data = action.payload.cutaways;
     });
     builder.addCase(fetchCutaways.rejected, (state) => {
       state.loading = false;

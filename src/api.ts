@@ -1,17 +1,17 @@
-const logoEndpoint: string = '/logo';
-const cutawaysEndpoint: string = '/cutaways';
-const priceMenuNotebooksEndpoint: string = '/priceMenuNotebooks';
-const flyersAndpoint: string = '/flyers';
-const diplomasAndCertificatesEndpoint: string = '/diplomasAndCertificates';
-const infographicsPostsStoriesEndpoint: string = '/infographicsPostsStories';
-const stickersAndTagsEndpoint: string = '/stickersAndTags';
-const postersAndBannersEndpoint: string = '/postersAndBanners';
+const logoEndpoint: string = '/images';
+const cutawaysEndpoint: string = '/images';
+const priceMenuNotebooksEndpoint: string = '/images';
+const flyersEndpoint: string = '/images';
+const diplomasAndCertificatesEndpoint: string = '/images';
+const infographicsPostsStoriesEndpoint: string = '/images';
+const stickersAndTagsEndpoint: string = '/images';
+const postersAndBannersEndpoint: string = '/images';
 
 export {
   logoEndpoint,
   cutawaysEndpoint,
   priceMenuNotebooksEndpoint,
-  flyersAndpoint,
+  flyersEndpoint,
   diplomasAndCertificatesEndpoint,
   infographicsPostsStoriesEndpoint,
   stickersAndTagsEndpoint,
