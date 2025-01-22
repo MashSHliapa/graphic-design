@@ -117,9 +117,9 @@
 }
 
 .about {
-  align-self: flex-end;
   display: flex;
-  align-items: center;
+  align-items: end;
+  align-self: flex-end;
 
   @include breakpoint(sm) {
     order: 2;
@@ -129,16 +129,16 @@
   &__description {
     order: 2;
     display: flex;
-    align-items: center;
+    align-items: end;
     padding-left: 20px;
 
     @include breakpoint(lg) {
-      max-width: 255px;
+      max-width: 264px;
     }
 
     @include breakpoint(md) {
-      max-width: 230px;
-      padding-left: 15px;
+      max-width: 239px;
+      padding-left: 12px;
     }
 
     @include breakpoint(sm) {
@@ -146,8 +146,8 @@
     }
 
     @include breakpoint(xs) {
-      max-width: 240px;
-      padding-left: 8px;
+      max-width: 186px;
+      padding-left: 7px;
     }
   }
 
@@ -156,10 +156,6 @@
     width: 5px;
     margin-right: 15px;
 
-    @include breakpoint(lg) {
-      height: 198px;
-    }
-
     @include breakpoint(md) {
       height: 155px;
       margin-right: 10px;
@@ -167,6 +163,7 @@
 
     @include breakpoint(xs) {
       height: 138px;
+      margin-right: 7px;
     }
   }
 
@@ -175,37 +172,22 @@
 
     @include breakpoint(lg) {
       font-size: 16px;
+      line-height: 1.12;
+    }
+
+    @include breakpoint(md) {
+      font-size: 14px;
       line-height: 1.1;
     }
 
-    @include breakpoint(md) {
-      font-size: 14px;
-    }
-
     @include breakpoint(sm) {
-      line-height: 1.25;
+      line-height: 1.22;
     }
 
     @include breakpoint(xs) {
-      font-size: 12px;
-      line-height: 1.05;
-    }
-  }
-
-  &__text-green {
-    color: #05921c;
-    line-height: 1.18;
-
-    @include breakpoint(lg) {
-      font-size: 18px;
-    }
-
-    @include breakpoint(md) {
-      font-size: 15px;
-    }
-
-    @include breakpoint(xs) {
-      font-size: 14px;
+      font-size: 11.8px;
+      line-height: 1.06;
+      align-self: start;
     }
   }
 

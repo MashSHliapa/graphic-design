@@ -3,14 +3,14 @@ import { GoToMain } from '../../components/GoToMain/GoToMain.tsx';
 import { Title } from '../../components/Title/Title.tsx';
 import { GoToTop } from '../../components/GoToTop/GoToTop.tsx';
 import vector from '../../icons/vector_here.svg';
-import flyer from '../../images/portfolio/flyer1.jpg';
-import cutaway from '../../images/portfolio/cutaway2.jpg';
-import notebook from '../../images/portfolio/notebook3.jpg';
-import diploma from '../../images/portfolio/diploma4.jpg';
-import bord from '../../images/portfolio/bord5.jpg';
-import sticker from '../../images/portfolio/sticker6.jpg';
-import post from '../../images/portfolio/post7.jpg';
-import logo from '../../images/portfolio/logo8.jpg';
+import flyer from '../../images/portfolio/flyer.jpg';
+import cutaway from '../../images/portfolio/cutaway.jpg';
+import notebook from '../../images/portfolio/notebook.jpg';
+import diploma from '../../images/portfolio/diploma.jpg';
+import bord from '../../images/portfolio/bord.jpg';
+import sticker from '../../images/portfolio/sticker.jpg';
+import post from '../../images/portfolio/post.jpg';
+import logo from '../../images/portfolio/logo.jpg';
 import './Portfolio.scss';
 
 export function Portfolio() {
@@ -26,7 +26,7 @@ export function Portfolio() {
               Все макеты сделаны по индивидуальным заказам. <br />
               К каждому проекту применён профессиональный подход.
               <br />
-              Учтены пожелания заказчика. По итогу все макеты успешно реализованы.
+              Учтены пожелания заказчика. По итогу, все макеты успешно реализованы.
             </h5>
             <h3 className="portfolio__subtitle">Вы можете ознакомиться с моими работами здеcь</h3>
             <div className="portfolio__vector-here">

@@ -30,13 +30,12 @@ export function Main() {
             <div className="about__description">
               <div className="about__separator-about _separator"></div>
               <p className="about__text">
-                <span className="about__text-green">Обо мне</span>
                 <br />
                 Меня зовут Алёна Левкова.
                 <br />
                 Я графический дизайнер.
                 <br />
-                Обучалась дизайну в СГУ.
+                Обучалась в Смоленском Государственном Университете.
                 <br />
                 Работала в редакции газеты и в рекламном агентстве <span className="note">8 лет.</span>
                 <br />

@@ -4,7 +4,7 @@ import { GoToTop } from '../../components/GoToTop/GoToTop';
 import phone from '../../icons/phone.svg';
 import name from '../../images/name.svg';
 import career from '../../images/career.svg';
-import photo from '../../images/photo_price.jpg';
+import photo from '../../images/price.jpg';
 import './Prices.scss';
 
 export function Prices() {
@@ -36,7 +36,7 @@ export function Prices() {
             <ul className="prices__list">
               <li className="prices__item">
                 Где вам необходимо обозначить вид{' '}
-                <span className="prices__reduced">(например листовки, визитки, баннеры...)</span>, размер макета и его
+                <span className="prices__reduced">(листовки, визитки, баннеры и т.п.)</span>, размер макета и его
                 ориентацию <span className="prices__reduced">(горизонтальный или вертикальный)</span>.
               </li>
               <li className="prices__item">Предоставить текстовую информацию в Word.</li>

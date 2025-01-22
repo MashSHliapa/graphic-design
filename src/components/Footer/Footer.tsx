@@ -26,7 +26,7 @@ export function Footer() {
               </div>
             </div>
             <h6 className="footer__copyright">
-              Портфолио графического дизайнера Алёны Левковой {new Date().getFullYear()} ©
+              Портфолио графического дизайнера Алёны Левковой {new Date().getFullYear()}
             </h6>
           </div>
           <div className="footer__data">
