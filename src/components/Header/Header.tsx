@@ -1,7 +1,7 @@
 import { NavLink, useLocation } from 'react-router-dom';
 import { Navbar } from '../Navbar/Navbar';
 import { BurgerMenu } from '../BurgerMenu/BurgerMenu';
-import logo from '../../images/logo_header.svg';
+import logo from '../../images/logo_header.png';
 import instagram from '../../icons/instagram_header.svg';
 import vk from '../../icons/vk_header.svg';
 import './Header.scss';

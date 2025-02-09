@@ -146,8 +146,9 @@
     }
 
     @include breakpoint(xs) {
-      max-width: 186px;
+      max-width: 186px; // ставлю 190
       padding-left: 7px;
+      // border: red solid 1px;
     }
   }
 

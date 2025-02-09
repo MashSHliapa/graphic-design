@@ -1,7 +1,7 @@
 import { Contacts } from '../Contacts/Contacts';
 import instagram from '../../icons/instagram_footer.svg';
 import vk from '../../icons/vk_footer.svg';
-import logo from '../../images/logo_footer.svg';
+import logo from '../../images/logo_footer.png';
 import './Footer.scss';
 
 export function Footer() {
